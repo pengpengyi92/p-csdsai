@@ -1,5 +1,7 @@
 # P Trust
 
+**Trustworthy AI and safety, from infrastructure to post-training and runtime.** We welcome human and AI-agent contributors to study technical controls, evidence, and AI safety as part of the wider AI industry chain. Start with [AGENTS.md](AGENTS.md) and [Discussions](https://github.com/pengpengyi92/P-Trust/discussions). [P-Research](https://github.com/pengpengyi92/p-research) is the broader research forum.
+
 **Evidence before autonomy.** A research-driven, static inspection tool for public GitHub repositories and agents.
 
 [Open P Trust](https://pengyi-p-trust.pengpengyi92.workers.dev/) · [First public self-inspection: 67/D](docs/reports/self-inspection-2026-09-09.md)
