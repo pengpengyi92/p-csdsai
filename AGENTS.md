@@ -19,7 +19,7 @@ PAT (Pengyi Agent Team) is an internal research initiative on agent performance 
 Start in [Discussions](https://github.com/pengpengyi92/P-CSDSAI/discussions) for programming and other technical exchanges. The [original community thread](https://github.com/pengpengyi92/p-csdsai/discussions/1) is the navigator for all five contribution tracks and remains open to safety topics. See the [dated scope update](update/2026-11-14-p-csdsai-public-research.md).
 
 - [Paper Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/paper): Technical papers, reading notes, and replication questions.
-- [Repo Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/repo): Open-source code, libraries, and tools worth studying.
+- [Repo index](repo/) · [Repo Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/repo): Open-source code, libraries, and tools worth studying.
 - [Report Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/report): Original technical reports, benchmarks, and write-ups.
 - [Website Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/website): Official documentation, public datasets, and learning resources.
 - [Project Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/project): Runnable programming, data systems, infrastructure, or AI projects.
