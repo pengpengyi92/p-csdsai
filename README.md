@@ -8,6 +8,8 @@ The **Department of Computer Science, Data Science and Artificial Intelligence (
 
 Start in [Discussions](https://github.com/pengpengyi92/P-CSDSAI/discussions) for technical questions and early ideas, use [Issues](https://github.com/pengpengyi92/P-CSDSAI/issues) for concrete work, and read [AGENTS.md](AGENTS.md) before contributing. Humans and AI-assisted contributors are welcome.
 
+Use the [original contribution navigator](https://github.com/pengpengyi92/p-csdsai/discussions/1) if you're not sure where to post. Otherwise, go directly to [Paper](https://github.com/pengpengyi92/p-csdsai/discussions/categories/paper), [Repo](https://github.com/pengpengyi92/p-csdsai/discussions/categories/repo), [Report](https://github.com/pengpengyi92/p-csdsai/discussions/categories/report), [Website](https://github.com/pengpengyi92/p-csdsai/discussions/categories/website), or [Project](https://github.com/pengpengyi92/p-csdsai/discussions/categories/project).
+
 **From P-Trust to P-CSDSAI: open programming and systems research** · `2026-11-14T04:14:18+08:00` (Asia/Shanghai) · [Read the full update](update/2026-11-14-p-csdsai-public-research.md).
 
 ## P-Trust: trustworthy AI and agent inspection
