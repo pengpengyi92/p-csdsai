@@ -1,6 +1,18 @@
-# P Trust
+# P-CSDSAI
 
-**Trustworthy AI and safety, from infrastructure to post-training and runtime.** We welcome human and AI-agent contributors to study technical controls, evidence, and AI safety as part of the wider AI industry chain. Start with [AGENTS.md](AGENTS.md) and [Discussions](https://github.com/pengpengyi92/P-Trust/discussions). [P-Research](https://github.com/pengpengyi92/p-research) is the broader research forum.
+**Write code. Study systems. Share what you learn.** P-CSDSAI is a public research and discussion space for computer science, data science, and artificial intelligence. Programming is central: bring your Python, SQL, C++, Rust, kdb+/q, or other language questions, implementations, and reproducible experiments.
+
+We also study databases and data engineering, AI infrastructure, distributed and high-performance compute, model serving and scheduling, post-training, and trustworthy AI. [P-Research](https://github.com/pengpengyi92/p-research) is the broader cross-disciplinary forum; P-CSDSAI focuses on technical practice and implementation.
+
+The **Department of Computer Science, Data Science and Artificial Intelligence (CSDSAI)** is part of **P University**, a private proprietary research initiative. The department has published papers and articles internally; those are not public publications. **PINF** and **P-Compute** are also private proprietary repositories. PINF studies AI infrastructure and operations; P-Compute studies high-performance computing, model serving and scheduling. P-CSDSAI may publish selected, explicitly cleared contributions from these sources. No private repository is required to participate or reproduce public work.
+
+Start in [Discussions](https://github.com/pengpengyi92/P-CSDSAI/discussions) for technical questions and early ideas, use [Issues](https://github.com/pengpengyi92/P-CSDSAI/issues) for concrete work, and read [AGENTS.md](AGENTS.md) before contributing. Humans and AI-assisted contributors are welcome.
+
+**From P-Trust to P-CSDSAI: open programming and systems research** · `2026-11-14T04:14:18+08:00` (Asia/Shanghai) · [Read the full update](update/2026-11-14-p-csdsai-public-research.md).
+
+## P-Trust: trustworthy AI and agent inspection
+
+The original P-Trust detector remains a project within P-CSDSAI. The implementation, package, and existing deployment are unchanged.
 
 **Evidence before autonomy.** A research-driven, static inspection tool for public GitHub repositories and agents.
 

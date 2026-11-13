@@ -1,5 +1,10 @@
 # Roadmap
 
+## P0: Public P-CSDSAI scope
+
+- [x] Document the broader programming, data systems and AI research scope and the private release boundary.
+- [ ] Review the first public programming example for reproducibility.
+
 ## P0: v0.1 Delivery
 
 - [x] Bounded public GitHub reader, pinned evidence and seven analyzers.
