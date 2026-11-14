@@ -6,6 +6,7 @@
 
 ## 分类路线
 
+- [Visualization / schema、渲染、WASM与大数据视图（12个公开参考）](data-visualization/README.md)
 - [Serving & Runtime / 推理服务与分布式调度](model-serving-and-runtime/README.md)
 - [Programming & Kernels / 框架、底层与编译](programming-and-kernels/README.md)
 - [Data & Storage / 查询、schema、序列化与持久化](data-and-storage/README.md)

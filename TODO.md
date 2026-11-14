@@ -1,5 +1,13 @@
 # Roadmap
 
+## P1 - Visualization as a data-system interface (2026-11-14)
+
+- [x] Add12 pinned public references with schema/nullable/time/transport/aggregation questions; preserve manual license and NOT_RUN boundaries.
+- [x] Run existing catalog and4 new reference tests:14/14 PASS; app/private research unchanged.
+- [x] Push public documentation/log in PR3; catalog CI PASS. App code/deps unchanged from base.
+- [ ] P0: Separately remediate existing dependency audit failures before merging PR3;19 reported entries/8high, main also fails. Do not bypass the gate.
+- [ ] Execute a separately approved fixed-fixture renderer comparison; third-party gains remain UNMEASURED.
+
 ## P0 - AI repository reading catalog (2026-11-14)
 
 - [x] Curate10 role-specific cards with official source pins, rights and public PR states.
