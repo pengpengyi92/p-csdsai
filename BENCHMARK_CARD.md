@@ -1,5 +1,16 @@
 # Benchmark Card: v0.1
 
+## Repository catalog — 2026-11-14
+
+| Step | Evidence |
+| --- | --- |
+| Baseline | No role-specific multi-repository AI reading routes; existing project code and prior indexes preserved. |
+| Change |10 project-specific cards, official source pins/PR states, license limits, study plans and catalog-only CI. |
+| Measure |10 local catalog tests; 目录10项；现有 P-Trust35项、类型/lint、固定fixture benchmark与构建全部通过. [Observed delivery](update/2026-11-14-ai-repository-guides.md). |
+| Result |Catalog checks PASS; runtime/model/learning/throughput improvements NOT RUN / UNMEASURED, not claimed from curation. |
+| Trade-off |Curated bounded sample, changing paths/permissions and PR history; no full ecosystem audit or third-party certification. |
+| Next Action |One fixed-fixture study with independent baseline and negative controls; no model/GPU spending without approval. |
+
 ## Baseline
 
 No existing analyzer implementation. Seven fixed harmless synthetic fixtures represent expected patterns and review signals, not production accuracy. Keyword-only matching is the conceptual comparator; a quantitative paired baseline comparison is UNMEASURED.

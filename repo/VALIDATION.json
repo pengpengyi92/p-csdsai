@@ -1,0 +1,23 @@
+{
+  "project": "p-csdsai",
+  "observed_date": "2026-11-14",
+  "timezone": "Asia/Shanghai",
+  "source_base": "7f185feeae9162852cae7b29d900fcb426dcad01",
+  "catalog_sha256": "9f29eaf6dc5b6609aad30737b8275095f8fddcc8a231fffe51f9a351d93e06d6",
+  "environment": {
+    "os": "Windows",
+    "python": "3.12.14",
+    "node": "24.18.0"
+  },
+  "catalog_check": {
+    "command": "python -m unittest discover -s tests -p test_repo_catalog.py -v",
+    "exit_code": 0,
+    "passed": 10,
+    "failed": 0
+  },
+  "legacy_scope": "目录10项；现有 P-Trust35项、类型/lint、固定fixture benchmark与构建全部通过",
+  "third_party_runtime": "NOT RUN",
+  "learning_and_performance_gains": "UNMEASURED",
+  "remote_ci": "NOT OBSERVED at local acceptance",
+  "publication": "Git commit/push/readback verified separately at handoff"
+}

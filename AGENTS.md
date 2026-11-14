@@ -12,7 +12,7 @@ P-CSDSAI is a public technical research space for computer science, data science
 
 The **Department of Computer Science, Data Science and Artificial Intelligence (CSDSAI)** is part of **P University**, a private proprietary research initiative. The department has published papers and articles internally; those are not public publications. **PINF** and **P-Compute** are also private proprietary repositories. PINF studies AI infrastructure and operations; P-Compute studies high-performance computing, model serving and scheduling. P-CSDSAI may publish selected, explicitly cleared contributions from these sources. No private repository is required to participate or reproduce public work.
 
-PAT (Pengyi Agent Team) is an internal research initiative on agent performance and post-training. [P-Research](https://github.com/pengpengyi92/p-research) is the broader AI and quant research forum.
+PAT (Pengyi Agent Team) is an internal research initiative on agent performance and post-training. [P-Research](https://github.com/pengpengyi92/p-research) is the AI-first research forum; Quant × AI remains an application branch. This repository's repo/ catalog emphasizes systems, programming, serving and data infrastructure; P-ML emphasizes models and methods. Cross-listed libraries need distinct questions, not copied claims of measured gains.
 
 ## How to participate
 

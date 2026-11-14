@@ -12,6 +12,18 @@ Use the [original contribution navigator](https://github.com/pengpengyi92/p-csds
 
 **From P-Trust to P-CSDSAI: open programming and systems research** · `2026-11-14T04:14:18+08:00` (Asia/Shanghai) · [Read the full update](update/2026-11-14-p-csdsai-public-research.md).
 
+## AI infrastructure and systems reading guide
+
+[10 repository cards](repo/README.md) cover SGLang, vLLM, Ray, PyTorch, Triton,
+Safetensors, DuckDB, Ibis, Pandera and sqlite-utils. Each has a systems-specific
+reason, pinned code pointers and an unrun study plan. No serving/GPU speedup,
+model installation or successful production integration is claimed.
+
+Use [P-ML](https://github.com/pengpengyi92/P-ML/tree/main/ml-repo) for model and
+training foundations, and [P-Research](https://github.com/pengpengyi92/p-research/tree/main/repo)
+for AI research questions and evidence-based evaluation. The existing P-Trust
+application below remains unchanged.
+
 ## P-Trust: trustworthy AI and agent inspection
 
 The original P-Trust detector remains a project within P-CSDSAI. The implementation, package, and existing deployment are unchanged.

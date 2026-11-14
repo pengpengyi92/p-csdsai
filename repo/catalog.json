@@ -1,0 +1,469 @@
+{
+  "schema_version": 1,
+  "project": "p-csdsai",
+  "profile": "systems",
+  "catalog_root": "repo",
+  "last_reviewed": "2026-11-14",
+  "timezone": "Asia/Shanghai",
+  "scope": "编程、模型服务、调度、编译、分布式计算、数据系统和可验证的基础设施工程",
+  "complete_ecosystem_inventory": false,
+  "entries": [
+    {
+      "slug": "pytorch",
+      "title": "PyTorch",
+      "category": "programming-and-kernels",
+      "card": "programming-and-kernels/pytorch.md",
+      "summary": "Tensor、autograd 与神经网络模块的核心框架。",
+      "inclusion_reason": "研究张量执行、模块 hook、分布式接口及 Python/底层边界，关注正确性与可维护性。",
+      "learning_question": "autograd 与模块状态是否按预期变化？",
+      "planned_exercise": "对照小张量手算梯度；记录 train/eval、随机种子和 dtype，先 CPU，GPU 成本另行审批。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "pytorch/pytorch",
+        "requested_name": "pytorch/pytorch",
+        "url": "https://github.com/pytorch/pytorch",
+        "private": false,
+        "default_branch": "main",
+        "head": "1a6d2a8249e0b28c119661a8c424f9c145fbe1bd",
+        "archived": false,
+        "observed_at": "2026-11-14T15:33:09.225985+08:00",
+        "license_signal": "NOASSERTION",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "torch/nn/modules/module.py",
+          "torch/autograd/__init__.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:pytorch/pytorch author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 3,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [
+          {
+            "url": "https://github.com/pytorch/pytorch/pull/192439",
+            "number": 192439,
+            "title": "[typing] Export torch.distributed.algorithms symbols",
+            "state": "OPEN",
+            "merged_at": null,
+            "author": "pengpengyi92",
+            "updated_at": "2026-11-05T06:39:24Z"
+          },
+          {
+            "url": "https://github.com/pytorch/pytorch/pull/193055",
+            "number": 193055,
+            "title": "[distributed] Continue socket fallback after constructor errors",
+            "state": "OPEN",
+            "merged_at": null,
+            "author": "pengpengyi92",
+            "updated_at": "2026-11-10T05:34:44Z"
+          },
+          {
+            "url": "https://github.com/pytorch/pytorch/pull/193311",
+            "number": 193311,
+            "title": "[docs] Remove unsupported out argument from torch.linalg._powsum",
+            "state": "CLOSED_UNMERGED",
+            "merged_at": null,
+            "author": "pengpengyi92",
+            "updated_at": "2026-11-11T21:03:04Z"
+          }
+        ],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "safetensors",
+      "title": "Safetensors",
+      "category": "data-and-storage",
+      "card": "data-and-storage/safetensors.md",
+      "summary": "张量文件格式及语言绑定。",
+      "inclusion_reason": "研究 Rust/Python 边界、字节序、文件校验与模型 artifact 供应链。",
+      "learning_question": "字节布局和跨平台 round-trip 是否一致？",
+      "planned_exercise": "设计 dtype/shape/endianness round-trip 和损坏文件负面对照；不把某格式当成整条模型供应链安全证明。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "safetensors/safetensors",
+        "requested_name": "safetensors/safetensors",
+        "url": "https://github.com/safetensors/safetensors",
+        "private": false,
+        "default_branch": "main",
+        "head": "9e6f4d6c7af8c63ac791ab1bfdd58d2de02fbaa4",
+        "archived": false,
+        "observed_at": "2026-11-14T15:34:03.874625+08:00",
+        "license_signal": "Apache-2.0",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "safetensors/src/tensor.rs",
+          "bindings/python/py_src/safetensors/torch.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:safetensors/safetensors author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 1,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [
+          {
+            "url": "https://github.com/safetensors/safetensors/pull/830",
+            "number": 830,
+            "title": "Fix big-endian data in threadable serialization test",
+            "state": "OPEN",
+            "merged_at": null,
+            "author": "pengpengyi92",
+            "updated_at": "2026-08-23T05:55:31Z"
+          }
+        ],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "sglang",
+      "title": "SGLang",
+      "category": "model-serving-and-runtime",
+      "card": "model-serving-and-runtime/sglang.md",
+      "summary": "模型服务与推理运行时。",
+      "inclusion_reason": "AI infra 重点：服务调度、chunking、异常与 profiling，连接现有 NVTX/动态分块贡献。",
+      "learning_question": "调度正确性、资源成本与性能能否分开验证？",
+      "planned_exercise": "先读 scheduler、prefill/decode 与性能观测边界；后续固定模型、硬件、请求分布再测 TTFT/TPOT/p95。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "sgl-project/sglang",
+        "requested_name": "sgl-project/sglang",
+        "url": "https://github.com/sgl-project/sglang",
+        "private": false,
+        "default_branch": "main",
+        "head": "2456e0beab40a2c130f56df4858976db91e2f735",
+        "archived": false,
+        "observed_at": "2026-11-14T15:36:10.569694+08:00",
+        "license_signal": "Apache-2.0",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "python/sglang/srt/managers/scheduler.py",
+          "python/sglang/srt/managers/scheduler_pp_mixin.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:sgl-project/sglang author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 2,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [
+          {
+            "url": "https://github.com/sgl-project/sglang/pull/36984",
+            "number": 36984,
+            "title": "[Fix] Balance NVTX ranges when forward raises",
+            "state": "OPEN",
+            "merged_at": null,
+            "author": "pengpengyi92",
+            "updated_at": "2026-09-03T05:59:02Z"
+          },
+          {
+            "url": "https://github.com/sgl-project/sglang/pull/50375",
+            "number": 50375,
+            "title": "[Fix] scheduler: Avoid cancellation in dynamic chunk-size prediction",
+            "state": "OPEN",
+            "merged_at": null,
+            "author": "pengpengyi92",
+            "updated_at": "2026-11-13T20:32:06Z"
+          }
+        ],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "vllm",
+      "title": "vLLM",
+      "category": "model-serving-and-runtime",
+      "card": "model-serving-and-runtime/vllm.md",
+      "summary": "模型推理与 serving 引擎。",
+      "inclusion_reason": "作为 serving 架构与请求调度对照，不预设性能排名或生产适配。",
+      "learning_question": "吞吐、延迟和显存比较是否同口径？",
+      "planned_exercise": "从请求到 engine/core 跟踪状态和批处理；与其他服务框架比较前固定硬件、模型、量化和并发。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "vllm-project/vllm",
+        "requested_name": "vllm-project/vllm",
+        "url": "https://github.com/vllm-project/vllm",
+        "private": false,
+        "default_branch": "main",
+        "head": "5ec99956ad4253e70a56c8c0179c5af14fef377d",
+        "archived": false,
+        "observed_at": "2026-11-14T15:36:18.047177+08:00",
+        "license_signal": "Apache-2.0",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "vllm/engine/llm_engine.py",
+          "vllm/v1/engine/core.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:vllm-project/vllm author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 0,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "ray",
+      "title": "Ray",
+      "category": "model-serving-and-runtime",
+      "card": "model-serving-and-runtime/ray.md",
+      "summary": "分布式任务、actor 与服务相关工具。",
+      "inclusion_reason": "研究分布式编排、故障恢复和资源分配，不把调度框架当成完整算力财务系统。",
+      "learning_question": "重试后任务副作用和资源归属是否正确？",
+      "planned_exercise": "用任务/actor 图设计重试、资源声明和失败隔离；分布式/GPU 实验另立授权预算。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "ray-project/ray",
+        "requested_name": "ray-project/ray",
+        "url": "https://github.com/ray-project/ray",
+        "private": false,
+        "default_branch": "master",
+        "head": "74b21dc82a7977e7b29291a7b5d8db99018259b3",
+        "archived": false,
+        "observed_at": "2026-11-14T15:36:25.315124+08:00",
+        "license_signal": "Apache-2.0",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "python/ray/_private/worker.py",
+          "python/ray/serve/deployment.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:ray-project/ray author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 0,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "triton",
+      "title": "Triton",
+      "category": "programming-and-kernels",
+      "card": "programming-and-kernels/triton.md",
+      "summary": "GPU kernel 编程语言与编译工具链。",
+      "inclusion_reason": "研究编译/runtime 边界、内存访问与性能测量方法；正确性先于优化。",
+      "learning_question": "kernel 的尾部 mask 和数值误差是否正确？",
+      "planned_exercise": "先读 vector-add 的布局与边界，再设计尾部块、dtype 和容差测试；本轮不编译/运行 GPU kernel。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "triton-lang/triton",
+        "requested_name": "triton-lang/triton",
+        "url": "https://github.com/triton-lang/triton",
+        "private": false,
+        "default_branch": "main",
+        "head": "cc3d5aefdcd29e2d2cb8505e8322a2370f93217e",
+        "archived": false,
+        "observed_at": "2026-11-14T15:36:31.810746+08:00",
+        "license_signal": "MIT",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "python/triton/runtime/jit.py",
+          "python/tutorials/01-vector-add.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:triton-lang/triton author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 0,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "duckdb",
+      "title": "DuckDB",
+      "category": "data-and-storage",
+      "card": "data-and-storage/duckdb.md",
+      "summary": "分析型 SQL 数据库与执行系统。",
+      "inclusion_reason": "AI 数据准备/评估的 SQL 基础设施，研究执行与时间语义而非只写查询示例。",
+      "learning_question": "查询是否只看到决策时点可得的信息？",
+      "planned_exercise": "在合成版本化数据上检查 as-of join、NULL、重复键和执行计划；保留 SQL/Python 独立对照。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "duckdb/duckdb",
+        "requested_name": "duckdb/duckdb",
+        "url": "https://github.com/duckdb/duckdb",
+        "private": false,
+        "default_branch": "main",
+        "head": "b678afa97b529d5856731e115e31542a72d2d978",
+        "archived": false,
+        "observed_at": "2026-11-14T15:36:38.92135+08:00",
+        "license_signal": "MIT",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "src/main/connection.cpp",
+          "src/execution/operator/scan/physical_table_scan.cpp"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:duckdb/duckdb author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 0,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "ibis",
+      "title": "Ibis",
+      "category": "data-and-storage",
+      "card": "data-and-storage/ibis.md",
+      "summary": "DataFrame/关系表达式与多后端查询接口。",
+      "inclusion_reason": "研究 Python/SQL 与 backend 边界，为跨数据系统的 AI 研究流程提供对照。",
+      "learning_question": "抽象表达式是否保留 NULL 和时间语义？",
+      "planned_exercise": "对同一合成输入检查表达式、生成 SQL 与执行结果；不要假定各后端语义完全一致。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "ibis-project/ibis",
+        "requested_name": "ibis-project/ibis",
+        "url": "https://github.com/ibis-project/ibis",
+        "private": false,
+        "default_branch": "main",
+        "head": "6d40f963fee940063e09956c7e60d073f4302259",
+        "archived": false,
+        "observed_at": "2026-11-14T15:36:45.619531+08:00",
+        "license_signal": "Apache-2.0",
+        "license_path": "LICENSE.txt",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "ibis/expr/types/core.py",
+          "ibis/backends/duckdb/__init__.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:ibis-project/ibis author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 0,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "pandera",
+      "title": "Pandera",
+      "category": "data-and-storage",
+      "card": "data-and-storage/pandera.md",
+      "summary": "数据 schema 与验证工具。",
+      "inclusion_reason": "把训练/评估数据 QA 变成可执行契约，连接已有 row-dropping PR。",
+      "learning_question": "schema 更新是否保留原有错误处理契约？",
+      "planned_exercise": "测试缺字段、异常 dtype、逐行错误和更新 schema 后的行为；验证通过不代表标签正确或无泄漏。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "unionai-oss/pandera",
+        "requested_name": "unionai-oss/pandera",
+        "url": "https://github.com/unionai-oss/pandera",
+        "private": false,
+        "default_branch": "main",
+        "head": "0292915e3321e83ee19380d7329788b7ead05291",
+        "archived": false,
+        "observed_at": "2026-11-14T15:36:53.264511+08:00",
+        "license_signal": "MIT",
+        "license_path": "LICENSE.txt",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "pandera/api/pandas/container.py",
+          "pandera/api/pandas/array.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:unionai-oss/pandera author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 1,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [
+          {
+            "url": "https://github.com/unionai-oss/pandera/pull/2667",
+            "number": 2667,
+            "title": "fix(pandas): preserve column row-dropping settings in update_columns",
+            "state": "OPEN",
+            "merged_at": null,
+            "author": "pengpengyi92",
+            "updated_at": "2026-11-12T14:02:02Z"
+          }
+        ],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    },
+    {
+      "slug": "sqlite-utils",
+      "title": "sqlite-utils",
+      "category": "data-and-storage",
+      "card": "data-and-storage/sqlite-utils.md",
+      "summary": "SQLite 数据管理与 CLI/Python 工具。",
+      "inclusion_reason": "研究本地研究记忆库的数据接口与持久化，结合真实 iterable/FTS 贡献案例。",
+      "learning_question": "惰性输入是否被多次消费导致数据丢失？",
+      "planned_exercise": "用小型合成记录检查索引/FTS、一次性 iterable 和事务持久化；不导入私人知识库。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "simonw/sqlite-utils",
+        "requested_name": "simonw/sqlite-utils",
+        "url": "https://github.com/simonw/sqlite-utils",
+        "private": false,
+        "default_branch": "main",
+        "head": "9c66bafa52ae23d40499c74b0db3b635bcddb876",
+        "archived": false,
+        "observed_at": "2026-11-14T15:36:59.740051+08:00",
+        "license_signal": "Apache-2.0",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "sqlite_utils/db.py",
+          "sqlite_utils/cli.py"
+        ],
+        "missing_candidates": [],
+        "contribution_search": {
+          "query": "repo:simonw/sqlite-utils author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 1,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [
+          {
+            "url": "https://github.com/simonw/sqlite-utils/pull/943",
+            "number": 943,
+            "title": "Preserve one-shot column iterables in full-text search queries",
+            "state": "OPEN",
+            "merged_at": null,
+            "author": "pengpengyi92",
+            "updated_at": "2026-11-13T18:55:48Z"
+          }
+        ],
+        "runtime_evaluation": "NOT RUN in this catalog task"
+      }
+    }
+  ]
+}
