@@ -14,6 +14,11 @@ Use the [original contribution navigator](https://github.com/pengpengyi92/p-csds
 
 ## AI infrastructure and systems reading guide
 
+[Visualization/data-system interface](repo/data-visualization/README.md) adds12
+pinned public references with typed-schema, null/time semantics, browser/WASM,
+aggregation and measurement questions. References only; no third-party runtime,
+performance or safety validation is implied.
+
 [10 repository cards](repo/README.md) cover SGLang, vLLM, Ray, PyTorch, Triton,
 Safetensors, DuckDB, Ibis, Pandera and sqlite-utils. Each has a systems-specific
 reason, pinned code pointers and an unrun study plan. No serving/GPU speedup,

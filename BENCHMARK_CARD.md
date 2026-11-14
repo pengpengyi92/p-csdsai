@@ -1,5 +1,14 @@
 # Benchmark Card: v0.1
 
+## Visualization reference interface - 2026-11-14
+
+- **Baseline**:10 existing systems cards, no visualization-specific source/spec/transport route.
+- **Change**:12 pinned public visualization/reporting references, system-specific study questions, common evidence and manual license observations; existing app/runtime untouched.
+- **Measure**:fixed commit/file/license identities,4 reference-contract tests plus existing catalog suite; third-party renderers NOT_RUN.
+- **Result**:candidate reading route, not measured renderer correctness/performance/safety. Tests and remote delivery recorded in log/2026-11-14_data-visualization.md.
+- **Trade-off**:metadata/readme inspection cannot establish runtime quality or data rights; AGPL/NOTICE/unknown automatic SPDX remain explicit.
+- **Next Action**:source/privacy/CI review and push, then a separately scoped10k/100k synthetic renderer experiment; gains UNMEASURED.
+
 ## Repository catalog — 2026-11-14
 
 | Step | Evidence |
