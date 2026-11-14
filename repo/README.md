@@ -41,7 +41,9 @@
 - [P-Research / AI 研究](https://github.com/pengpengyi92/p-research/tree/main/repo)
 - [P-CSDSAI / AI 系统与数据](https://github.com/pengpengyi92/p-csdsai/tree/main/repo)
 
-## Existing community guide
+## Community guides
+
+- [HKUDS community and repository guide](hkuds.md) — 93 public repository links, engineering starting points, and [the HKUDS discussion](https://github.com/pengpengyi92/p-csdsai/discussions/4).
 
 - [PPRT prop engineering work log](../docs/logs/2026-11-14-pprt-prop-engineering-upstream.md) — public contributions and reproducible checks for Jump Trading, Optiver, and Point72, plus what we could verify about Verition.
 - [LLMQuant community and repository guide](llmquant.md) — the complete public inventory with access notes, suggested starting points, and how to contribute. [Discuss LLMQuant (#2)](https://github.com/pengpengyi92/p-csdsai/discussions/2).

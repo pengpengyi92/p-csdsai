@@ -20,6 +20,7 @@ Start in [Discussions](https://github.com/pengpengyi92/P-CSDSAI/discussions) for
 
 - [Paper Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/paper): Technical papers, reading notes, and replication questions.
 - [Repo index](repo/) · [Repo Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/repo): Open-source code, libraries, and tools worth studying.
+  For HKUDS, read [the project guide](repo/hkuds.md) and use [the existing discussion](https://github.com/pengpengyi92/p-csdsai/discussions/4) for setup notes, debugging and engineering contributions.
 - [Report Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/report): Original technical reports, benchmarks, and write-ups.
 - [Website Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/website): Official documentation, public datasets, and learning resources.
 - [Project Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/project): Runnable programming, data systems, infrastructure, or AI projects.
