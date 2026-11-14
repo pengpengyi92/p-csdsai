@@ -24,6 +24,8 @@ training foundations, and [P-Research](https://github.com/pengpengyi92/p-researc
 for AI research questions and evidence-based evaluation. The existing P-Trust
 application below remains unchanged.
 
+[PPRT open-source engineering work log](docs/logs/2026-11-14-pprt-prop-engineering-upstream.md) · public patches, offline verification, and contact for our private prop team.
+
 ## P-Trust: trustworthy AI and agent inspection
 
 The original P-Trust detector remains a project within P-CSDSAI. The implementation, package, and existing deployment are unchanged.
