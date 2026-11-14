@@ -41,3 +41,18 @@ Local Markdown/source/permission checks and `git diff --check` PASS.
 No JS app code or dependency changed; this local run did not repeat the app's
 browser/Worker benchmark. Existing remote CI remains a separate delivery gate.
 Third-party visualizers NOT_RUN / UNMEASURED. Commit/push readback follows.
+
+## Publication gate — 2026-11-14T16:24+08:00
+
+Source53213752f9af448ecc8e386e9d29a51c6da38df9 pushed to
+[PR3](https://github.com/pengpengyi92/p-csdsai/pull/3). Catalog checks PASS in
+run43575438605. Existing app quality run43575438624 fails `npm audit
+--audit-level=high`:19 affected dependency entries,11moderate/8high, including
+Vite/Zod/undici and test/tooling dependencies. No automatic audit fix/force
+downgrade or disabled gate. Main6fe6ae2 run43575364796 fails the same audit
+step; this contribution has no package/lock/app changes from its base.
+
+PR stays OPEN pending separately reviewed dependency remediation. Public
+catalog branch/log are published, but this is NOT a claim of main merge or
+clean application audit/browser acceptance. Do not copy unrelated app fixes
+into a reference-only PR without separate scope and verification.
