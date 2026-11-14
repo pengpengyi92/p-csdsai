@@ -43,3 +43,8 @@
 
 - [x] First read-only, pinned-commit SkillWard source review (2026-11-06) and risk/evidence ledger in [pinned audit](docs/reports/2026-11-06_skillward_pinned_source_audit.md). No vendor code executed.\n- [x] Reproducible **synthetic-only** metrics smoke test with five passed unit tests; no empirical performance claim.\n- [ ] Review external Agent runtime safety literature and validate the pinned-code findings independently.
 - [ ] Develop independently labeled Agent trace and tool-interruption scenarios; report precision/recall, false blocks, latency, trace coverage and pre-effect prevention separately. No runtime protection is claimed in P-Trust v0.1.
+
+## Follow-up: AI Infra L1–L7 (2026-11-15)
+
+- P1: Pre-register one fixed synthetic trace, FCFS baseline, unique logical terminal-state check and short-request p95 threshold before running a scheduler comparison.
+- P2: Only after CPU results and explicit resource approval, pin one model/device and verify whether the observed trade-off survives real GPU measurement.

@@ -6,6 +6,8 @@
 
 ## 分类路线
 
+- [AI Infra L1–L7 · 源码路线、最小复现与工程贡献](ai-infra/README.md) — 每层四个固定版本的公开项目；原有项目卡保留。
+
 - [Serving & Runtime / 推理服务与分布式调度](model-serving-and-runtime/README.md)
 - [Programming & Kernels / 框架、底层与编译](programming-and-kernels/README.md)
 - [Data & Storage / 查询、schema、序列化与持久化](data-and-storage/README.md)
