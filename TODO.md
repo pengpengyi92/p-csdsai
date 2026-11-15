@@ -6,9 +6,10 @@
   audit-suggested downgrade peers and current config exposure; no compatible fix
   found. Keep7 moderate findings, lockfile and audit policy unchanged.
 - [x] Add3 actual-linter policy controls;45 Vitest/30 Python and full check PASS.
-- [ ] Complete both real persisted-report browser cases after anonymous quota
-  recovery. First announced reset was awaited;15:14 probe still403/0, next reset
- 15:35:16+08:00. One final bounded attempt, no identity/network rotation.
+- [x] Complete both real persisted-report browser cases after anonymous quota
+  recovery. At15:35:46 Node quota recovered; source=github public scand03e507
+  completed, full browser10 PASS/0 SKIPPED and focused repeat2 PASS. See the
+  [live receipt](docs/reports/dependency-audit-2026-11-15/live-regression.json).
 - [ ] Revisit supported upstream fix once published; require full protocol, not
   only audit counts. See [decision report](docs/reports/dependency-audit-2026-11-15/moderate-followup.md).
 
@@ -27,8 +28,9 @@
   when a supported TypeScript-ESLint/minimatch dependency path is available. Accept
   only after full audit, type/lint/unit/browser checks; do not force minimatch11
   into a declared10.x range or use the audit-suggested TypeScript-ESLint downgrade.
-- [ ] P1: After GitHub anonymous quota recovers, run the canonical self-scan and
-  both PTRUST_REPORT_ID browser cases against its real persisted local report.
+- [x] P1: Canonical real self-scan and both PTRUST_REPORT_ID browser cases passed
+  at15:36-15:38+08:00; full10-case suite0 skipped. Historical earlier skip counts
+  remain preserved in the log, not rewritten as passes.
 - [ ] P2: Production rollout is separate; no wrangler deploy in this repair.
 
 [Version decisions, failed attempts and receipts](docs/reports/dependency-audit-2026-11-15/README.md).

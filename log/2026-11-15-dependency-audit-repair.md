@@ -83,3 +83,31 @@ code exported.
   replay with a real local persisted report. Local Worker was stopped while idle.
 - Publish the completed supported-fix review and45-test policy evidence now;
   make one final bounded attempt after the new reset, not an unbounded retry loop.
+
+### Real online gap closed - `2026-11-15T15:38:55+08:00`
+
+- Final bounded preflight at15:35:46: actual anonymous Node path HTTP200,
+  remaining50. One successful local Worker scan, no token/identity/network change.
+- Source=github, commit `d03e507923df150ae302b1b725b725df5baca2eb`, job
+  `a03e3f0dbc09db27482f5bc466f31ab216aba47624e54f2fd26a74302c4d6db9`.
+  Created15:36:18.805 and completed15:36:34.557+08:00:15.752s, N=1, not a latency
+  benchmark.16/86 eligible files,62,325 bytes; no target code executed.
+- Real report id supplied to the full Chromium suite: **10 PASS/0 SKIPPED/0 FAIL**.
+  Focused JSON-reporter repeat: both desktop/mobile live cases PASS,0 skipped,
+  unexpected or flaky. These are the same2 cases, not2 additional unique tests.
+- Checked actual desktop/mobile screenshots and all40 source URLs against the
+  pinned public commit. Preserved [exact public report](../docs/reports/self-inspection-2026-11-15.json)
+  and [minimal receipt](../docs/reports/dependency-audit-2026-11-15/live-regression.json).
+  Local state/raw logs/screenshots remain ignored; Worker stopped after tests.
+- Fresh final audit still7 moderate/0 high/0 critical. No compatible supported
+  dependency fix found; no force/downgrade/override, no disabled lint or audit.
+  Upstream resolution remains P1; the real online regression follow-up is complete.
+- Review commitd03e507 was published and6/6 remote blobs matched.
+  [Hosted quality43689232643](https://github.com/pengpengyi92/p-csdsai/actions/runs/43689232643)
+  SUCCESS. This default hosted job uses8 deterministic browser cases/2 optional
+  live skips; it is distinct from the completed local10-case real-report run.
+- Non-product verification limits: an extra sandbox-only PowerShell health probe
+  was denied by socket policy; the approved browser health assertions passed.
+  Context7 reached its monthly quota during reporter lookup; official Playwright
+  docs were the fallback. No production rollout, retention/restart claim or
+  security certification follows from this result.

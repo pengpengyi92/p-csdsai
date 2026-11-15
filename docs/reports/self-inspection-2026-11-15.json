@@ -1,0 +1,884 @@
+{
+  "id": "a03e3f0dbc09db27482f5bc466f31ab216aba47624e54f2fd26a74302c4d6db9",
+  "version": "0.1.0",
+  "policy": "static-evidence-2026-09-09.1",
+  "repository": {
+    "ref": {
+      "owner": "pengpengyi92",
+      "name": "p-csdsai",
+      "url": "https://github.com/pengpengyi92/p-csdsai"
+    },
+    "commit_sha": "d03e507923df150ae302b1b725b725df5baca2eb",
+    "tree_sha": "b674e237e8b579ef53e44b975c87a4dbf8f22c64",
+    "description": "\"🏫csdsai：Public technical research in computer science, data science and AI: programming, infrastructure, compute and trustworthy AI.”",
+    "coverage": {
+      "tree_entries": 136,
+      "eligible_files": 86,
+      "fetched_files": 16,
+      "bytes": 62325,
+      "truncated_tree": false,
+      "skipped": [
+        {
+          "path": ".env.example",
+          "reason": "sensitive filename"
+        },
+        {
+          "path": ".gitattributes",
+          "reason": "unsupported or generated file"
+        },
+        {
+          "path": ".gitignore",
+          "reason": "unsupported or generated file"
+        },
+        {
+          "path": "LICENSE",
+          "reason": "unsupported or generated file"
+        },
+        {
+          "path": "docs/reports/dependency-audit-2026-11-15/baseline-audit.json",
+          "reason": "file size limit"
+        },
+        {
+          "path": "docs/reports/self-inspection-2026-09-09.json",
+          "reason": "file size limit"
+        },
+        {
+          "path": "index.html",
+          "reason": "unsupported or generated file"
+        },
+        {
+          "path": "package-lock.json",
+          "reason": "file size limit"
+        },
+        {
+          "path": "public/trust-researcher.png",
+          "reason": "file size limit"
+        },
+        {
+          "path": "repo/ai-infra/README.md",
+          "reason": "file size limit"
+        },
+        {
+          "path": "repo/ai-infra/catalog.json",
+          "reason": "file size limit"
+        },
+        {
+          "path": "repo/catalog.json",
+          "reason": "file size limit"
+        },
+        {
+          "path": "repo/cv-dl-rl/pml_snapshot.json",
+          "reason": "file size limit"
+        },
+        {
+          "path": "research/agent_runtime_eval/fixtures/synthetic_agent_actions.json",
+          "reason": "excluded path"
+        },
+        {
+          "path": "src/fixtures/index.ts",
+          "reason": "excluded path"
+        },
+        {
+          "path": "src/main.tsx",
+          "reason": "file size limit"
+        },
+        {
+          "path": "src/styles.css",
+          "reason": "unsupported or generated file"
+        },
+        {
+          "path": "wrangler.jsonc",
+          "reason": "unsupported or generated file"
+        }
+      ]
+    },
+    "captured_at": "2026-11-15T07:36:20.769Z",
+    "source": "github"
+  },
+  "classification": {
+    "kind": "software",
+    "confidence": 0.55,
+    "evidence": [
+      {
+        "id": "research/agent_runtime_eval/evaluate.py:1:4",
+        "path": "research/agent_runtime_eval/evaluate.py",
+        "line_start": 1,
+        "line_end": 4,
+        "snippet": "#!/usr/bin/env python3\n\"\"\"Read-only evaluation of entirely synthetic Agent tool-action decisions.\n\nNo Agent, Skill, MCP, Docker image, model, network request, or untrusted code is",
+        "blob_sha": "af30be76b0b9b3bbaf53ad6e1b395f666fd5e85b",
+        "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/research/agent_runtime_eval/evaluate.py#L1-L4"
+      }
+    ],
+    "method": "Static call-name, parsed manifest-key and source-filename heuristic, not a runtime or semantic classification. Non-agent evidence identifies the supporting file, not a proof of behavior; no match yields unknown. Ambiguous repositories may be misclassified."
+  },
+  "overall_score": 64,
+  "grade": "D",
+  "confidence": 0.37,
+  "dimensions": [
+    {
+      "dimension": "security",
+      "score": 100,
+      "applicable": true,
+      "confidence": 0.37,
+      "checks": [
+        {
+          "id": "validation",
+          "title": "Input validation call",
+          "observed": true,
+          "evidence": [
+            {
+              "id": "src/worker.ts:46:46",
+              "path": "src/worker.ts",
+              "line_start": 46,
+              "line_end": 46,
+              "snippet": "    return row ? JSON.parse(row.value) : undefined;",
+              "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L46-L46"
+            },
+            {
+              "id": "src/worker.ts:82:82",
+              "path": "src/worker.ts",
+              "line_start": 82,
+              "line_end": 82,
+              "snippet": "    return job && Date.parse(job.expires_at) > Date.now() ? job : null;",
+              "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L82-L82"
+            },
+            {
+              "id": "src/worker.ts:92:92",
+              "path": "src/worker.ts",
+              "line_start": 92,
+              "line_end": 92,
+              "snippet": "    if (Date.now() >= Date.parse(job.expires_at)) {",
+              "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L92-L92"
+            },
+            {
+              "id": "src/worker.ts:97:97",
+              "path": "src/worker.ts",
+              "line_start": 97,
+              "line_end": 97,
+              "snippet": "      await this.ctx.storage.setAlarm(Date.parse(job.expires_at));",
+              "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L97-L97"
+            }
+          ],
+          "points": 40,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "ci_security",
+          "title": "Security check in CI",
+          "observed": true,
+          "evidence": [
+            {
+              "id": ".github/workflows/ci.yml:21:21",
+              "path": ".github/workflows/ci.yml",
+              "line_start": 21,
+              "line_end": 21,
+              "snippet": "      - run: npm audit --audit-level=high",
+              "blob_sha": "113679b361f3c9057555d3874cd23113c12022d7",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/.github/workflows/ci.yml#L21-L21"
+            }
+          ],
+          "points": 30,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "doc_limits",
+          "title": "Documented safety limitations",
+          "observed": true,
+          "evidence": [
+            {
+              "id": "README.md:105:105",
+              "path": "README.md",
+              "line_start": 105,
+              "line_end": 105,
+              "snippet": "## Security And Limitations",
+              "blob_sha": "c35687892ec7502142676d9d86376a3a78a7c8ea",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/README.md#L105-L105"
+            },
+            {
+              "id": "README.md:131:131",
+              "path": "README.md",
+              "line_start": 131,
+              "line_end": 131,
+              "snippet": "### External AI safety research notes",
+              "blob_sha": "c35687892ec7502142676d9d86376a3a78a7c8ea",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/README.md#L131-L131"
+            },
+            {
+              "id": "SECURITY.md:1:1",
+              "path": "SECURITY.md",
+              "line_start": 1,
+              "line_end": 1,
+              "snippet": "# Security Policy",
+              "blob_sha": "f873cd8b9497d7a50fa09bfe4c2b519c7ea8f1c9",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/SECURITY.md#L1-L1"
+            },
+            {
+              "id": "SECURITY.md:7:7",
+              "path": "SECURITY.md",
+              "line_start": 7,
+              "line_end": 7,
+              "snippet": "## Limitations",
+              "blob_sha": "f873cd8b9497d7a50fa09bfe4c2b519c7ea8f1c9",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/SECURITY.md#L7-L7"
+            }
+          ],
+          "points": 30,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        }
+      ],
+      "findings": [],
+      "strengths": [
+        "Input validation call",
+        "Security check in CI",
+        "Documented safety limitations"
+      ],
+      "limitations": [
+        "Sampled static evidence only. Absence means not detected, not necessarily absent.",
+        "Named calls can be aliases, stubs or unused code; no control/data-flow proof."
+      ]
+    },
+    {
+      "dimension": "permissions",
+      "score": 30,
+      "applicable": true,
+      "confidence": 0.37,
+      "checks": [
+        {
+          "id": "permission_gate",
+          "title": "Explicit permission or approval check",
+          "observed": false,
+          "evidence": [],
+          "points": 70,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "doc_limits",
+          "title": "Documented permission boundary",
+          "observed": true,
+          "evidence": [
+            {
+              "id": "README.md:105:105",
+              "path": "README.md",
+              "line_start": 105,
+              "line_end": 105,
+              "snippet": "## Security And Limitations",
+              "blob_sha": "c35687892ec7502142676d9d86376a3a78a7c8ea",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/README.md#L105-L105"
+            },
+            {
+              "id": "README.md:131:131",
+              "path": "README.md",
+              "line_start": 131,
+              "line_end": 131,
+              "snippet": "### External AI safety research notes",
+              "blob_sha": "c35687892ec7502142676d9d86376a3a78a7c8ea",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/README.md#L131-L131"
+            },
+            {
+              "id": "SECURITY.md:1:1",
+              "path": "SECURITY.md",
+              "line_start": 1,
+              "line_end": 1,
+              "snippet": "# Security Policy",
+              "blob_sha": "f873cd8b9497d7a50fa09bfe4c2b519c7ea8f1c9",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/SECURITY.md#L1-L1"
+            },
+            {
+              "id": "SECURITY.md:7:7",
+              "path": "SECURITY.md",
+              "line_start": 7,
+              "line_end": 7,
+              "snippet": "## Limitations",
+              "blob_sha": "f873cd8b9497d7a50fa09bfe4c2b519c7ea8f1c9",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/SECURITY.md#L7-L7"
+            }
+          ],
+          "points": 30,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        }
+      ],
+      "findings": [
+        {
+          "id": "permissions:network",
+          "title": "Outbound network capability",
+          "category": "permissions",
+          "severity": "low",
+          "decision": "warn",
+          "summary": "1 static occurrence(s) found in the sampled files. This is a review signal, not proof of exploitation or malicious intent.",
+          "evidence": [
+            {
+              "id": "src/worker.ts:119:119",
+              "path": "src/worker.ts",
+              "line_start": 119,
+              "line_end": 119,
+              "snippet": "        return fetch(input, init);",
+              "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L119-L119"
+            }
+          ],
+          "why_it_matters": "Network calls cross a data boundary; static detection cannot establish destination safety.",
+          "recommendation": "Review host allowlists, redirects, credential scope and data redaction.",
+          "confidence": 0.8
+        }
+      ],
+      "strengths": [
+        "Documented permission boundary"
+      ],
+      "limitations": [
+        "Sampled static evidence only. Absence means not detected, not necessarily absent.",
+        "Named calls can be aliases, stubs or unused code; no control/data-flow proof."
+      ]
+    },
+    {
+      "dimension": "trajectory",
+      "score": null,
+      "applicable": false,
+      "confidence": 0.37,
+      "checks": [
+        {
+          "id": "agent_call",
+          "title": "Agent or tool invocation",
+          "observed": false,
+          "evidence": [],
+          "points": 20,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "state_write",
+          "title": "State persistence or transition call",
+          "observed": false,
+          "evidence": [],
+          "points": 40,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "permission_gate",
+          "title": "Approval checkpoint",
+          "observed": false,
+          "evidence": [],
+          "points": 20,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "trace",
+          "title": "Correlated event logging",
+          "observed": false,
+          "evidence": [],
+          "points": 20,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        }
+      ],
+      "findings": [],
+      "strengths": [],
+      "limitations": [
+        "Sampled static evidence only. Absence means not detected, not necessarily absent.",
+        "Named calls can be aliases, stubs or unused code; no control/data-flow proof.",
+        "Agent trajectory is not applicable under the current heuristic classification."
+      ]
+    },
+    {
+      "dimension": "observability",
+      "score": 50,
+      "applicable": true,
+      "confidence": 0.37,
+      "checks": [
+        {
+          "id": "logging",
+          "title": "Structured logging candidate",
+          "observed": true,
+          "evidence": [
+            {
+              "id": "src/worker.ts:175:179",
+              "path": "src/worker.ts",
+              "line_start": 175,
+              "line_end": 179,
+              "snippet": "      console.log(\n        JSON.stringify({\n          event: \"scan_stage\",\n          job_id: job.id,\n          stage: job.stage,",
+              "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L175-L179"
+            },
+            {
+              "id": "src/worker.ts:210:214",
+              "path": "src/worker.ts",
+              "line_start": 210,
+              "line_end": 214,
+              "snippet": "      console.warn(\n        JSON.stringify({\n          event: \"scan_failure\",\n          job_id: job.id,\n          code: known.code,",
+              "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L210-L214"
+            }
+          ],
+          "points": 30,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "trace",
+          "title": "Trace or request identifier",
+          "observed": false,
+          "evidence": [],
+          "points": 50,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "exception_handling",
+          "title": "Exception handling syntax",
+          "observed": true,
+          "evidence": [
+            {
+              "id": "src/worker.ts:101:104",
+              "path": "src/worker.ts",
+              "line_start": 101,
+              "line_end": 104,
+              "snippet": "    try {\n      if (Date.now() - Date.parse(job.created_at) > 600_000)\n        throw new ScanError(\n          \"JOB_TIMEOUT\",",
+              "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L101-L104"
+            },
+            {
+              "id": "src/worker.ts:128:132",
+              "path": "src/worker.ts",
+              "line_start": 128,
+              "line_end": 132,
+              "snippet": "          try {\n            const result = await this.env.AI.run(\n              \"@cf/meta/llama-3.1-8b-instruct\",\n              {\n                messages: [",
+              "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L128-L132"
+            },
+            {
+              "id": "src/worker.ts:240:244",
+              "path": "src/worker.ts",
+              "line_start": 240,
+              "line_end": 244,
+              "snippet": "    try {\n      if (url.pathname === \"/api/health\")\n        return json({\n          status: \"ok\",\n          version: \"0.1.0\",",
+              "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L240-L244"
+            }
+          ],
+          "points": 20,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        }
+      ],
+      "findings": [],
+      "strengths": [
+        "Structured logging candidate",
+        "Exception handling syntax"
+      ],
+      "limitations": [
+        "Sampled static evidence only. Absence means not detected, not necessarily absent.",
+        "Named calls can be aliases, stubs or unused code; no control/data-flow proof."
+      ]
+    },
+    {
+      "dimension": "ci",
+      "score": 60,
+      "applicable": true,
+      "confidence": 0.37,
+      "checks": [
+        {
+          "id": "ci_install",
+          "title": "Dependency installation",
+          "observed": true,
+          "evidence": [
+            {
+              "id": ".github/workflows/ci.yml:17:17",
+              "path": ".github/workflows/ci.yml",
+              "line_start": 17,
+              "line_end": 17,
+              "snippet": "      - run: npm ci --ignore-scripts",
+              "blob_sha": "113679b361f3c9057555d3874cd23113c12022d7",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/.github/workflows/ci.yml#L17-L17"
+            }
+          ],
+          "points": 20,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "ci_test",
+          "title": "Automated tests",
+          "observed": true,
+          "evidence": [
+            {
+              "id": ".github/workflows/ci.yml:34:34",
+              "path": ".github/workflows/ci.yml",
+              "line_start": 34,
+              "line_end": 34,
+              "snippet": "      - run: npm run test:browser",
+              "blob_sha": "113679b361f3c9057555d3874cd23113c12022d7",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/.github/workflows/ci.yml#L34-L34"
+            }
+          ],
+          "points": 40,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "ci_checks",
+          "title": "Type or lint checks",
+          "observed": false,
+          "evidence": [],
+          "points": 20,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "test_assert",
+          "title": "Assertions in source",
+          "observed": false,
+          "evidence": [],
+          "points": 20,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        }
+      ],
+      "findings": [],
+      "strengths": [
+        "Dependency installation",
+        "Automated tests"
+      ],
+      "limitations": [
+        "Sampled static evidence only. Absence means not detected, not necessarily absent.",
+        "Named calls can be aliases, stubs or unused code; no control/data-flow proof."
+      ]
+    },
+    {
+      "dimension": "recovery",
+      "score": 30,
+      "applicable": true,
+      "confidence": 0.37,
+      "checks": [
+        {
+          "id": "exception_handling",
+          "title": "Exception handling",
+          "observed": true,
+          "evidence": [
+            {
+              "id": "src/worker.ts:101:104",
+              "path": "src/worker.ts",
+              "line_start": 101,
+              "line_end": 104,
+              "snippet": "    try {\n      if (Date.now() - Date.parse(job.created_at) > 600_000)\n        throw new ScanError(\n          \"JOB_TIMEOUT\",",
+              "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L101-L104"
+            },
+            {
+              "id": "src/worker.ts:128:132",
+              "path": "src/worker.ts",
+              "line_start": 128,
+              "line_end": 132,
+              "snippet": "          try {\n            const result = await this.env.AI.run(\n              \"@cf/meta/llama-3.1-8b-instruct\",\n              {\n                messages: [",
+              "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L128-L132"
+            },
+            {
+              "id": "src/worker.ts:240:244",
+              "path": "src/worker.ts",
+              "line_start": 240,
+              "line_end": 244,
+              "snippet": "    try {\n      if (url.pathname === \"/api/health\")\n        return json({\n          status: \"ok\",\n          version: \"0.1.0\",",
+              "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L240-L244"
+            }
+          ],
+          "points": 30,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "timeout",
+          "title": "Explicit timeout",
+          "observed": false,
+          "evidence": [],
+          "points": 30,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "retry_bound",
+          "title": "Retry-count boundary",
+          "observed": false,
+          "evidence": [],
+          "points": 25,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "backoff",
+          "title": "Backoff or sleep call",
+          "observed": false,
+          "evidence": [],
+          "points": 15,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        }
+      ],
+      "findings": [],
+      "strengths": [
+        "Exception handling"
+      ],
+      "limitations": [
+        "Sampled static evidence only. Absence means not detected, not necessarily absent.",
+        "Named calls can be aliases, stubs or unused code; no control/data-flow proof."
+      ]
+    },
+    {
+      "dimension": "documentation",
+      "score": 100,
+      "applicable": true,
+      "confidence": 0.37,
+      "checks": [
+        {
+          "id": "doc_usage",
+          "title": "Installation or usage section",
+          "observed": true,
+          "evidence": [
+            {
+              "id": "README.md:58:58",
+              "path": "README.md",
+              "line_start": 58,
+              "line_end": 58,
+              "snippet": "## Quick Start",
+              "blob_sha": "c35687892ec7502142676d9d86376a3a78a7c8ea",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/README.md#L58-L58"
+            },
+            {
+              "id": "README.md:84:84",
+              "path": "README.md",
+              "line_start": 84,
+              "line_end": 84,
+              "snippet": "## Usage",
+              "blob_sha": "c35687892ec7502142676d9d86376a3a78a7c8ea",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/README.md#L84-L84"
+            }
+          ],
+          "points": 40,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "doc_limits",
+          "title": "Limitations or security section",
+          "observed": true,
+          "evidence": [
+            {
+              "id": "README.md:105:105",
+              "path": "README.md",
+              "line_start": 105,
+              "line_end": 105,
+              "snippet": "## Security And Limitations",
+              "blob_sha": "c35687892ec7502142676d9d86376a3a78a7c8ea",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/README.md#L105-L105"
+            },
+            {
+              "id": "README.md:131:131",
+              "path": "README.md",
+              "line_start": 131,
+              "line_end": 131,
+              "snippet": "### External AI safety research notes",
+              "blob_sha": "c35687892ec7502142676d9d86376a3a78a7c8ea",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/README.md#L131-L131"
+            },
+            {
+              "id": "SECURITY.md:1:1",
+              "path": "SECURITY.md",
+              "line_start": 1,
+              "line_end": 1,
+              "snippet": "# Security Policy",
+              "blob_sha": "f873cd8b9497d7a50fa09bfe4c2b519c7ea8f1c9",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/SECURITY.md#L1-L1"
+            },
+            {
+              "id": "SECURITY.md:7:7",
+              "path": "SECURITY.md",
+              "line_start": 7,
+              "line_end": 7,
+              "snippet": "## Limitations",
+              "blob_sha": "f873cd8b9497d7a50fa09bfe4c2b519c7ea8f1c9",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/SECURITY.md#L7-L7"
+            }
+          ],
+          "points": 35,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        },
+        {
+          "id": "doc_architecture",
+          "title": "Architecture section",
+          "observed": true,
+          "evidence": [
+            {
+              "id": "README.md:90:90",
+              "path": "README.md",
+              "line_start": 90,
+              "line_end": 90,
+              "snippet": "## Architecture",
+              "blob_sha": "c35687892ec7502142676d9d86376a3a78a7c8ea",
+              "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/README.md#L90-L90"
+            }
+          ],
+          "points": 25,
+          "meaning": "Presence only; effectiveness, reachability and branch coverage remain unverified."
+        }
+      ],
+      "findings": [],
+      "strengths": [
+        "Installation or usage section",
+        "Limitations or security section",
+        "Architecture section"
+      ],
+      "limitations": [
+        "Sampled static evidence only. Absence means not detected, not necessarily absent.",
+        "Named calls can be aliases, stubs or unused code; no control/data-flow proof."
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "permissions:network",
+      "title": "Outbound network capability",
+      "category": "permissions",
+      "severity": "low",
+      "decision": "warn",
+      "summary": "1 static occurrence(s) found in the sampled files. This is a review signal, not proof of exploitation or malicious intent.",
+      "evidence": [
+        {
+          "id": "src/worker.ts:119:119",
+          "path": "src/worker.ts",
+          "line_start": 119,
+          "line_end": 119,
+          "snippet": "        return fetch(input, init);",
+          "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+          "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L119-L119"
+        }
+      ],
+      "why_it_matters": "Network calls cross a data boundary; static detection cannot establish destination safety.",
+      "recommendation": "Review host allowlists, redirects, credential scope and data redaction.",
+      "confidence": 0.8
+    }
+  ],
+  "permission_map": [
+    {
+      "capability": "network",
+      "status": "observed; review required",
+      "evidence": [
+        {
+          "id": "src/worker.ts:119:119",
+          "path": "src/worker.ts",
+          "line_start": 119,
+          "line_end": 119,
+          "snippet": "        return fetch(input, init);",
+          "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+          "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L119-L119"
+        }
+      ]
+    },
+    {
+      "capability": "shell",
+      "status": "not detected in sample",
+      "evidence": []
+    },
+    {
+      "capability": "filesystem_write",
+      "status": "not detected in sample",
+      "evidence": []
+    },
+    {
+      "capability": "dynamic_eval",
+      "status": "not detected in sample",
+      "evidence": []
+    }
+  ],
+  "trajectory": [
+    {
+      "stage": "Input validation",
+      "status": "not_applicable",
+      "evidence": [
+        {
+          "id": "src/worker.ts:46:46",
+          "path": "src/worker.ts",
+          "line_start": 46,
+          "line_end": 46,
+          "snippet": "    return row ? JSON.parse(row.value) : undefined;",
+          "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+          "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L46-L46"
+        },
+        {
+          "id": "src/worker.ts:82:82",
+          "path": "src/worker.ts",
+          "line_start": 82,
+          "line_end": 82,
+          "snippet": "    return job && Date.parse(job.expires_at) > Date.now() ? job : null;",
+          "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+          "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L82-L82"
+        },
+        {
+          "id": "src/worker.ts:92:92",
+          "path": "src/worker.ts",
+          "line_start": 92,
+          "line_end": 92,
+          "snippet": "    if (Date.now() >= Date.parse(job.expires_at)) {",
+          "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+          "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L92-L92"
+        }
+      ]
+    },
+    {
+      "stage": "Tool invocation",
+      "status": "not_applicable",
+      "evidence": []
+    },
+    {
+      "stage": "Approval",
+      "status": "not_applicable",
+      "evidence": []
+    },
+    {
+      "stage": "State transition",
+      "status": "not_applicable",
+      "evidence": []
+    },
+    {
+      "stage": "Observation",
+      "status": "not_applicable",
+      "evidence": []
+    },
+    {
+      "stage": "Recovery",
+      "status": "not_applicable",
+      "evidence": [
+        {
+          "id": "src/worker.ts:101:104",
+          "path": "src/worker.ts",
+          "line_start": 101,
+          "line_end": 104,
+          "snippet": "    try {\n      if (Date.now() - Date.parse(job.created_at) > 600_000)\n        throw new ScanError(\n          \"JOB_TIMEOUT\",",
+          "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+          "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L101-L104"
+        },
+        {
+          "id": "src/worker.ts:128:132",
+          "path": "src/worker.ts",
+          "line_start": 128,
+          "line_end": 132,
+          "snippet": "          try {\n            const result = await this.env.AI.run(\n              \"@cf/meta/llama-3.1-8b-instruct\",\n              {\n                messages: [",
+          "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+          "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L128-L132"
+        },
+        {
+          "id": "src/worker.ts:240:244",
+          "path": "src/worker.ts",
+          "line_start": 240,
+          "line_end": 244,
+          "snippet": "    try {\n      if (url.pathname === \"/api/health\")\n        return json({\n          status: \"ok\",\n          version: \"0.1.0\",",
+          "blob_sha": "3bfbf3261853774a49351399e61dddf4a91e478c",
+          "source_url": "https://github.com/pengpengyi92/p-csdsai/blob/d03e507923df150ae302b1b725b725df5baca2eb/src/worker.ts#L240-L244"
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "status": "off",
+    "finding_order": [
+      "permissions:network"
+    ],
+    "model": null,
+    "summary": "Deterministic evidence report. No model-generated claims.",
+    "limitation": "LLM interpretation is disabled by default. Static results do not prove runtime safety."
+  },
+  "created_at": "2026-11-15T07:36:34.557Z",
+  "disclaimer": "This is a heuristic evidence-coverage score, not a security certification, malware verdict, probability of safety, or authorization to execute.",
+  "warnings": [
+    "Partial file sample: undetected controls and risks may exist outside the sample.",
+    "No dependency resolution, runtime sandbox, interprocedural data flow or exploit validation in v0.1."
+  ]
+}

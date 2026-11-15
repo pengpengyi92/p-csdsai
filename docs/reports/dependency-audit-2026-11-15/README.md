@@ -1,5 +1,11 @@
 # Dependency Audit Repair and Regression Evidence
 
+Follow-up observed15:38+08:00: the two previously skipped real-report cases are
+now complete locally, with a real public scan and10/10 browser PASS/0 SKIPPED.
+See the [supported-fix review](moderate-followup.md), [exact live receipt](live-regression.json)
+and [self-inspection](../self-inspection-2026-11-15.md). The original observations
+below remain dated history; seven moderate findings are still visible.
+
 - Title: P-CSDSAI dependency audit repair, high findings first
 - Observed: `2026-11-15T14:03:58+08:00` (Asia/Shanghai)
 - Baseline: `3bab5e5d162ac9facdf4d32d9347cc817e80f83b`

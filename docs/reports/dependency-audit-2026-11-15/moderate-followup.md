@@ -107,3 +107,26 @@ One anonymous Node check at15:14:27 still returned403/remaining0; the new reset
 header1794728116 is15:35:16+08:00. The two real browser checks are still **NOT_RUN**,
 not passed via replay or a different credential. Permit one final bounded check
 after that reset, then report the blocking condition if it remains depleted.
+
+## Completed Live Follow-up - `2026-11-15T15:38:55+08:00`
+
+After the second bounded wait, the actual anonymous Node preflight returned200
+with50 requests remaining at15:35:46. One real local Worker scan then completed
+against public commitd03e507, reading16/86 eligible files. It produced source=github,
+not a replay: [exact report](../self-inspection-2026-11-15.json),
+[minimal receipt](live-regression.json), [readable result](../self-inspection-2026-11-15.md).
+
+Full browser suite with that actual report id: **10 PASS /0 SKIPPED**. A separate
+JSON-reporter repeat of `live-report.spec.ts` confirmed both desktop/mobile cases
+passed,0 unexpected/skipped/flaky. Screenshots inspected and40 evidence URLs
+verified against our own pinned public source. No authentication, network or
+policy changes; Worker stopped afterward. A supplementary sandbox-only PowerShell
+health probe was denied by local socket permissions, not an application failure;
+the approved full browser suite's actual HTTP health/AI-off assertions passed.
+
+Fresh final audit still7 moderate/0 high/0 critical, default exit1. The linter
+policy is retained, not weakened, and the supported-fix decision is unchanged.
+The local real-report gap is closed; default hosted CI remains intentionally
+offline/deterministic without PTRUST_REPORT_ID. Retention/restart/production
+behavior remains unmeasured. Playwright JSON reporter docs were checked through
+official documentation after Context7's monthly quota was exhausted.

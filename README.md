@@ -67,7 +67,10 @@ and [implementation log](log/2026-11-15-dependency-audit-repair.md).
 The [moderate-finding follow-up](docs/reports/dependency-audit-2026-11-15/moderate-followup.md)
 checks compatible/backport/downgrade options and retains the existing lint policy
 with three negative controls (45 unit tests). No compatible supported remediation
-was found as of the review; real online checks remain explicitly quota-dependent.
+was found as of the review. After anonymous quota recovery, the actual local
+public-repository scan and both real-report browser cases passed: **10/10 browser
+cases,0 skipped**. See the [real self-inspection evidence](docs/reports/self-inspection-2026-11-15.md);
+default hosted CI remains deterministic and does not automatically run live scans.
 
 Node.js 22.12+ (Node 24 used in development):
 

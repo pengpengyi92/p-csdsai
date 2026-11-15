@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-11-15T15:38:55+08:00",
+  "mode": "real-public-repository-on-local-worker",
+  "repository": "https://github.com/pengpengyi92/p-csdsai",
+  "commit_sha": "d03e507923df150ae302b1b725b725df5baca2eb",
+  "report_id": "a03e3f0dbc09db27482f5bc466f31ab216aba47624e54f2fd26a74302c4d6db9",
+  "source": "github",
+  "job": {
+    "status": "completed",
+    "created_at": "2026-11-15T07:36:18.805Z",
+    "completed_at": "2026-11-15T07:36:34.557Z",
+    "duration_seconds": 15.752,
+    "sample_count": 1
+  },
+  "report": {
+    "path": "../self-inspection-2026-11-15.json",
+    "sha256": "d86bee181b48bf11e1f5bed6b8a94efa46a3899c16020ba1b3733f21d05dffeb",
+    "tree_entries": 136,
+    "eligible_files": 86,
+    "fetched_files": 16,
+    "bytes": 62325,
+    "truncated_tree": false,
+    "score": 64,
+    "grade": "D",
+    "findings": 1,
+    "pinned_public_source_links_verified": 40
+  },
+  "full_browser_suite": {
+    "command": "npm run test:browser",
+    "passed": 10,
+    "skipped": 0,
+    "failed": 0,
+    "observed_by": "2026-11-15T15:37:23+08:00"
+  },
+  "focused_live_repeat": {
+    "command": "npm exec -- playwright test tests/browser/live-report.spec.ts --reporter=json",
+    "start_time": "2026-11-15T07:38:08.999Z",
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0,
+    "projects": [
+      { "name": "desktop", "viewport": "1440x1000", "status": "passed" },
+      { "name": "mobile", "viewport": "390x844", "status": "passed" }
+    ]
+  },
+  "audit": {
+    "moderate": 7,
+    "high": 0,
+    "critical": 0,
+    "default_exit": 1,
+    "dependencies_changed": false,
+    "policy_changed": false
+  },
+  "limits": [
+    "Bounded static inspection only; target code not executed.",
+    "Real report uses actual local Worker API, not the separate archive replay fixture.",
+    "No authentication token, identity change, network rotation or quota bypass.",
+    "No production deployment or AI interpretation call.",
+    "No restart, retention-expiry, throughput or security-certification claim.",
+    "Hosted default CI still skips optional live cases without PTRUST_REPORT_ID; this receipt describes the completed local live run."
+  ]
+}
