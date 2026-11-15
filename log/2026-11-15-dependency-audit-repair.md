@@ -35,6 +35,24 @@ public receipts](../docs/reports/dependency-audit-2026-11-15/README.md).
 
 ## Delivery
 
-Local verification complete with the explicit gaps above. Remote push and hosted
-CI receipt will be appended only after observation. No credentials, workstation
-paths, dependency directories, private traces or new upstream source code exported.
+Local verification complete with the explicit gaps above. No credentials,
+workstation paths, dependency directories, private traces or new upstream source
+code exported.
+
+### Remote receipt - `2026-11-15T14:09:06+08:00`
+
+- Repair commit: `605b5b8debe6a96e5241ba30ab0daa65525fdc46`, normal fast-forward to
+  main and task branch. Remote main read back;14/14 changed Git blobs match.
+- [Quality and regression43683956033](https://github.com/pengpengyi92/p-csdsai/actions/runs/43683956033)
+  **SUCCESS**, observed completed on Ubuntu with Node24: exact npm ci,
+  types/typecheck/lint,42 Vitest, benchmark/build, unchanged high audit gate,
+  Chromium install, local Worker start and browser step all succeeded.
+- Hosted browser output explicitly **8 passed /2 skipped**; seven moderate audit
+  entries remain visible in hosted logs. No online-scan or zero-vulnerability claim.
+- Catalog workflow is path-filtered and was not triggered by these dependency/docs
+  paths; local30-case Python suite and generator passed. Existing catalogs and
+  their source/pin bytes are unchanged.
+- All9 recorded Git-normalized source/receipt SHA256 values verified against the
+  committed blobs. Local Worker stopped and ports8801/9259 released after tests.
+- This receipt is a documentation-only follow-up to the measured repair commit;
+  it does not change dependencies, tests, runtime configuration or audit policy.

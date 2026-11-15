@@ -9,6 +9,8 @@
   build and70 fixed-fixture benchmark runs.
 - [x] Desktop/mobile browser:8 PASS;2 optional live-scan cases SKIPPED, not passed.
   Archive replay verifies UI reload/export only, not live job persistence.
+- [x] Push repair605b5b8 to main/task branch;14/14 remote blobs verified;
+  hosted quality CI43683956033 SUCCESS including unchanged high audit and browser.
 - [ ] P1: Resolve [GHSA-g3hv-75wg-m249](https://github.com/advisories/GHSA-g3hv-75wg-m249)
   when a supported TypeScript-ESLint/minimatch dependency path is available. Accept
   only after full audit, type/lint/unit/browser checks; do not force minimatch11
