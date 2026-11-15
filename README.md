@@ -14,6 +14,8 @@ Use the [original contribution navigator](https://github.com/pengpengyi92/p-csds
 
 ## AI infrastructure and systems reading guide
 
+[李博杰的 AI 教材](repo/bojieli-textbooks/README.md) — 从 Agent 的上下文、工具与评估，到 Infra 的显存、带宽与推理估算；附译著、课程和动手路线。
+
 **AI Infra L1–L7** — [Working paper](paper/ai-infra/working-paper.md) · [配套文章](paper/ai-infra/article.md) · [28 个公开仓库](repo/ai-infra/README.md)。Selected shared from P University, with selected PINF and P Compute methods (private prop repositories). No performance experiments were run for this edition.
 
 [10 repository cards](repo/README.md) cover SGLang, vLLM, Ray, PyTorch, Triton,
