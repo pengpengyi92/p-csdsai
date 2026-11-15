@@ -2,6 +2,8 @@
 
 **Last reviewed:** `2026-11-15T11:43:37+08:00`（Asia/Shanghai） · P-CSDSAI 公开学习资料索引
 
+[共读与实验复现（P-CSDSAI #5）](https://github.com/pengpengyi92/p-csdsai/discussions/5) · [AI Agent × AI Infra 研究讨论（P-Research #28）](https://github.com/pengpengyi92/p-research/discussions/28)
+
 从 [李博杰（Bojie Li）的 GitHub 主页](https://github.com/bojieli)和[本人著作与译著列表](https://01.me/whoami/#books)核对作者身份，并用原始仓库或作者页面确认每项资料。这里分开记录**李博杰原创开源书、他参与的译著和课程配套**。公开资源以链接形式收录，本仓库不镜像正文、PDF、EPUB、课件或配套代码。
 
 ## 原创开源教材
@@ -44,4 +46,4 @@
 - **图灵 AI Agent 实战营** · [李博杰的课程介绍](https://01.me/2025/08/ai-agent-bootcamp/) · [原始讲义](https://01.me/files/ai-agent-camp-slidev/dist/)。用公开的九周路线挑一个小课题；建议从受控工具调用开始，再加记忆、评测与协作。这是课程资料，不另算一本书。
 - **国科大 AI Agent 实践课题** · [bojieli/ai-agent-projects](https://github.com/bojieli/ai-agent-projects) · [固定版课程说明](https://github.com/bojieli/ai-agent-projects/blob/b2297bacd2629dabd46938a00ee4e87934f566e3/README.md)。例如[深度研究](https://github.com/bojieli/ai-agent-projects/tree/b2297bacd2629dabd46938a00ee4e87934f566e3/deep-research)适合练习检索、证据追踪和交叉核验；[论文到演示文稿](https://github.com/bojieli/ai-agent-projects/tree/b2297bacd2629dabd46938a00ee4e87934f566e3/paper-to-slides)适合练习来源标注、结构化生成和结果验收。本次未确认仓库级复用许可，只提供阅读链接；历史 API 和课题环境不视为现在可用。
 
-欢迎在 [P-CSDSAI Repo Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/repo)分享读书笔记或最小复现。请注明教材章节、版本、环境和实际结果；勘误优先走原书的上游渠道。
+欢迎在[共读原帖](https://github.com/pengpengyi92/p-csdsai/discussions/5)分享读书笔记或最小复现。请注明教材章节、版本、环境和实际结果；勘误优先走原书的上游渠道。跨层假设、对照设计与负结果请到[研究讨论帖](https://github.com/pengpengyi92/p-research/discussions/28)。
