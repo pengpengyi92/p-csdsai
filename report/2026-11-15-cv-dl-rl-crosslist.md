@@ -56,3 +56,7 @@ The pre-existing [app CI43674351364](https://github.com/pengpengyi92/p-csdsai/ac
 on the unchanged baseline had npm check SUCCESS but audit FAILURE:19 findings,8 high;
 browser checks were consequently skipped. Dependencies and audit policy are not changed
 or bypassed in this catalog task; separate security triage remains necessary.
+
+Published content095e173 has catalog CI SUCCESS. Its separate app run43676891378 again
+passed npm check and failed the same audit summary (19 findings,8 high), skipping browser
+gates; no claim that all CI or app security passed. See the delivery receipt for read-back.

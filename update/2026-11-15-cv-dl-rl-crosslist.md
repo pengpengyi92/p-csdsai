@@ -17,4 +17,20 @@
 - Existing app/CLI, source cards/AI Infra, papers and data remain unchanged.
   Upstream quality/cost/runtime/gain NOT_RUN / UNMEASURED.
 
-Publish only after final validation and verify remote content/CI; no curation-to-model claim.
+## Publication read-back
+
+**Observed:** `2026-11-15T12:28:27+08:00` (Asia/Shanghai).
+
+- Content commit: `095e1739432da242ca0d4c2274afe1e4e4952dca`, pushed normally to main and
+  `codex/cv-dl-rl-crosslist-20261115`; remote main confirmed by API.
+-20/20 changed Git blobs match the local commit. Imported source snapshot, target view
+  annotations and index were additionally read back with byte-identical SHA256 hashes.
+- [Catalog CI43676891314](https://github.com/pengpengyi92/p-csdsai/actions/runs/43676891314)
+  completed SUCCESS, including the new cross-list tests and offline generator check.
+- Existing app workflow [43676891378](https://github.com/pengpengyi92/p-csdsai/actions/runs/43676891378)
+  completed FAILURE at the unchanged npm audit gate (19 findings:11 moderate,8 high).
+  npm check succeeded; browser checks skipped. Same baseline failure was verified before
+  this task. No dependency change, disabled gate or production-security claim.
+- This follow-up changes delivery records only. Source bytes, annotations, generator/tests
+  and application/CLI remain unchanged. Catalog path filters do not rerun for receipt-only
+  paths; the linked successful run covers the content commit.

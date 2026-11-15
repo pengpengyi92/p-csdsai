@@ -37,3 +37,9 @@ npm check succeeded; browser gates skipped. No app dependency/audit changes in t
 Final commands, test counts, hashes and remote/CI receipts are recorded only after execution.
 Raw test transcripts stay ignored locally. No upstream installation, GPU, training,
 simulation, model inference, paid service or real-world safety/quality claim.
+
+## Publication
+
+At `2026-11-15T12:28:27+08:00`, published content `095e1739432da242ca0d4c2274afe1e4e4952dca` to main/task branch.
+All20 remote blobs match; source snapshot, view and index also match downloaded SHA256
+bytes. Catalog CI43676891314 SUCCESS. No source/code/model result promoted by publication.
