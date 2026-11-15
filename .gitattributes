@@ -5,3 +5,5 @@
 *.md text eol=lf
 *.png binary
 *.webp binary
+repo/cv-dl-rl/*.py text eol=lf
+tests/test_cv_dl_rl_crosslist.py text eol=lf

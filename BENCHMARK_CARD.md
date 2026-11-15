@@ -1,5 +1,16 @@
 # Benchmark Card: v0.1
 
+## CV / DL / RL cross-list - 2026-11-15
+
+| Step | Evidence |
+| --- | --- |
+| Baseline | Existing source/AI Infra cards;12 Python tests pass before this change. |
+| Change | Byte-preserved public P-ML snapshot,43 systems questions/baselines/proposed metrics,89 pins and three links to existing entries; no duplicate new-project count. |
+| Measure |18 new offline source/profile/privacy/identity/timestamp/claim controls, full Python regressions, generator freshness and preservation checks. |
+| Result |Full30 Python tests PASS (12 existing +18 new), generator freshness and preservation checks PASS; receipts in repo/cv-dl-rl/CHECKS.json. No new ML experiment result. |
+| Trade-off | Cross-list is a bounded view, not all repository contents or a fresh upstream audit. Upstream training/inference/simulation, quality, learning gains, costs and production security NOT_RUN / UNMEASURED. |
+| Next Action | One fixed-fixture interface/gradient/episode-contract study with independent baseline, negative controls and actual resource accounting. |
+
 ## AI Infra L1–L7 public release (2026-11-15)
 
 - Baseline: the existing repo cards and collection guides, without a dedicated seven-layer cross-index.

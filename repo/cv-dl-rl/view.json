@@ -1,0 +1,413 @@
+{
+  "schema_version": 1,
+  "project": "P-CSDSAI",
+  "profile": "systems",
+  "title": "P-CSDSAI: CV / DL / RL systems questions",
+  "imported_at": "2026-11-15T12:17:22+08:00",
+  "timezone": "Asia/Shanghai",
+  "status": "REFERENCE_ONLY / NOT_RUN",
+  "complete_ecosystem_inventory": false,
+  "provenance": {
+    "repository": "pengpengyi92/P-ML",
+    "commit": "f0492b80f9f97527926b7aa1cb1290c2ef73699b",
+    "path": "ml-repo/cv-dl-rl/snapshot.json",
+    "sha256": "2867982492edd317a0d0c6ce9bec1584e66acc11d946ac0e8d58deae2eaf9478",
+    "snapshot_url": "https://github.com/pengpengyi92/P-ML/blob/f0492b80f9f97527926b7aa1cb1290c2ef73699b/ml-repo/cv-dl-rl/snapshot.json",
+    "source_policy": "Byte-preserved public metadata only. Original upstream observations remain unchanged; import is not a new upstream review."
+  },
+  "entries": [
+    {
+      "repository": "opencv/opencv",
+      "question": "颜色、坐标和dtype变换在接口间能保持约定吗？",
+      "baseline": "固定合成棋盘格与identity/手算几何",
+      "measure": "像素/坐标误差，错误轴/范围拒绝",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "opencv/opencv_contrib",
+      "question": "扩展模块与核心版本是否正确匹配和失败可诊断？",
+      "baseline": "锁定核心版本的最小模块契约",
+      "measure": "可用接口、错误版本拒绝与构建失败类型",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "scikit-image/scikit-image",
+      "question": "强度范围和dtype往返会破坏形态学或测量吗？",
+      "baseline": "手工二值mask及已知面积/边界",
+      "measure": "面积/拓扑误差，越界输入拒绝",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "open-mmlab/mmpretrain",
+      "question": "训练和验证的预处理/状态切换是否遵守同一数据契约？",
+      "baseline": "固定图片fixture和冻结encoder",
+      "measure": "shape/dtype、变换参数和重复样本审计",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "open-mmlab/mmpose",
+      "question": "关键点可见性、坐标和主体映射是否一致？",
+      "baseline": "合成关键点与明确坐标oracle",
+      "measure": "缺失点处理、映射错误与坐标容差",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "open-mmlab/mmtracking",
+      "question": "跨视频reset后是否遗留track身份和缓存？",
+      "baseline": "短合成序列、明确场景边界",
+      "measure": "身份泄漏、丢失/重置状态和时序契约",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "facebookresearch/segment-anything",
+      "question": "提示/缩放/坐标转换是否产生正确且可复现的mask？",
+      "baseline": "固定合成图、已知提示和mask",
+      "measure": "坐标/尺寸/空mask边界",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "facebookresearch/sam2",
+      "question": "视频会话边界能否可靠释放和重置记忆？",
+      "baseline": "两个独立合成片段与无跨片段状态",
+      "measure": "跨视频污染、缓存大小和输出一致性",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "IDEA-Research/GroundingDINO",
+      "question": "短语token到目标框的映射和后处理是否保持语义？",
+      "baseline": "固定文本/框映射fixture",
+      "measure": "token/坐标映射错误与空目标处理",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "open-mmlab/mmrotate",
+      "question": "角度制、旋转框和IoU接口是否一致？",
+      "baseline": "已知旋转矩形和独立几何oracle",
+      "measure": "角度周期/坐标误差与无效框拒绝",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "facebookresearch/pytorchvideo",
+      "question": "采样窗口、帧索引和视频边界会错位吗？",
+      "baseline": "带已知时间戳的合成帧序列",
+      "measure": "时间覆盖、重采样和窗口边界",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "isl-org/Open3D",
+      "question": "配准/坐标变换能通过逆变换和单位检查吗？",
+      "baseline": "已知点云和刚体变换",
+      "measure": "旋转/位移误差、单位错误拒绝",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "facebookresearch/pytorch3d",
+      "question": "相机、坐标与渲染梯度是否满足独立oracle？",
+      "baseline": "解析小场景与有限差分梯度",
+      "measure": "投影/梯度误差、坐标约定失败",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "nerfstudio-project/nerfstudio",
+      "question": "数据管理器是否严格隔离训练和测试相机？",
+      "baseline": "固定相机清单与不可见测试视角",
+      "measure": "视角泄漏、缩放和重建/导出契约",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "ultralytics/ultralytics",
+      "question": "缩放、NMS和导出的预测能与参考结果一致吗？",
+      "baseline": "固定合成框及原始eager输出",
+      "measure": "框容差、阈值边界和导出误差",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "open-mmlab/mmdeploy",
+      "question": "后端/精度转换会改变算子和预测语义吗？",
+      "baseline": "原始eager/fp32模型的固定输出",
+      "measure": "误差容差、算子拒绝和冷/热成本",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "huggingface/accelerate",
+      "question": "梯度累积和混合精度能保持有效batch更新吗？",
+      "baseline": "单设备显式训练循环",
+      "measure": "参数更新误差、缩放和checkpoint恢复",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "deepspeedai/DeepSpeed",
+      "question": "分片checkpoint恢复能还原参数/优化器/随机状态吗？",
+      "baseline": "固定小模型连续训练轨迹",
+      "measure": "恢复等价、分片缺失拒绝和峰值内存",
+      "existing_links": [
+        "../ai-infra/README.md"
+      ],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "meta-pytorch/torchtune",
+      "question": "token mask、训练状态和恢复配方能保持一致吗？",
+      "baseline": "小型固定序列和显式loss mask",
+      "measure": "有效token计数、梯度/恢复等价",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "pytorch/torchtitan",
+      "question": "并行切分后梯度归约和随机状态是否守恒？",
+      "baseline": "单进程小模型与固定批次",
+      "measure": "梯度/参数容差、有效batch和恢复",
+      "existing_links": [
+        "../ai-infra/README.md"
+      ],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "facebookresearch/xformers",
+      "question": "注意力算子在mask/dtype/边界上是否等价？",
+      "baseline": "小张量朴素attention和梯度参考",
+      "measure": "前后向误差、空/因果mask和支持范围",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "karpathy/micrograd",
+      "question": "分支复用与反向传播能匹配有限差分吗？",
+      "baseline": "解析函数与有限差分oracle",
+      "measure": "梯度误差、累积/清零和非法输入",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "karpathy/minGPT",
+      "question": "因果mask是否禁止未来token影响当前logit？",
+      "baseline": "固定小序列与扰动未来token",
+      "measure": "因果不变性、loss对齐与状态切换",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "karpathy/nanoGPT",
+      "question": "训练/验证序列和采样边界是否泄漏近重复内容？",
+      "baseline": "固定去重分割与最小训练循环",
+      "measure": "序列污染、恢复一致性和token记账",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "karpathy/nanochat",
+      "question": "聊天模板、分词和loss区域能通过端到端契约吗？",
+      "baseline": "固定小对话fixture和显式mask",
+      "measure": "模板/token/loss对齐与训练/推理一致性",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "d2l-ai/d2l-en",
+      "question": "示例张量/随机种子/数值梯度能独立验证吗？",
+      "baseline": "解析教学fixture，文字/代码权利分离",
+      "measure": "数值正确性和环境复现，而非整书执行",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "NVIDIA/Megatron-LM",
+      "question": "张量/流水线并行的参数与优化器切片能对齐吗？",
+      "baseline": "小模型单进程更新与显式分片映射",
+      "measure": "更新/恢复误差、通信和内存",
+      "existing_links": [
+        "../ai-infra/README.md"
+      ],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "pytorch/rl",
+      "question": "buffer、done/truncation与reset能正确表示episode吗？",
+      "baseline": "合成转移流和手工episodeoracle",
+      "measure": "边界、bootstrap标记与采样生命周期",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "Farama-Foundation/PettingZoo",
+      "question": "AEC/Parallel与agent进入/退出语义一致吗？",
+      "baseline": "脚本agent和合成生命周期",
+      "measure": "非法动作、已退出agent和reset契约",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "Farama-Foundation/Minari",
+      "question": "轨迹版本和episode边界能无损round-trip吗？",
+      "baseline": "合成轨迹及显式terminated/truncated",
+      "measure": "完整性、来源、版本和重建一致性",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "Farama-Foundation/D4RL",
+      "question": "旧环境/数据/归一化映射能明确重建吗？",
+      "baseline": "固定旧版本清单和迁移映射",
+      "measure": "版本错配拒绝，不盲比新旧归一化分",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "Farama-Foundation/Minigrid",
+      "question": "固定布局/seed的观测和reset是否可复查？",
+      "baseline": "合成网格状态/脚本策略",
+      "measure": "可观测性和边界；许可澄清前不集成",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "openai/procgen",
+      "question": "训练与测试level选择和随机状态能隔离吗？",
+      "baseline": "固定level清单与脚本随机策略",
+      "measure": "level污染、seed记账和reset一致性",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "rail-berkeley/rlkit",
+      "question": "replay边界、terminal标记和训练器接口一致吗？",
+      "baseline": "合成回放与简单更新reference",
+      "measure": "数据边界和采样/优化器状态",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "takuseno/d3rlpy",
+      "question": "归一化和离线评估是否只读取允许的数据？",
+      "baseline": "固定轨迹和train-only拟合",
+      "measure": "预处理泄漏、额外在线交互和恢复",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "tinkoff-ai/CORL",
+      "question": "历史配置、数据和评估脚本能明确冻结吗？",
+      "baseline": "固定原库版本和配置清单",
+      "measure": "版本/seed/评估口径，非活跃支持承诺",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "facebookresearch/mbrl-lib",
+      "question": "模型训练/规划与真实环境交互能分别计账吗？",
+      "baseline": "合成动力学与固定规划预算",
+      "measure": "状态误差、交互/规划计数和恢复",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "facebookresearch/habitat-lab",
+      "question": "场景/传感器/坐标和episode重放保持一致吗？",
+      "baseline": "合成场景清单与固定传感器配置",
+      "measure": "reset、坐标和资产/数据权利门禁",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "google-deepmind/mujoco",
+      "question": "物理状态积分、单位和插件接口能验证吗？",
+      "baseline": "解析小动力学和固定时间步",
+      "measure": "能量/位置误差、状态重置和插件边界",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "google/brax",
+      "question": "维护中的training接口与后继环境能正确连接吗？",
+      "baseline": "固定training/环境版本的状态契约",
+      "measure": "reset/观测/回报映射，不假定旧物理接口仍推荐",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "Unity-Technologies/ml-agents",
+      "question": "编辑器/训练器消息和episode边界是否兼容？",
+      "baseline": "合成消息、版本清单与脚本策略",
+      "measure": "协议/动作空间/reset及宿主资产权利",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "google-deepmind/acme",
+      "question": "actor/learner与buffer的数据滞后能观察并限定吗？",
+      "baseline": "合成转移与同步单actor基线",
+      "measure": "staleness、重复更新、资源和恢复",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    },
+    {
+      "repository": "Farama-Foundation/HighwayEnv",
+      "question": "碰撞、奖励和结束语义能通过合成场景契约吗？",
+      "baseline": "固定场景与脚本驾驶策略",
+      "measure": "碰撞/结束标记和seed/reset一致性",
+      "existing_links": [],
+      "result": "NOT_RUN",
+      "gain": "UNMEASURED"
+    }
+  ]
+}

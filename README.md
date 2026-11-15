@@ -14,6 +14,10 @@ Use the [original contribution navigator](https://github.com/pengpengyi92/p-csds
 
 ## AI infrastructure and systems reading guide
 
+[CV / DL / RL · 43个工程问题入口](repo/cv-dl-rl/README.md) — 图像/视频/3D、训练状态与并行、
+episode/replay/模拟器；逐项有baseline、拟用指标和固定许可来源。链接P-ML的116项总目录，
+已有AI Infra条目交叉引用不重复计数；所有新上游实验NOT_RUN / UNMEASURED。
+
 [李博杰的 AI 教材](repo/bojieli-textbooks/README.md) — 从 Agent 的上下文、工具与评估，到 Infra 的显存、带宽与推理估算；附译著、课程和动手路线。
 
 **AI Infra L1–L7** — [Working paper](paper/ai-infra/working-paper.md) · [配套文章](paper/ai-infra/article.md) · [28 个公开仓库](repo/ai-infra/README.md)。Selected shared from P University, with selected PINF and P Compute methods (private prop repositories). No performance experiments were run for this edition.

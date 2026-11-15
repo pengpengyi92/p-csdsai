@@ -6,6 +6,9 @@
 
 ## 分类路线
 
+- [CV / DL / RL · 工程契约与实现问题](cv-dl-rl/README.md) —43项目、89个固定来源入口；
+  从梯度、坐标和训练恢复到episode/replay与多agent生命周期。链接P-ML116项总目录，
+  既有AI Infra三项交叉引用；不重复宣称新增独立项目或模型收益。
 - [李博杰的 AI 教材：Agent、Infra 与大模型](bojieli-textbooks/README.md) — 两本原创开源书、两本译著，以及 Agent 课件和实践课题；逐项标明作者、原始来源、用途和许可边界。
 - [AI Infra L1–L7 · 源码路线、最小复现与工程贡献](ai-infra/README.md) — 每层四个固定版本的公开项目；原有项目卡保留。
 
