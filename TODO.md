@@ -1,5 +1,24 @@
 # Roadmap
 
+## P0 - Dependency audit repair (2026-11-15)
+
+- [x] Reproduce and classify all19 package-level entries; prioritize8 high.
+- [x] Apply compatible parent upgrades and remove the vulnerable sharp override;
+  installed-tree audit now0 high/critical,7 moderate. Keep the CI audit unchanged.
+- [x] Pass types, typecheck, lint,42 Vitest cases,30 Python cases, catalog freshness,
+  build and70 fixed-fixture benchmark runs.
+- [x] Desktop/mobile browser:8 PASS;2 optional live-scan cases SKIPPED, not passed.
+  Archive replay verifies UI reload/export only, not live job persistence.
+- [ ] P1: Resolve [GHSA-g3hv-75wg-m249](https://github.com/advisories/GHSA-g3hv-75wg-m249)
+  when a supported TypeScript-ESLint/minimatch dependency path is available. Accept
+  only after full audit, type/lint/unit/browser checks; do not force minimatch11
+  into a declared10.x range or use the audit-suggested TypeScript-ESLint downgrade.
+- [ ] P1: After GitHub anonymous quota recovers, run the canonical self-scan and
+  both PTRUST_REPORT_ID browser cases against its real persisted local report.
+- [ ] P2: Production rollout is separate; no wrangler deploy in this repair.
+
+[Version decisions, failed attempts and receipts](docs/reports/dependency-audit-2026-11-15/README.md).
+
 ## P0 - CV / DL / RL cross-list (2026-11-15)
 
 - [x] Import public43-project/89-source snapshot byte-for-byte, preserve original timestamps.

@@ -57,6 +57,13 @@ This is **not a security certification or authorization to run code**. The score
 
 ## Quick Start
 
+Dependency repair observed `2026-11-15T14:03:58+08:00`: **19 audit entries
+(8 high, 11 moderate) -> 7 moderate, 0 high**. The existing high-severity CI gate
+is unchanged. The remaining development-only TypeScript-ESLint/minimatch chain
+is still reported, not suppressed or forcibly overridden. See the
+[full audit and regression evidence](docs/reports/dependency-audit-2026-11-15/README.md)
+and [implementation log](log/2026-11-15-dependency-audit-repair.md).
+
 Node.js 22.12+ (Node 24 used in development):
 
 ```sh

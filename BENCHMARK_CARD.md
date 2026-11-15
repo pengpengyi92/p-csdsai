@@ -1,5 +1,16 @@
 # Benchmark Card: v0.1
 
+## Dependency audit repair - 2026-11-15
+
+| Step | Evidence |
+| --- | --- |
+| Baseline | Commit3bab5e5; registry audit19 package entries:8 high,11 moderate; existing hosted high gate failed. Not19 independent CVEs. |
+| Change | Same-major Zod4.6.7, Vite8.3.8, Vitest5.1.0, ESLint10.15.0, Wrangler4.162.0; normal transitive resolution; remove sharp0.35.4 override. No audit, runtime policy or compatibility-date bypass. |
+| Measure | Full installed-tree audit, unchanged high gate, exact npm ci,42 Vitest/30 Python cases,70 fixture runs, desktop1440x1000/mobile390x844 Chromium. |
+| Result |0 high/critical,7 moderate; high gate exit0, default full audit still exit1. Types/lint/build PASS. Browser8 PASS/2 optional live SKIPPED; offline archive replay is not a live scan. Fixture scores100/3/3/0/100/3/47; same as published fixture expectations, not a paired speed comparison. |
+| Trade-off | Residual minimatch10.x development-tool advisory remains visible because current stable TypeScript-ESLint requires that major. Live self-scan blocked by anonymous GitHub quota; production rollout NOT_RUN. Runtime security, real-world accuracy and performance improvement UNMEASURED. |
+| Next Action | Supported upstream fix then same protocol; rerun live persisted-report cases after quota recovery. See [audit report](docs/reports/dependency-audit-2026-11-15/README.md) and [log](log/2026-11-15-dependency-audit-repair.md). |
+
 ## CV / DL / RL cross-list - 2026-11-15
 
 | Step | Evidence |

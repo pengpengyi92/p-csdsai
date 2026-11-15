@@ -2,7 +2,7 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import type { JobState, TrustReport } from '../src/types';
 
 const base = process.argv[2] || 'http://127.0.0.1:8801';
-const repository = 'https://github.com/pengpengyi92/P-Trust';
+const repository = 'https://github.com/pengpengyi92/p-csdsai';
 const response = await fetch(`${base}/api/analyze`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ repository }) });
 const start = await response.json() as { jobId?: string; error?: string };
 if (!response.ok || !start.jobId) throw Error(start.error || 'Job creation failed');

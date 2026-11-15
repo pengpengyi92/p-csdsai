@@ -1,0 +1,73 @@
+{
+  "measured_at": "2026-11-15T06:02:59.330Z",
+  "node": "v24.18.0",
+  "platform": "win32",
+  "protocol": "Seven fixed harmless fixtures, ten sequential warm/cold mixed runs. No network. Not a real-world accuracy evaluation.",
+  "results": [
+    {
+      "fixture": "safe-agent",
+      "score": 100,
+      "classification": "agentic",
+      "findings": [],
+      "mean_ms": 1.542,
+      "runs": 10
+    },
+    {
+      "fixture": "over-permissioned-agent",
+      "score": 3,
+      "classification": "agentic",
+      "findings": [
+        "security:shell_true",
+        "permissions:shell",
+        "permissions:network",
+        "permissions:broad_ci_permission"
+      ],
+      "mean_ms": 0.288,
+      "runs": 10
+    },
+    {
+      "fixture": "unsafe-filesystem-agent",
+      "score": 3,
+      "classification": "agentic",
+      "findings": [
+        "permissions:filesystem_write"
+      ],
+      "mean_ms": 0.138,
+      "runs": 10
+    },
+    {
+      "fixture": "weak-ci-project",
+      "score": 0,
+      "classification": "software",
+      "findings": [],
+      "mean_ms": 0.115,
+      "runs": 10
+    },
+    {
+      "fixture": "good-engineering-project",
+      "score": 100,
+      "classification": "software",
+      "findings": [],
+      "mean_ms": 0.317,
+      "runs": 10
+    },
+    {
+      "fixture": "retry-loop-agent",
+      "score": 3,
+      "classification": "agentic",
+      "findings": [
+        "recovery:unbounded_loop"
+      ],
+      "mean_ms": 0.082,
+      "runs": 10
+    },
+    {
+      "fixture": "well-observed-agent",
+      "score": 47,
+      "classification": "agentic",
+      "findings": [],
+      "mean_ms": 0.216,
+      "runs": 10
+    }
+  ]
+}

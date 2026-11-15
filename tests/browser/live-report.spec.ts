@@ -1,9 +1,11 @@
 import { test, expect } from '@playwright/test';
+import { readFile } from 'node:fs/promises';
 test('real public report survives reload and exports its pinned commit', async ({ page, request }, info) => {
   const id = process.env.PTRUST_REPORT_ID;
   test.skip(!id, 'Set PTRUST_REPORT_ID only after a real public scan completes.');
   const report = await (await request.get(`/api/reports/${id}`)).json();
   expect(report.repository.source).toBe('github');
+  expect(report.repository.commit_sha).toMatch(/^[a-f0-9]{40}$/);
   await page.goto(`/?report=${id}`);
   await expect(page.getByText('PUBLIC REPOSITORY SNAPSHOT', { exact: true })).toBeVisible();
   await expect(page.locator('.main-score strong')).toHaveText(String(report.overall_score));
@@ -13,5 +15,10 @@ test('real public report survives reload and exports its pinned commit', async (
   await expect(page.getByRole('heading', { name: 'Skipped files' })).toBeVisible();
   await page.screenshot({ path: `output/${info.project.name}-self-scan.png`, fullPage: true });
   const download = page.waitForEvent('download'); await page.getByRole('button', { name: 'Download Markdown' }).click();
-  expect((await download).suggestedFilename()).toBe('p-trust-P-Trust.md');
+  const exported = await download;
+  expect(exported.suggestedFilename()).toBe(`p-trust-${report.repository.ref.name}.md`);
+  const path = await exported.path();
+  expect(path).not.toBeNull();
+  expect(await readFile(path!, 'utf8')).toContain(`- Commit: ${report.repository.commit_sha}`);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
 });
