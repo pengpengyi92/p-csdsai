@@ -56,3 +56,30 @@ code exported.
   committed blobs. Local Worker stopped and ports8801/9259 released after tests.
 - This receipt is a documentation-only follow-up to the measured repair commit;
   it does not change dependencies, tests, runtime configuration or audit policy.
+
+## Moderate Follow-up - `2026-11-15T14:18:10+08:00`
+
+- User request: seek a safe fix for7 remaining moderate entries; do not force
+  versions to reach zero; repeat both real online checks after quota recovers.
+- Checked stable TypeScript-ESLint8.72.2 (still minimatch^10.2.2), all published10.x
+  versions (latest10.2.6), maintainer advisory (patched11.0.1), and audit-suggested
+ 8.36.0 downgrade (peers exclude ESLint10/TS6). No compatible supported fix found.
+- No dependency, lockfile, linter rule, audit threshold or Worker policy changed.
+  Seven moderate entries remain visible; high/critical0. Added3 synthetic actual-
+  ESLint-policy controls;45 Vitest and30 Python PASS, full check/build/benchmark
+  and catalog freshness PASS; deterministic browser8 PASS/2 live pending.
+- Direct PowerShell anonymous request appeared readable, but actual Worker scan
+  and same-header Node transport returned rate-limit403. We explicitly rejected
+  the probe as proof of live readiness. Reset:15:13:44+08:00, not bypassed.
+- [Option-by-option evidence and bounded post-reset protocol](../docs/reports/dependency-audit-2026-11-15/moderate-followup.md).
+- Next: wait for reset, perform one bounded quota recheck, scan own public repo,
+  run the two real browser cases and record observed results before pushing.
+
+### Post-reset quota - `2026-11-15T15:14:28+08:00`
+
+- Waited3285 seconds without repeated API polling. The one Node probe after the
+  announced reset still returned403/remaining0; new reset15:35:16+08:00.
+- Online self-scan/browser remain pending; do not conflate the prior archive
+  replay with a real local persisted report. Local Worker was stopped while idle.
+- Publish the completed supported-fix review and45-test policy evidence now;
+  make one final bounded attempt after the new reset, not an unbounded retry loop.

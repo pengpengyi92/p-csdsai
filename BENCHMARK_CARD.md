@@ -1,5 +1,16 @@
 # Benchmark Card: v0.1
 
+## Moderate follow-up review - 2026-11-15
+
+| Step | Evidence |
+| --- | --- |
+| Baseline | ef4bf94:7 moderate/0 high;42 Vitest, browser8 PASS/2 live SKIPPED. |
+| Change | No dependency or audit-policy change. Review stable upgrade, official10.x backport, downgrade, override and tool-replacement options; add3 actual-ESLint-policy negative controls. |
+| Measure | Fresh audit, exact registry peers/ranges and tagged primary sources; full check, Python/catalog regressions; bounded anonymous Node/Worker quota checks. |
+| Result | Still7 moderate/0 high, no compatible supported fix found.45 Vitest/30 Python, types/lint/build/70 fixture runs PASS. Deterministic browser8 PASS; live checks still pending quota at15:14+08:00. |
+| Trade-off | No cosmetic audit reduction or weaker lint rules. Narrow observed minimatch call path is not exploit-resistance proof. Real online regression NOT_RUN until a successful persisted scan; production security/performance gains UNMEASURED. |
+| Next Action | Supported upstream fix when available; one final post-reset check at15:35:16+08:00 and record actual outcome in the [follow-up report](docs/reports/dependency-audit-2026-11-15/moderate-followup.md) and log. |
+
 ## Dependency audit repair - 2026-11-15
 
 | Step | Evidence |

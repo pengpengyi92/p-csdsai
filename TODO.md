@@ -1,5 +1,17 @@
 # Roadmap
 
+## P1 - Moderate audit supported-fix review (2026-11-15)
+
+- [x] Recheck current stable TypeScript-ESLint, minimatch10.x backport availability,
+  audit-suggested downgrade peers and current config exposure; no compatible fix
+  found. Keep7 moderate findings, lockfile and audit policy unchanged.
+- [x] Add3 actual-linter policy controls;45 Vitest/30 Python and full check PASS.
+- [ ] Complete both real persisted-report browser cases after anonymous quota
+  recovery. First announced reset was awaited;15:14 probe still403/0, next reset
+ 15:35:16+08:00. One final bounded attempt, no identity/network rotation.
+- [ ] Revisit supported upstream fix once published; require full protocol, not
+  only audit counts. See [decision report](docs/reports/dependency-audit-2026-11-15/moderate-followup.md).
+
 ## P0 - Dependency audit repair (2026-11-15)
 
 - [x] Reproduce and classify all19 package-level entries; prioritize8 high.

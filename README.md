@@ -64,6 +64,11 @@ is still reported, not suppressed or forcibly overridden. See the
 [full audit and regression evidence](docs/reports/dependency-audit-2026-11-15/README.md)
 and [implementation log](log/2026-11-15-dependency-audit-repair.md).
 
+The [moderate-finding follow-up](docs/reports/dependency-audit-2026-11-15/moderate-followup.md)
+checks compatible/backport/downgrade options and retains the existing lint policy
+with three negative controls (45 unit tests). No compatible supported remediation
+was found as of the review; real online checks remain explicitly quota-dependent.
+
 Node.js 22.12+ (Node 24 used in development):
 
 ```sh
