@@ -86,9 +86,14 @@ The two real persisted-report tests remain pending, not marked as passed.
 
 ## Versioned Input Hashes
 
+SHA256 values below identify Git-normalized blobs. A pre-push receipt check caught
+the CRLF working-copy versus LF Git-blob difference for the unchanged ESLint
+configuration; its recorded hash was corrected before publishing, with no config
+or rule edit.
+
 - package.json: `e1b147bc422a49911d88563d6ff293c7163cca423a17eed37bf3504ee3f989b3`
 - package-lock.json: `ee8f46a4094464233daca2b71520dbb4a90857079c1ba945b08535d9848d23ce`
-- eslint.config.js: `e86dd94b3ce01d58aef58fdbc42a613ed50999650863ccdf1ad97e7142efcbe5`
+- eslint.config.js: `b395f9f7e43e6b343329099c1a37e1314119460f7cabce353f2ff167474f1d23`
 - tests/lint-policy.test.ts: `5c00ce612e12b9312aff83351fc455c21da91a540099b74a296e30d913ea95ca`
 
 These identify reviewed inputs, not a vulnerability remediation. Post-reset and
