@@ -52,7 +52,29 @@ resolved, not skipped. Only sanitized public facts are shared here.
 At2026-11-18T10:31:09+08:00 upstream [CI](https://github.com/kayak/pypika/actions/runs/44223419809)
 is action_required pending maintainer approval. It is not a passing hosted run.
 
-## Next
+## Hosted CI follow-up - 2026-11-18
+
+[Catalog CI44224229412](https://github.com/pengpengyi92/p-csdsai/actions/runs/44224229412)
+SUCCESS on content commita8abe42012a86504982f36d5261a470e170c4cbf, including
+all38 Python catalog contracts and both freshness generators.
+[Quality CI44224229568](https://github.com/pengpengyi92/p-csdsai/actions/runs/44224229568)
+passed npm run check but FAILED npm audit --audit-level=high; browser steps were
+SKIPPED. It reports13 package-level findings (6 moderate,7 high), not13 independent
+CVEs. The high chain includes picomatch/fdir/tinyglobby/Vite/Vitest.
+
+Official [GHSA-fc5q-39xc-vjpf](https://github.com/advisories/GHSA-fc5q-39xc-vjpf)
+lists picomatch<=4.0.7 affected and no patched version at this check; advisory
+updated2026-11-17. package.json/lockfile are unchanged from baseline94e65e2.
+No force audit downgrade, fake override, removed audit gate or deployment was
+used. This documents an existing dependency blocker, not a catalog regression
+or proof of runtime exploitability. A separate supported-fix review is needed.
+
+Local `npm audit --audit-level=high --json` also exits1 with the same13 package
+findings. Baseline/current lockfile Git blob identity is identical:
+`aec955533e556ebe3a969e33de6a26759697f859`. This is a current audit and source
+identity comparison, not a separately executed historical audit.
+
+## Next Training Action
 
 Choose one synthetic SQL/Python exercise, predict its result, preserve a negative
 control and log actual evidence. Extend only after a bounded unseen exercise,

@@ -6,6 +6,9 @@
 - [x] Add original exercises, cross-language projects, runtime/rights gates and offline tests.
 - [ ] Complete one fixed-fixture training card; all catalog exercises NOT RUN / UNMEASURED.
 - [ ] Observe upstream SQL PR CI/review separately; local passing tests are not a merge.
+- [ ] P0: Review picomatch GHSA-fc5q-39xc-vjpf in the unchanged dev-tool chain.
+  Catalog CI passed, Quality audit failed (7 high/6 moderate package findings);
+  official record has no patched version. Keep audit gate; no breaking force fix.
 
 ## P1 - Moderate audit supported-fix review (2026-11-15)
 
