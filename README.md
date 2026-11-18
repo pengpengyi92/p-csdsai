@@ -1,3 +1,9 @@
+## 2026-11-18 - HKUDS AutoSwarm under AI
+
+[AutoSwarm 收录卡](repo/ai/agents-and-swarms/autoswarm.md) · [AI 分类](repo/ai/README.md)。
+工程视角：CLI 适配、上下文交接、批准与恢复。
+固定 `2.0.0.dev0` 开发快照；本轮未安装或运行上游 Agent。
+
 # P-CSDSAI
 
 ## Programming languages - 2026-11-18

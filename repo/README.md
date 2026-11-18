@@ -1,3 +1,9 @@
+## 2026-11-18 - AI / Agent Swarms
+
+[AI 分类](ai/README.md) · [HKUDS AutoSwarm](ai/agents-and-swarms/autoswarm.md)。
+新增工程视角，基础卡当前11项。
+固定当前主线开发快照；其余来源时间与历史专题保留，本轮未安装或调用 Agent。
+
 # AI Systems & Infrastructure — 运行时、数据与工程
 
 ## Programming by language - 2026-11-18
@@ -26,6 +32,7 @@
 
 | 项目 | 本仓库为何收录 | 档案 |
 | --- | --- | --- |
+| AutoSwarm | AI / Agent Swarms：原生 CLI、上下文、批准归属与失败恢复。 | [阅读](ai/agents-and-swarms/autoswarm.md) |
 | PyTorch | 研究张量执行、模块 hook、分布式接口及 Python/底层边界，关注正确性与可维护性。 | [阅读](programming-and-kernels/pytorch.md) |
 | Safetensors | 研究 Rust/Python 边界、字节序、文件校验与模型 artifact 供应链。 | [阅读](data-and-storage/safetensors.md) |
 | SGLang | AI infra 重点：服务调度、chunking、异常与 profiling，连接现有 NVTX/动态分块贡献。 | [阅读](model-serving-and-runtime/sglang.md) |
