@@ -1,0 +1,1190 @@
+{
+  "schema_version": 1,
+  "project": "P-CSDSAI",
+  "scope": "Language-oriented programming and SQL/data-systems training",
+  "complete_ecosystem_inventory": false,
+  "entries": [
+    {
+      "language": "sql",
+      "repository": "duckdb/duckdb",
+      "entry_candidates": [
+        "src/planner/binder.cpp",
+        "src/execution/operator/join/physical_hash_join.cpp"
+      ],
+      "reason": "从 SQL 到向量化执行；训练 JOIN、窗口函数与查询计划的语义验证。",
+      "exercise": "用重复键、NULL 和迟到观测构造 JOIN/window 对照，先解释计划再测量。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "duckdb/duckdb",
+        "url": "https://github.com/duckdb/duckdb",
+        "head": "993031901279c430c764f64dbc4b2066185faf3e",
+        "default_branch": "main",
+        "private": false,
+        "archived": false,
+        "license_signal": "MIT",
+        "verified_paths": {
+          "src/planner/binder.cpp": {
+            "__typename": "Blob",
+            "oid": "1cbfd2dc9e05e98e46ac616ccfc2bbe6a6ebf254"
+          },
+          "src/execution/operator/join/physical_hash_join.cpp": {
+            "__typename": "Blob",
+            "oid": "48363d078b6ac6bb147008333e59badfd98b5cc6"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "f9cd154ac7c41b49784cc66e659d60412d468fce"
+          },
+          "LICENSE": {
+            "__typename": "Blob",
+            "oid": "2719c9a23d2a37c1dfb7402e79f03bd615701e53"
+          }
+        },
+        "entry_paths": [
+          "src/planner/binder.cpp",
+          "src/execution/operator/join/physical_hash_join.cpp"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE"
+        ],
+        "observed_at": "2026-11-18T10:15:38.147229+08:00"
+      }
+    },
+    {
+      "language": "sql",
+      "repository": "tobymao/sqlglot",
+      "entry_candidates": [
+        "sqlglot/parser.py",
+        "tests/test_parser.py"
+      ],
+      "reason": "研究 SQL parser、AST 与方言转换；训练解析/生成往返和最小失败用例。",
+      "exercise": "挑选一个固定方言表达式，比较 parse-render-parse AST 并验证错误边界。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "tobymao/sqlglot",
+        "url": "https://github.com/tobymao/sqlglot",
+        "head": "eb11aec4be8cb2122afe713a4816662c3f0fb2fa",
+        "default_branch": "main",
+        "private": false,
+        "archived": false,
+        "license_signal": "MIT",
+        "verified_paths": {
+          "sqlglot/parser.py": {
+            "__typename": "Blob",
+            "oid": "456314b26ea679c20d90cbb9df2756c4470cc117"
+          },
+          "tests/test_parser.py": {
+            "__typename": "Blob",
+            "oid": "b2dd023e64f1acbe887463b00a37da2d5fa24b33"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "db8dd6c9d2621555d5aeafd0cd0b322e30508e9d"
+          },
+          "LICENSE": {
+            "__typename": "Blob",
+            "oid": "aa0703d7fc80b4b0a7a9a115de50467013c7c219"
+          }
+        },
+        "entry_paths": [
+          "sqlglot/parser.py",
+          "tests/test_parser.py"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE"
+        ],
+        "observed_at": "2026-11-18T10:15:38.147229+08:00"
+      }
+    },
+    {
+      "language": "sql",
+      "repository": "sqlfluff/sqlfluff",
+      "entry_candidates": [
+        "src/sqlfluff/core/linter/linter.py",
+        "test/core/linter/linter_test.py"
+      ],
+      "reason": "研究 SQL lint/fix 的规则与幂等性，区分风格修正和查询语义。",
+      "exercise": "对小型 CTE/窗口查询运行 lint/fix；验证第二次 fix 不再修改。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "sqlfluff/sqlfluff",
+        "url": "https://github.com/sqlfluff/sqlfluff",
+        "head": "a5ec1e2213687df30748da17842398e4633d4583",
+        "default_branch": "main",
+        "private": false,
+        "archived": false,
+        "license_signal": "MIT",
+        "verified_paths": {
+          "src/sqlfluff/core/linter/linter.py": {
+            "__typename": "Blob",
+            "oid": "09f98b130db4a8116a0f1121f4f51e7f490097f5"
+          },
+          "test/core/linter/linter_test.py": {
+            "__typename": "Blob",
+            "oid": "bb0c9f5d3747851dfe78424d1ab1f661e1f3d32e"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "89bf0c29119254209488f5abf63408709bad3970"
+          },
+          "LICENSE.md": {
+            "__typename": "Blob",
+            "oid": "1c61d85de026444a6bab747f2e73142ea5b44371"
+          }
+        },
+        "entry_paths": [
+          "src/sqlfluff/core/linter/linter.py",
+          "test/core/linter/linter_test.py"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE.md"
+        ],
+        "observed_at": "2026-11-18T10:15:38.147229+08:00"
+      }
+    },
+    {
+      "language": "python",
+      "repository": "python/cpython",
+      "entry_candidates": [
+        "Lib/sqlite3/dbapi2.py",
+        "Lib/test/test_sqlite3/test_dbapi.py"
+      ],
+      "reason": "从标准库理解事务、异常和资源生命周期，而不是只练习脚本语法。",
+      "exercise": "用 sqlite3 内存数据库练习事务失败回滚、参数绑定和游标关闭。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "python/cpython",
+        "url": "https://github.com/python/cpython",
+        "head": "3ad9316217ba4e2788abc7d19f469762c6c38309",
+        "default_branch": "main",
+        "private": false,
+        "archived": false,
+        "license_signal": "NOASSERTION",
+        "verified_paths": {
+          "Lib/sqlite3/dbapi2.py": {
+            "__typename": "Blob",
+            "oid": "2054b3a78e3f6070aff3a727cf9689f27622851a"
+          },
+          "Lib/test/test_sqlite3/test_dbapi.py": {
+            "__typename": "Blob",
+            "oid": "bbb7c1f8b6159381a369827a251f837eacbc3354"
+          },
+          "README.rst": {
+            "__typename": "Blob",
+            "oid": "b3058f63c27a1201670a2a6a0e0dfea38e43d048"
+          },
+          "LICENSE": {
+            "__typename": "Blob",
+            "oid": "20cf39097c68baa17cc566b64e76d34ebf034044"
+          }
+        },
+        "entry_paths": [
+          "Lib/sqlite3/dbapi2.py",
+          "Lib/test/test_sqlite3/test_dbapi.py"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.rst",
+        "license_paths": [
+          "LICENSE"
+        ],
+        "observed_at": "2026-11-18T10:15:38.147229+08:00"
+      }
+    },
+    {
+      "language": "python",
+      "repository": "ibis-project/ibis",
+      "entry_candidates": [
+        "ibis/expr/types/relations.py",
+        "ibis/backends/duckdb/__init__.py"
+      ],
+      "reason": "训练表达式系统、Python/SQL backend 契约及执行结果对齐。",
+      "exercise": "同一 synthetic 聚合用表达式和手写 SQL 实现，比较 NULL/类型/顺序。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "ibis-project/ibis",
+        "url": "https://github.com/ibis-project/ibis",
+        "head": "6d40f963fee940063e09956c7e60d073f4302259",
+        "default_branch": "main",
+        "private": false,
+        "archived": false,
+        "license_signal": "Apache-2.0",
+        "verified_paths": {
+          "ibis/expr/types/relations.py": {
+            "__typename": "Blob",
+            "oid": "d00d1171e4a9cf69c9170b4836d8a3b538e79ea6"
+          },
+          "ibis/backends/duckdb/__init__.py": {
+            "__typename": "Blob",
+            "oid": "55cb128457f874c5ecb341d9eb3216c168eee907"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "d4ce3c0ea135d7b6ae39dd41923c857e5a3469e9"
+          },
+          "LICENSE.txt": {
+            "__typename": "Blob",
+            "oid": "886854508f8417dcfa40f633e79ebeaab2c0e23c"
+          }
+        },
+        "entry_paths": [
+          "ibis/expr/types/relations.py",
+          "ibis/backends/duckdb/__init__.py"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE.txt"
+        ],
+        "observed_at": "2026-11-18T10:15:38.147229+08:00"
+      }
+    },
+    {
+      "language": "python",
+      "repository": "kayak/pypika",
+      "entry_candidates": [
+        "pypika/terms.py",
+        "pypika/tests/test_criterions.py"
+      ],
+      "reason": "训练可组合 SQL AST、不可变 builder 和回归测试；连接已公开的修复经验。",
+      "exercise": "生成 JOIN、聚合和窗口查询；断言原表达式不变，并在 SQLite 执行兼容部分。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "kayak/pypika",
+        "url": "https://github.com/kayak/pypika",
+        "head": "e9fdd3a2d6bbd69c7a731beab308442ada83af72",
+        "default_branch": "master",
+        "private": false,
+        "archived": false,
+        "license_signal": "Apache-2.0",
+        "verified_paths": {
+          "pypika/terms.py": {
+            "__typename": "Blob",
+            "oid": "c5d4633518f9fbfe9d258a47d403ca575742f4e9"
+          },
+          "pypika/tests/test_criterions.py": {
+            "__typename": "Blob",
+            "oid": "74d4aebda9bafff6be8732581289d6aae64f0884"
+          },
+          "README.rst": {
+            "__typename": "Blob",
+            "oid": "4ce557806857c8bb288a180f4c53b690a6adb7b7"
+          },
+          "LICENSE.txt": {
+            "__typename": "Blob",
+            "oid": "9c8f3ea0871e0bfe81da0fa6e7c1d7d156dc380e"
+          }
+        },
+        "entry_paths": [
+          "pypika/terms.py",
+          "pypika/tests/test_criterions.py"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.rst",
+        "license_paths": [
+          "LICENSE.txt"
+        ],
+        "observed_at": "2026-11-18T10:15:38.147229+08:00"
+      }
+    },
+    {
+      "language": "cpp",
+      "repository": "apache/arrow",
+      "entry_candidates": [
+        "cpp/src/arrow/array/array_base.cc",
+        "cpp/src/arrow/compute/api.h"
+      ],
+      "reason": "研究列式内存、schema 与 C++/Python 边界，为研究数据交换提供契约。",
+      "exercise": "画出 null bitmap、offset 和 buffer 所有权；设计 slice/empty/null 负面对照。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "apache/arrow",
+        "url": "https://github.com/apache/arrow",
+        "head": "21156bccc5f3b2eaaa21b9045cccd02ba332f435",
+        "default_branch": "main",
+        "private": false,
+        "archived": false,
+        "license_signal": "Apache-2.0",
+        "verified_paths": {
+          "cpp/src/arrow/array/array_base.cc": {
+            "__typename": "Blob",
+            "oid": "0add32a5552574ff84409fffaa6a00922031c8d5"
+          },
+          "cpp/src/arrow/compute/api.h": {
+            "__typename": "Blob",
+            "oid": "343e30643cfd31916caafc4a84a3fd393c9a84ef"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "7ba3f56fce388c2ce16001f2cfa26f3d22d476ae"
+          },
+          "LICENSE.txt": {
+            "__typename": "Blob",
+            "oid": "2f4988e212af93eb2938f80dffd3e56131bab7d8"
+          }
+        },
+        "entry_paths": [
+          "cpp/src/arrow/array/array_base.cc",
+          "cpp/src/arrow/compute/api.h"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE.txt"
+        ],
+        "observed_at": "2026-11-18T10:15:41.621706+08:00"
+      }
+    },
+    {
+      "language": "cpp",
+      "repository": "fmtlib/fmt",
+      "entry_candidates": [
+        "include/fmt/format.h",
+        "test/format-test.cc"
+      ],
+      "reason": "研究类型安全格式化、模板和错误诊断，练习可维护的 C++ 接口。",
+      "exercise": "给定边界类型和非法格式，预测编译/运行结果并写最小测试。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "fmtlib/fmt",
+        "url": "https://github.com/fmtlib/fmt",
+        "head": "14ac0d5a9d40aef14f50954069c1e10971abb0b2",
+        "default_branch": "main",
+        "private": false,
+        "archived": false,
+        "license_signal": "MIT",
+        "verified_paths": {
+          "include/fmt/format.h": {
+            "__typename": "Blob",
+            "oid": "9480c8f5c5031ead5351e1ef44983d2b4932195f"
+          },
+          "test/format-test.cc": {
+            "__typename": "Blob",
+            "oid": "a802c432e067541d9bd21e45e6b3d30226a49d75"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "0d51c3eb66985e23e2d98d1c7b4a8744d7bd32f4"
+          },
+          "LICENSE": {
+            "__typename": "Blob",
+            "oid": "795fdaec8f2ce6fcc97bbb15d1a6ac073af7bd17"
+          }
+        },
+        "entry_paths": [
+          "include/fmt/format.h",
+          "test/format-test.cc"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE"
+        ],
+        "observed_at": "2026-11-18T10:15:41.621706+08:00"
+      }
+    },
+    {
+      "language": "cpp",
+      "repository": "google/benchmark",
+      "entry_candidates": [
+        "src/benchmark.cc",
+        "test/benchmark_test.cc"
+      ],
+      "reason": "训练可靠性能测量，识别优化消除、预热和计时边界。",
+      "exercise": "同一计算用正确性 oracle 固定后，再设计防优化消除的 benchmark。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "google/benchmark",
+        "url": "https://github.com/google/benchmark",
+        "head": "325ec3ded4761cb1cf16e3dc66c4b17a6f3be290",
+        "default_branch": "main",
+        "private": false,
+        "archived": false,
+        "license_signal": "Apache-2.0",
+        "verified_paths": {
+          "src/benchmark.cc": {
+            "__typename": "Blob",
+            "oid": "435920ca05060fb6923317c0dbb71270e2764f3f"
+          },
+          "test/benchmark_test.cc": {
+            "__typename": "Blob",
+            "oid": "0dd37bff0c56bff6144c8503145a420bfc68a618"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "77a2336d960810446186771bdfceadc967dc1cf7"
+          },
+          "LICENSE": {
+            "__typename": "Blob",
+            "oid": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+          }
+        },
+        "entry_paths": [
+          "src/benchmark.cc",
+          "test/benchmark_test.cc"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE"
+        ],
+        "observed_at": "2026-11-18T10:15:41.621706+08:00"
+      }
+    },
+    {
+      "language": "c",
+      "repository": "sqlite/sqlite",
+      "entry_candidates": [
+        "src/select.c",
+        "test/select1.test"
+      ],
+      "reason": "研究 C 实现的 SQL 引擎与事务；SQLite GitHub 是镜像，贡献走官方流程。",
+      "exercise": "读取 SELECT 编译路径和一条 Tcl 测试，解释语义，不向只读镜像投 PR。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "sqlite/sqlite",
+        "url": "https://github.com/sqlite/sqlite",
+        "head": "3ee9f4064e0025a029d648c5374a4d9db10aaa32",
+        "default_branch": "master",
+        "private": false,
+        "archived": false,
+        "license_signal": "NOASSERTION",
+        "verified_paths": {
+          "src/select.c": {
+            "__typename": "Blob",
+            "oid": "426491ab2b9f161c0d78f4a943fb9f9984cc4fa7"
+          },
+          "test/select1.test": {
+            "__typename": "Blob",
+            "oid": "0b7edf0c84b44aad095819616a9a3c3c0c4884dc"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "966bad3f8601d40d983e1e0e818562a41acb29e2"
+          },
+          "LICENSE.md": {
+            "__typename": "Blob",
+            "oid": "aa439fce58d0cfc4d21f0bdfbb48e09d3eda3a67"
+          }
+        },
+        "entry_paths": [
+          "src/select.c",
+          "test/select1.test"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE.md"
+        ],
+        "observed_at": "2026-11-18T10:15:41.621706+08:00"
+      }
+    },
+    {
+      "language": "c",
+      "repository": "libuv/libuv",
+      "entry_candidates": [
+        "src/unix/core.c",
+        "test/test-tcp-close.c"
+      ],
+      "reason": "研究事件循环、句柄生命周期与回调顺序，训练系统编程的可证伪状态机。",
+      "exercise": "用本地 loop/close 测试验证回调只完成一次，不连接外部服务。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "libuv/libuv",
+        "url": "https://github.com/libuv/libuv",
+        "head": "e5dab8432177f43af97bbe032037d273234642ac",
+        "default_branch": "v1.x",
+        "private": false,
+        "archived": false,
+        "license_signal": "MIT",
+        "verified_paths": {
+          "src/unix/core.c": {
+            "__typename": "Blob",
+            "oid": "bb0cc489e78ddea6ccac068e837261d5163ac0ac"
+          },
+          "test/test-tcp-close.c": {
+            "__typename": "Blob",
+            "oid": "ed19da6f783b3eec2dca45e553eac9774fb0edfb"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "1f1fdbfe3f7059b66f94a310577bbb383fda2fca"
+          },
+          "LICENSE": {
+            "__typename": "Blob",
+            "oid": "6566365d4f238005a3358710e20b2acde266b594"
+          }
+        },
+        "entry_paths": [
+          "src/unix/core.c",
+          "test/test-tcp-close.c"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE"
+        ],
+        "observed_at": "2026-11-18T10:15:41.621706+08:00"
+      }
+    },
+    {
+      "language": "c",
+      "repository": "nanomsg/nng",
+      "entry_candidates": [
+        "src/core/socket.c",
+        "tests/cplusplus_pair.cc",
+        "src/sp/protocol/pubsub0/pub.c"
+      ],
+      "reason": "研究 C 网络库的所有权、取消与超时；与消息传递研究相关。",
+      "exercise": "设计进程内消息超时/取消实验，记录失败路径与资源回收。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "nanomsg/nng",
+        "url": "https://github.com/nanomsg/nng",
+        "head": "caf6f9f0b220a8e182875707db3fd05142d913ea",
+        "default_branch": "main",
+        "private": false,
+        "archived": false,
+        "license_signal": "MIT",
+        "verified_paths": {
+          "src/core/socket.c": {
+            "__typename": "Blob",
+            "oid": "45716d0170dc846c8d267bc235ad5a43076def7c"
+          },
+          "tests/cplusplus_pair.cc": {
+            "__typename": "Blob",
+            "oid": "44abde05eab9acc8192011b83bf3b00e6cb22207"
+          },
+          "src/sp/protocol/pubsub0/pub.c": {
+            "__typename": "Blob",
+            "oid": "2d65ef11793a4641922cbb9a3f844ecc92425aa4"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "13e397ea7b49dd2f317bae9b2fb3757562823f58"
+          },
+          "LICENSE.txt": {
+            "__typename": "Blob",
+            "oid": "353da18316279d3eded2dd973f21af1cce87acf8"
+          }
+        },
+        "entry_paths": [
+          "src/core/socket.c",
+          "tests/cplusplus_pair.cc",
+          "src/sp/protocol/pubsub0/pub.c"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE.txt"
+        ],
+        "observed_at": "2026-11-18T10:15:41.621706+08:00"
+      }
+    },
+    {
+      "language": "rust",
+      "repository": "apache/datafusion",
+      "entry_candidates": [
+        "datafusion/core/src/execution/context/mod.rs",
+        "datafusion/sqllogictest/test_files/window.slt"
+      ],
+      "reason": "研究 Rust SQL 执行器、Arrow 与优化规则，训练类型/结果/计划三层契约。",
+      "exercise": "对固定窗口聚合写 SQLLogicTest，并与一个简单 SQL 引擎作语义对照。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "apache/datafusion",
+        "url": "https://github.com/apache/datafusion",
+        "head": "454bf2978660f69744eb220bed19b0a1d60f4128",
+        "default_branch": "main",
+        "private": false,
+        "archived": false,
+        "license_signal": "Apache-2.0",
+        "verified_paths": {
+          "datafusion/core/src/execution/context/mod.rs": {
+            "__typename": "Blob",
+            "oid": "b008542b473292e96f6e6f36de064026d9532090"
+          },
+          "datafusion/sqllogictest/test_files/window.slt": {
+            "__typename": "Blob",
+            "oid": "2a9e3084c10841be4b5ff1f802057e354327fb83"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "9cbbf0685bcb8bbddd67bdb37d79707682e8ae05"
+          },
+          "LICENSE.txt": {
+            "__typename": "Blob",
+            "oid": "d74c6b599d2ae5eb8cbc226c1d2ae310198cc2df"
+          }
+        },
+        "entry_paths": [
+          "datafusion/core/src/execution/context/mod.rs",
+          "datafusion/sqllogictest/test_files/window.slt"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE.txt"
+        ],
+        "observed_at": "2026-11-18T10:15:44.427902+08:00"
+      }
+    },
+    {
+      "language": "rust",
+      "repository": "pola-rs/polars",
+      "entry_candidates": [
+        "crates/polars-core/src/frame/mod.rs",
+        "crates/polars-lazy/src/frame/mod.rs"
+      ],
+      "reason": "研究惰性执行、查询优化与 Rust/Python 边界，强调流式/非流式一致性。",
+      "exercise": "固定小表比较 eager/lazy/streaming，覆盖 NULL 和分组顺序。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "pola-rs/polars",
+        "url": "https://github.com/pola-rs/polars",
+        "head": "dec76f8796de967a0a5c875726ae028dfb02b145",
+        "default_branch": "main",
+        "private": false,
+        "archived": false,
+        "license_signal": "MIT",
+        "verified_paths": {
+          "crates/polars-core/src/frame/mod.rs": {
+            "__typename": "Blob",
+            "oid": "d57eded08acba390f3e49c15b8fa7c4513d286d8"
+          },
+          "crates/polars-lazy/src/frame/mod.rs": {
+            "__typename": "Blob",
+            "oid": "2fb33797783449a8a37dcf71cd80fe4ad2fba757"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "b868bcab455d882692515ea01d67726a73e84568"
+          },
+          "LICENSE": {
+            "__typename": "Blob",
+            "oid": "33b09bbb6c5bd43c5e985e2affed64c5ed093616"
+          }
+        },
+        "entry_paths": [
+          "crates/polars-core/src/frame/mod.rs",
+          "crates/polars-lazy/src/frame/mod.rs"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE"
+        ],
+        "observed_at": "2026-11-18T10:15:44.427902+08:00"
+      }
+    },
+    {
+      "language": "rust",
+      "repository": "BurntSushi/ripgrep",
+      "entry_candidates": [
+        "crates/regex/src/lib.rs",
+        "crates/core/main.rs"
+      ],
+      "reason": "用实用 CLI 学习 Rust 错误传播、编码和确定性测试，不只做算法题。",
+      "exercise": "在 synthetic 文本树测试编码/忽略规则/退出码；不要扫描私人目录。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "BurntSushi/ripgrep",
+        "url": "https://github.com/BurntSushi/ripgrep",
+        "head": "178cc027e283fd965cb72d0a7395b219eada170c",
+        "default_branch": "master",
+        "private": false,
+        "archived": false,
+        "license_signal": "Unlicense",
+        "verified_paths": {
+          "crates/regex/src/lib.rs": {
+            "__typename": "Blob",
+            "oid": "93e477b61eb2c90da0163f2123de7e02316b2ae4"
+          },
+          "crates/core/main.rs": {
+            "__typename": "Blob",
+            "oid": "c74e645f7c83484b4435e79b7d508d320e224878"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "54a7158a564faae22988da41efb1ef279e06fe5e"
+          },
+          "LICENSE-MIT": {
+            "__typename": "Blob",
+            "oid": "3b0a5dc09c1e16357459ddc9182a50f360f3cdba"
+          }
+        },
+        "entry_paths": [
+          "crates/regex/src/lib.rs",
+          "crates/core/main.rs"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE-MIT"
+        ],
+        "observed_at": "2026-11-18T10:15:44.427902+08:00"
+      }
+    },
+    {
+      "language": "kdb-q",
+      "repository": "KxSystems/kdb",
+      "entry_candidates": [
+        "stat.q",
+        "trade.q"
+      ],
+      "reason": "研究 q 示例与 kdb+ C/Java IPC 接口；区分示例代码和商业 runtime 权限。",
+      "exercise": "先阅读 IPC 类型映射；仅在 runtime 许可明确时运行本地 synthetic 表。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "NEEDS_RUNTIME_LICENSE_REVIEW",
+      "source": {
+        "repository": "KxSystems/kdb",
+        "url": "https://github.com/KxSystems/kdb",
+        "head": "1daebf73349199b1318649fc2c5656cab2b4a7f2",
+        "default_branch": "master",
+        "private": false,
+        "archived": false,
+        "license_signal": "Apache-2.0",
+        "verified_paths": {
+          "stat.q": {
+            "__typename": "Blob",
+            "oid": "7cedc436f4cf2496280a07729d696c3a8c6fa7dc"
+          },
+          "trade.q": {
+            "__typename": "Blob",
+            "oid": "09f8b29593b7c36696bc96c31f42f935a40a7e94"
+          },
+          "README.TXT": {
+            "__typename": "Blob",
+            "oid": "a2b8f575273ae4a359f8bffe6b9046980bd07297"
+          },
+          "LICENSE": {
+            "__typename": "Blob",
+            "oid": "8dada3edaf50dbc082c9a125058f25def75e625a"
+          }
+        },
+        "entry_paths": [
+          "stat.q",
+          "trade.q"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.TXT",
+        "license_paths": [
+          "LICENSE"
+        ],
+        "observed_at": "2026-11-18T10:15:44.427902+08:00"
+      }
+    },
+    {
+      "language": "kdb-q",
+      "repository": "KxSystems/kdb-tick",
+      "entry_candidates": [
+        "tick.q",
+        "tick/u.q"
+      ],
+      "reason": "研究 tickerplant、流式表和回放顺序，连接市场数据的去重/恢复契约。",
+      "exercise": "纸上重放重复/乱序事件，定义序列号和恢复规则；不是交易系统认证。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "NEEDS_RUNTIME_LICENSE_REVIEW",
+      "source": {
+        "repository": "KxSystems/kdb-tick",
+        "url": "https://github.com/KxSystems/kdb-tick",
+        "head": "85c08ff192b0a103b323246c7300a37919be6159",
+        "default_branch": "master",
+        "private": false,
+        "archived": false,
+        "license_signal": "NOASSERTION",
+        "verified_paths": {
+          "tick.q": {
+            "__typename": "Blob",
+            "oid": "068099264b61cf3765dde59d370cfc297224d0a1"
+          },
+          "tick/u.q": {
+            "__typename": "Blob",
+            "oid": "21f42e444d505cb0f4555aa0b0f3acffdb974422"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "2d01faf2aef13e14d805fab8cfdefe526dbcd05a"
+          }
+        },
+        "entry_paths": [
+          "tick.q",
+          "tick/u.q"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [],
+        "observed_at": "2026-11-18T10:15:44.427902+08:00"
+      }
+    },
+    {
+      "language": "kdb-q",
+      "repository": "KxSystems/pykx",
+      "entry_candidates": [
+        "src/pykx/query.py",
+        "tests/test_query.py"
+      ],
+      "reason": "研究 Python/q 类型与查询边界，避免把 Python 包可下载当成 kdb+ 授权。",
+      "exercise": "比较 Python/q 时间戳和 NULL 映射；许可/环境确认前仅阅读。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "NEEDS_RUNTIME_LICENSE_REVIEW",
+      "source": {
+        "repository": "KxSystems/pykx",
+        "url": "https://github.com/KxSystems/pykx",
+        "head": "321319e814dca591a29fcf3f0efd270a9f6e116d",
+        "default_branch": "main",
+        "private": false,
+        "archived": false,
+        "license_signal": "NOASSERTION",
+        "verified_paths": {
+          "src/pykx/query.py": {
+            "__typename": "Blob",
+            "oid": "3078ba8a58cf1ea53dc13d18bdb1885d202dfc68"
+          },
+          "tests/test_query.py": {
+            "__typename": "Blob",
+            "oid": "d36a992396721b713c36fee718f4439105946e94"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "244ad9bc3581b8ce119c118d06bf35f2b1f07e61"
+          },
+          "LICENSE.txt": {
+            "__typename": "Blob",
+            "oid": "d49f2bd65aaa8668159d05b8f92e2f3e42ff91c1"
+          }
+        },
+        "entry_paths": [
+          "src/pykx/query.py",
+          "tests/test_query.py"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE.txt"
+        ],
+        "observed_at": "2026-11-18T10:15:44.427902+08:00"
+      }
+    },
+    {
+      "language": "java",
+      "repository": "trinodb/trino",
+      "entry_candidates": [
+        "core/trino-main/src/main/java/io/trino/sql/planner/LocalExecutionPlanner.java",
+        "core/trino-parser/src/main/java/io/trino/sql/parser/SqlParser.java"
+      ],
+      "reason": "研究分布式 SQL 的解析、计划和执行边界，练习大型 Java 工程阅读。",
+      "exercise": "跟踪一个 JOIN 的 AST/计划，设计空表/NULL/重复键回归。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "trinodb/trino",
+        "url": "https://github.com/trinodb/trino",
+        "head": "796a027f0e1517b31a24f7d825ee7cdc1fc8388f",
+        "default_branch": "master",
+        "private": false,
+        "archived": false,
+        "license_signal": "Apache-2.0",
+        "verified_paths": {
+          "core/trino-main/src/main/java/io/trino/sql/planner/LocalExecutionPlanner.java": {
+            "__typename": "Blob",
+            "oid": "e5fb4e2a2f1ac32ccbc0f0a3141adaceee3b6087"
+          },
+          "core/trino-parser/src/main/java/io/trino/sql/parser/SqlParser.java": {
+            "__typename": "Blob",
+            "oid": "88852c4987e38db7ad5f2ca36d10a5aad947fb05"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "b36573c8291f25301edf9b914b8824ab49445231"
+          },
+          "LICENSE": {
+            "__typename": "Blob",
+            "oid": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+          }
+        },
+        "entry_paths": [
+          "core/trino-main/src/main/java/io/trino/sql/planner/LocalExecutionPlanner.java",
+          "core/trino-parser/src/main/java/io/trino/sql/parser/SqlParser.java"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE"
+        ],
+        "observed_at": "2026-11-18T10:15:48.478109+08:00"
+      }
+    },
+    {
+      "language": "java",
+      "repository": "apache/calcite",
+      "entry_candidates": [
+        "core/src/main/java/org/apache/calcite/sql/SqlNode.java",
+        "core/src/test/java/org/apache/calcite/test/SqlValidatorTest.java"
+      ],
+      "reason": "研究关系代数、类型验证与优化规则，训练 SQL 到 Java planner 的推理。",
+      "exercise": "选择一条规则，给出等价条件及 NULL 反例，不预设优化永远正确。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "apache/calcite",
+        "url": "https://github.com/apache/calcite",
+        "head": "aecb0c0e53b6ff7ddddeed212bbc4bda6d468bcc",
+        "default_branch": "main",
+        "private": false,
+        "archived": false,
+        "license_signal": "Apache-2.0",
+        "verified_paths": {
+          "core/src/main/java/org/apache/calcite/sql/SqlNode.java": {
+            "__typename": "Blob",
+            "oid": "fa642101b4604336f9481b5331564fba3be1a9a2"
+          },
+          "core/src/test/java/org/apache/calcite/test/SqlValidatorTest.java": {
+            "__typename": "Blob",
+            "oid": "bddf3d43132eceff26caf55aec3eea6f7ebb5e84"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "adccca475b022b278ef0815221b5a30c6c44a22f"
+          },
+          "README": {
+            "__typename": "Blob",
+            "oid": "981a9713f4ed607c8368c6e2580d29f9ba3b64eb"
+          },
+          "LICENSE": {
+            "__typename": "Blob",
+            "oid": "bdd603ed050ea5226c17d5e029d57ac2abc53185"
+          }
+        },
+        "entry_paths": [
+          "core/src/main/java/org/apache/calcite/sql/SqlNode.java",
+          "core/src/test/java/org/apache/calcite/test/SqlValidatorTest.java"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE"
+        ],
+        "observed_at": "2026-11-18T10:15:48.478109+08:00"
+      }
+    },
+    {
+      "language": "java",
+      "repository": "questdb/questdb",
+      "entry_candidates": [
+        "core/src/main/java/io/questdb/griffin/SqlCompilerImpl.java",
+        "core/src/test/java/io/questdb/test/griffin"
+      ],
+      "reason": "研究 Java 时间序列 SQL、时间戳和查询契约，区分开源与商业功能。",
+      "exercise": "用 synthetic 时间序列分析时间边界与 ASOF 语义，先跑本地小测试。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "questdb/questdb",
+        "url": "https://github.com/questdb/questdb",
+        "head": "2be999f6005bfc81eb0f5b1683e737b9e828df18",
+        "default_branch": "master",
+        "private": false,
+        "archived": false,
+        "license_signal": "Apache-2.0",
+        "verified_paths": {
+          "core/src/main/java/io/questdb/griffin/SqlCompilerImpl.java": {
+            "__typename": "Blob",
+            "oid": "0d69bed2caf63f3934f75d6d2f1bd304b1d84a78"
+          },
+          "core/src/test/java/io/questdb/test/griffin": {
+            "__typename": "Tree",
+            "oid": "63fb0612b74cc02245910738a0d345f1b01e09d3"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "12f63ee62deae18334471d44bcd00d0b7d9c2a18"
+          },
+          "LICENSE.txt": {
+            "__typename": "Blob",
+            "oid": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+          }
+        },
+        "entry_paths": [
+          "core/src/main/java/io/questdb/griffin/SqlCompilerImpl.java",
+          "core/src/test/java/io/questdb/test/griffin"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE.txt"
+        ],
+        "observed_at": "2026-11-18T10:15:48.478109+08:00"
+      }
+    },
+    {
+      "language": "typescript",
+      "repository": "colinhacks/zod",
+      "entry_candidates": [
+        "packages/zod/src/v4/core/parse.ts",
+        "packages/zod/src/v4/core/schemas.ts"
+      ],
+      "reason": "研究 TypeScript 类型推断与运行时 schema 校验的边界，不把静态类型等同于数据有效。",
+      "exercise": "对同一 payload 分别写类型断言和运行时解析，保留未知字段与错误输入的反例。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "colinhacks/zod",
+        "url": "https://github.com/colinhacks/zod",
+        "head": "90bf57b8e96a3729d766fff3185d39b2ab3ba016",
+        "default_branch": "main",
+        "private": false,
+        "archived": false,
+        "license_signal": "MIT",
+        "verified_paths": {
+          "packages/zod/src/v4/core/parse.ts": {
+            "__typename": "Blob",
+            "oid": "8cc0ade97bcf8e6cf90b5dd6dff83aeee871f33e"
+          },
+          "packages/zod/src/v4/core/schemas.ts": {
+            "__typename": "Blob",
+            "oid": "e7e38df2a17fb7b97dee47f869c074d5653ebcd1"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "37891adae9de890dcfcd5d1d6bb7eee6375f3b1e"
+          },
+          "LICENSE": {
+            "__typename": "Blob",
+            "oid": "c06579627b432d09779094cd0166b7f37fe51db8"
+          }
+        },
+        "entry_paths": [
+          "packages/zod/src/v4/core/parse.ts",
+          "packages/zod/src/v4/core/schemas.ts"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE"
+        ],
+        "observed_at": "2026-11-18T10:15:48.478109+08:00"
+      }
+    },
+    {
+      "language": "typescript",
+      "repository": "kysely-org/kysely",
+      "entry_candidates": [
+        "src/query-builder/select-query-builder.ts",
+        "test/node/src/select.test.ts"
+      ],
+      "reason": "研究类型化 SQL builder，训练泛型 API、生成 SQL 与实际数据库结果对齐。",
+      "exercise": "对 nullable JOIN 和参数绑定同时做类型测试、SQL 快照和执行验证。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "kysely-org/kysely",
+        "url": "https://github.com/kysely-org/kysely",
+        "head": "51a7094fc9f316edb43a7b6bd68eb62ab0c95ed8",
+        "default_branch": "master",
+        "private": false,
+        "archived": false,
+        "license_signal": "MIT",
+        "verified_paths": {
+          "src/query-builder/select-query-builder.ts": {
+            "__typename": "Blob",
+            "oid": "94c3b406fb6cb22b0573bec2194b2fe142fabc16"
+          },
+          "test/node/src/select.test.ts": {
+            "__typename": "Blob",
+            "oid": "e1db520d5057d7417abf56d671484a13d015fdb7"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "7923f34ecfee432e303493d572058fafa9e7edf4"
+          },
+          "LICENSE": {
+            "__typename": "Blob",
+            "oid": "d64909141c304cc9dc908e897e501dd9909fe95a"
+          }
+        },
+        "entry_paths": [
+          "src/query-builder/select-query-builder.ts",
+          "test/node/src/select.test.ts"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE"
+        ],
+        "observed_at": "2026-11-18T10:15:48.478651+08:00"
+      }
+    },
+    {
+      "language": "typescript",
+      "repository": "drizzle-team/drizzle-orm",
+      "entry_candidates": [
+        "drizzle-orm/src/sql/sql.ts",
+        "integration-tests/tests/sqlite/sqlite-common.ts"
+      ],
+      "reason": "研究 schema/迁移与类型化查询，重视事务、驱动与方言边界。",
+      "exercise": "在临时 SQLite 上设计可回滚迁移；不连接生产库，不把静态类型当授权。",
+      "training_status": "NOT RUN / UNMEASURED",
+      "runtime_permission": "CHECK_CODE_DATA_AND_RUNTIME_TERMS",
+      "source": {
+        "repository": "drizzle-team/drizzle-orm",
+        "url": "https://github.com/drizzle-team/drizzle-orm",
+        "head": "3bcb6a27ec1f4f1602aeeb0af2f5aec61010d72d",
+        "default_branch": "main",
+        "private": false,
+        "archived": false,
+        "license_signal": "Apache-2.0",
+        "verified_paths": {
+          "drizzle-orm/src/sql/sql.ts": {
+            "__typename": "Blob",
+            "oid": "994acf4faa41bf12a76229c796efced9ab1c0c10"
+          },
+          "integration-tests/tests/sqlite/sqlite-common.ts": {
+            "__typename": "Blob",
+            "oid": "feb0f722d4a758d5df1db3fe6f1b9e5ceaef4955"
+          },
+          "README.md": {
+            "__typename": "Blob",
+            "oid": "ea8205d0669fca66eb16eb4cee1e0178388a2ee3"
+          },
+          "LICENSE": {
+            "__typename": "Blob",
+            "oid": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+          }
+        },
+        "entry_paths": [
+          "drizzle-orm/src/sql/sql.ts",
+          "integration-tests/tests/sqlite/sqlite-common.ts"
+        ],
+        "missing_candidates": [],
+        "readme_path": "README.md",
+        "license_paths": [
+          "LICENSE"
+        ],
+        "observed_at": "2026-11-18T10:15:48.478651+08:00"
+      }
+    }
+  ],
+  "last_reviewed": "2026-11-18T10:15:48.478651+08:00",
+  "status": "REFERENCE_ONLY / TRAINING_NOT_RUN"
+}

@@ -1,5 +1,12 @@
 # Roadmap
 
+## P0 - Programming language training catalog (2026-11-18)
+
+- [x] Verify24 public source heads and entry objects across8 language/query topics.
+- [x] Add original exercises, cross-language projects, runtime/rights gates and offline tests.
+- [ ] Complete one fixed-fixture training card; all catalog exercises NOT RUN / UNMEASURED.
+- [ ] Observe upstream SQL PR CI/review separately; local passing tests are not a merge.
+
 ## P1 - Moderate audit supported-fix review (2026-11-15)
 
 - [x] Recheck current stable TypeScript-ESLint, minimatch10.x backport availability,

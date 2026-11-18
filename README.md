@@ -1,5 +1,14 @@
 # P-CSDSAI
 
+## Programming languages - 2026-11-18
+
+[8 language/query topics and24 pinned public repositories](repo/programming/README.md):
+SQL, Python, C++, C, Rust, kdb+/q, Java and TypeScript. Each has a specific
+learning reason, source entry points, unrun exercises and licensing boundaries.
+[Cross-language projects](repo/programming/PROJECTS.md) and
+[training protocol](repo/programming/TRAINING.md) turn reading into falsifiable
+practice. No training gain/performance claim or q runtime permission is implied.
+
 **Write code. Study systems. Share what you learn.** P-CSDSAI is a public research and discussion space for computer science, data science, and artificial intelligence. Programming is central: bring your Python, SQL, C++, Rust, kdb+/q, or other language questions, implementations, and reproducible experiments.
 
 We also study databases and data engineering, AI infrastructure, distributed and high-performance compute, model serving and scheduling, post-training, and trustworthy AI. [P-Research](https://github.com/pengpengyi92/p-research) is the broader cross-disciplinary forum; P-CSDSAI focuses on technical practice and implementation.

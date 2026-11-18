@@ -1,5 +1,16 @@
 # Benchmark Card: v0.1
 
+## Programming languages - 2026-11-18
+
+Baseline:30 offline catalog contracts; no8-language view. Change:24 verified
+public repositories,8 language/query guides, source-object pins, exercises,
+rights and cross-language projects. Measure:8 new contract/negative-control tests
+plus30 regressions and generator freshness. Result:38 Python tests PASS; actual
+training, learning gains and runtime/performance comparisons UNMEASURED.
+Trade-off: curated overlapping views and dated pins, not a complete ecosystem.
+Next: one prediction/oracle/negative-control exercise; see
+[programming benchmark](repo/programming/BENCHMARK_CARD.md).
+
 ## Moderate follow-up review - 2026-11-15
 
 | Step | Evidence |
