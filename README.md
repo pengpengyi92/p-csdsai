@@ -1,10 +1,14 @@
+# P-CSDSAI: The Open Computing, Data Science & AI Lab
+
+<p align="center">
+  <img src="assets/p-csdsai-super-workspace.webp" alt="Xiao G and the CS, DS, and AI robots share a workshop with code, chips, statistical plots, agent workflows, and a robot arm" width="100%">
+</p>
+
 ## 2026-11-18 - HKUDS AutoSwarm under AI
 
 [AutoSwarm 收录卡](repo/ai/agents-and-swarms/autoswarm.md) · [AI 分类](repo/ai/README.md)。
 工程视角：CLI 适配、上下文交接、批准与恢复。
 固定 `2.0.0.dev0` 开发快照；本轮未安装或运行上游 Agent。
-
-# P-CSDSAI
 
 ## 手机 Agent 与研究工作流
 
