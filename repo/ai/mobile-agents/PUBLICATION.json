@@ -1,0 +1,21 @@
+{
+  "id": "D_kwDOUTECvc4ArUM2",
+  "number": 8,
+  "url": "https://github.com/pengpengyi92/p-csdsai/discussions/8",
+  "title": "PhoneGo 手机 Agent 接入 PDD PFF PPRT 的工作流设计",
+  "createdAt": "2026-11-19T15:33:23Z",
+  "updatedAt": "2026-11-19T15:33:23Z",
+  "author": {
+    "login": "pengpengyi92",
+    "databaseId": 74917296
+  },
+  "category": {
+    "name": "Report"
+  },
+  "content_commit": "3842b2a2a234d2d7e74da553a5b5907d6df4a897",
+  "report": "report/2026-11-19-phonego-mobile-agents.md",
+  "body_sha256": "a50563204fc35f882133d3d88464b6e4bfe0bda138ca50f4a20bfdaf46557782",
+  "body_exact_match": true,
+  "readback_verified_at": "2026-11-19T15:33:29.410744+00:00",
+  "authorization": "User explicitly requested this PhoneGo public Report and prop-repo role introductions"
+}

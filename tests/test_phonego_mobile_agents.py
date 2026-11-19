@@ -130,6 +130,11 @@ class PhoneGoMobileAgentTests(unittest.TestCase):
         for name in ("README.md", "repo/README.md", "repo/ai/README.md", "repo/hkuds.md", "report/README.md"):
             self.assertIn("PhoneGo", (ROOT / name).read_text("utf-8"))
         self.assertIn("test_phonego_mobile_agents.py", (ROOT / ".github/workflows/repo-catalog.yml").read_text("utf-8"))
+        receipt = json.loads((FOLDER / "PUBLICATION.json").read_text("utf-8"))
+        self.assertEqual(receipt["category"]["name"], "Report")
+        self.assertEqual(receipt["author"]["databaseId"], 74917296)
+        self.assertTrue(receipt["body_exact_match"])
+        self.assertEqual(receipt["body_sha256"], hashlib.sha256(PUB.body_at(receipt["content_commit"]).encode()).hexdigest())
 
 
 if __name__ == "__main__":

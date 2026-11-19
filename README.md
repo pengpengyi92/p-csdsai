@@ -9,7 +9,7 @@
 ## 手机 Agent 与研究工作流
 
 [HKUDS PhoneGo收录卡](repo/ai/mobile-agents/phonego.md) · [手机Agent目录](repo/ai/mobile-agents/README.md) ·
-[PhoneGo接入PDD PFF PPRT专题](report/2026-11-19-phonego-mobile-agents.md)。
+[PhoneGo接入PDD PFF PPRT专题](report/2026-11-19-phonego-mobile-agents.md) · [Report #8](https://github.com/pengpengyi92/p-csdsai/discussions/8)。
 介绍三个私有prop repo的职责，研究证据交接、导航复用、失败恢复和人工批准；
 仅公开原创方案与来源，不公开私库资料。接入尚未实现，设备/模型收益NOT_RUN / UNMEASURED。
 

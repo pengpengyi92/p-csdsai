@@ -4,7 +4,7 @@
 - [x] Add one canonical repo entry,AI/mobile-agent and HKUDS navigation,and original workflow report.
 - [x] Describe PDD/PFF/PPRT prop repo roles without private links/content; freeze12 proposed tasks.
 - [x] P0:62 offline contracts,three catalog generators and publication dry check PASS; application/dependencies unchanged.
-- [ ] P0: publish exact report in Report category with title,timestamp,author; read back full body.
+- [x] P0: publish Report8 with title,timestamp,author; exact full body,Report category and immutable author74917296 read back.
 - [ ] P1: Owner must separately approve device,App/data rights,endpoint and budget before adapter or phone trials; PROPOSED_NOT_IMPLEMENTED / UNMEASURED.
 
 ## P0 - Multimodal / World Model module, 2026-11-19
