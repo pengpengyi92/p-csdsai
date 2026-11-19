@@ -1,3 +1,15 @@
+## PhoneGo mobile agents — 2026-11-19
+
+Baseline → main3097655,52 offline Python tests PASS in0.644s,11 canonical cards.
+Change → one PhoneGo entry,source objects,mobile-agent report and proposed PDD/PFF/PPRT handoff protocol.
+Measure → additive catalog/source preservation,source pins,metadata,rights,private-export guards,
+protocol boundaries,publisher dry checks and full offline regression.
+Result →62 offline Python tests PASS,all three catalog generators and publication dry check PASS;
+actual receipt in research/mobile-agents/CHECKS.json. App/dependencies unchanged;
+real device/model quality,safety and workflow savings UNMEASURED,adapter PROPOSED_NOT_IMPLEMENTED.
+Trade-off → public role descriptions and original design,not private repo contents or a live connector.
+Next Action → publish cleared report; approve fixed device/endpoint/budget before any real trial.
+
 ## Multimodal / World Model module — 2026-11-19
 
 Baseline → existing catalogs,42 Python contracts, no dedicated multimodal module.

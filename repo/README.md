@@ -1,10 +1,17 @@
 ## 2026-11-18 - AI / Agent Swarms
 
 [AI 分类](ai/README.md) · [HKUDS AutoSwarm](ai/agents-and-swarms/autoswarm.md)。
-新增工程视角，基础卡当前11项。
+当日新增后基础卡11项；后续PhoneGo更新见下方手机Agent专题。
 固定当前主线开发快照；其余来源时间与历史专题保留，本轮未安装或调用 Agent。
 
 # AI Systems & Infrastructure — 运行时、数据与工程
+
+## 手机 Agent 与 PhoneGo
+
+[手机Agent目录](ai/mobile-agents/README.md) · [PhoneGo卡](ai/mobile-agents/phonego.md) ·
+[PDD PFF PPRT接入报告](../report/2026-11-19-phonego-mobile-agents.md)。
+2026-11-19新增一个独立项目，机器总目录现12项；复用导航、视觉回退、来源保真与交接状态是本专题的问题。
+所有旧条目的源码观测时间保留，不把此日期当作全目录重新验证。
 
 ## 多模态 / World Model — 2026-11-19
 
@@ -38,6 +45,7 @@
 
 | 项目 | 本仓库为何收录 | 档案 |
 | --- | --- | --- |
+| PhoneGo | AI / Mobile Agents：手机导航复用、证据交接、状态与人工批准。 | [阅读](ai/mobile-agents/phonego.md) |
 | AutoSwarm | AI / Agent Swarms：原生 CLI、上下文、批准归属与失败恢复。 | [阅读](ai/agents-and-swarms/autoswarm.md) |
 | PyTorch | 研究张量执行、模块 hook、分布式接口及 Python/底层边界，关注正确性与可维护性。 | [阅读](programming-and-kernels/pytorch.md) |
 | Safetensors | 研究 Rust/Python 边界、字节序、文件校验与模型 artifact 供应链。 | [阅读](data-and-storage/safetensors.md) |

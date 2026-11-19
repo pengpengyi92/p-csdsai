@@ -1,3 +1,12 @@
+## P0 - PhoneGo mobile agents, 2026-11-19
+
+- [x] Pin official public source,11 source objects,0.4.2 prerelease and existing PR12 state.
+- [x] Add one canonical repo entry,AI/mobile-agent and HKUDS navigation,and original workflow report.
+- [x] Describe PDD/PFF/PPRT prop repo roles without private links/content; freeze12 proposed tasks.
+- [x] P0:62 offline contracts,three catalog generators and publication dry check PASS; application/dependencies unchanged.
+- [ ] P0: publish exact report in Report category with title,timestamp,author; read back full body.
+- [ ] P1: Owner must separately approve device,App/data rights,endpoint and budget before adapter or phone trials; PROPOSED_NOT_IMPLEMENTED / UNMEASURED.
+
 ## P0 - Multimodal / World Model module, 2026-11-19
 
 - [x] Add two distinct source-pinned catalogs:24 multimodal and12 world-model/adjacent sources.

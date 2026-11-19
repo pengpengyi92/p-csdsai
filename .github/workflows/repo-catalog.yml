@@ -1,9 +1,9 @@
 name: Repository catalog
 on:
   push:
-    paths: ['repo/**', 'report/**', 'research/multimodal/**', 'scripts/*research_routes.py', 'tests/test_research_routes.py', 'paper/ai-infra/**', 'tests/test_repo_catalog.py', 'tests/test_ai_infra_release.py', 'tests/test_cv_dl_rl_crosslist.py', 'tests/test_programming_catalog.py', 'tests/test_autoswarm_ai_catalog.py', '.github/workflows/repo-catalog.yml']
+    paths: ['repo/**', 'report/**', 'research/multimodal/**', 'research/mobile-agents/**', 'scripts/*phonego*.py', 'scripts/*mobile_agents*.py', 'tests/test_phonego_mobile_agents.py', 'scripts/*research_routes.py', 'tests/test_research_routes.py', 'paper/ai-infra/**', 'tests/test_repo_catalog.py', 'tests/test_ai_infra_release.py', 'tests/test_cv_dl_rl_crosslist.py', 'tests/test_programming_catalog.py', 'tests/test_autoswarm_ai_catalog.py', '.github/workflows/repo-catalog.yml']
   pull_request:
-    paths: ['repo/**', 'report/**', 'research/multimodal/**', 'scripts/*research_routes.py', 'tests/test_research_routes.py', 'paper/ai-infra/**', 'tests/test_repo_catalog.py', 'tests/test_ai_infra_release.py', 'tests/test_cv_dl_rl_crosslist.py', 'tests/test_programming_catalog.py', 'tests/test_autoswarm_ai_catalog.py', '.github/workflows/repo-catalog.yml']
+    paths: ['repo/**', 'report/**', 'research/multimodal/**', 'research/mobile-agents/**', 'scripts/*phonego*.py', 'scripts/*mobile_agents*.py', 'tests/test_phonego_mobile_agents.py', 'scripts/*research_routes.py', 'tests/test_research_routes.py', 'paper/ai-infra/**', 'tests/test_repo_catalog.py', 'tests/test_ai_infra_release.py', 'tests/test_cv_dl_rl_crosslist.py', 'tests/test_programming_catalog.py', 'tests/test_autoswarm_ai_catalog.py', '.github/workflows/repo-catalog.yml']
 permissions:
   contents: read
 jobs:
@@ -24,3 +24,5 @@ jobs:
       - run: python repo/programming/build_guides.py --check
       - run: python -X utf8 -m unittest discover -s tests -p test_research_routes.py -v
       - run: python -X utf8 scripts/render_research_routes.py --check
+      - run: python -X utf8 -m unittest discover -s tests -p test_phonego_mobile_agents.py -v
+      - run: python -X utf8 scripts/publish_phonego_report.py --check

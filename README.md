@@ -6,6 +6,13 @@
 
 # P-CSDSAI
 
+## 手机 Agent 与研究工作流
+
+[HKUDS PhoneGo收录卡](repo/ai/mobile-agents/phonego.md) · [手机Agent目录](repo/ai/mobile-agents/README.md) ·
+[PhoneGo接入PDD PFF PPRT专题](report/2026-11-19-phonego-mobile-agents.md)。
+介绍三个私有prop repo的职责，研究证据交接、导航复用、失败恢复和人工批准；
+仅公开原创方案与来源，不公开私库资料。接入尚未实现，设备/模型收益NOT_RUN / UNMEASURED。
+
 ## 多模态研究模块 — 2026-11-19
 
 [多模态 RAG / World Model 模块](research/multimodal/README.md)现已建立：
@@ -46,8 +53,8 @@ episode/replay/模拟器；逐项有baseline、拟用指标和固定许可来源
 
 **AI Infra L1–L7** — [Working paper](paper/ai-infra/working-paper.md) · [配套文章](paper/ai-infra/article.md) · [28 个公开仓库](repo/ai-infra/README.md)。Selected shared from P University, with selected PINF and P Compute methods (private prop repositories). No performance experiments were run for this edition.
 
-[10 repository cards](repo/README.md) cover SGLang, vLLM, Ray, PyTorch, Triton,
-Safetensors, DuckDB, Ibis, Pandera and sqlite-utils. Each has a systems-specific
+[12 repository cards](repo/README.md) cover PhoneGo, AutoSwarm, SGLang, vLLM, Ray,
+PyTorch, Triton, Safetensors, DuckDB, Ibis, Pandera and sqlite-utils. Each has a systems-specific
 reason, pinned code pointers and an unrun study plan. No serving/GPU speedup,
 model installation or successful production integration is claimed.
 

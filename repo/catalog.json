@@ -3,12 +3,140 @@
   "project": "p-csdsai",
   "profile": "systems",
   "catalog_root": "repo",
-  "last_reviewed": "2026-11-18",
-  "last_update_scope": "AutoSwarm AI entry only; other source observations unchanged",
+  "last_reviewed": "2026-11-19",
+  "last_update_scope": "PhoneGo mobile-agent entry only; all prior source observations preserved",
   "timezone": "Asia/Shanghai",
   "scope": "编程、模型服务、调度、编译、分布式计算、数据系统和可验证的基础设施工程",
   "complete_ecosystem_inventory": false,
   "entries": [
+    {
+      "slug": "phonego",
+      "title": "PhoneGo",
+      "category": "ai-mobile-agents",
+      "card": "ai/mobile-agents/phonego.md",
+      "tags": [
+        "AI",
+        "Mobile Agent",
+        "Android",
+        "Provenance"
+      ],
+      "summary": "以App导航地图、命令重放和视觉回退组合的手机Agent研究入口。",
+      "inclusion_reason": "研究手机导航复用、视觉回退与证据交接，明确 PDD、PFF、PPRT 的输入输出和人工批准边界，而非让手机直接发布结论或提交PR。",
+      "learning_question": "计入建图、失败重试和人工核验后，地图辅助能否降低每条有效证据的总成本，且不降低来源可追溯率？",
+      "planned_exercise": "先用公开或合成输入固定12个只读任务，对照人工/官方来源、纯视觉与地图辅助；另行批准设备、端点和预算后才执行。",
+      "permission_status": "READ_UPSTREAM_TERMS",
+      "source": {
+        "repository": "HKUDS/PhoneGo",
+        "requested_name": "HKUDS/PhoneGo",
+        "url": "https://github.com/HKUDS/PhoneGo",
+        "repository_id": 1079332068,
+        "private": false,
+        "archived": false,
+        "default_branch": "main",
+        "head": "98acb82b1348e85d47d78342623415ac0a47aeb2",
+        "observed_at": "2026-11-19T23:26:41+08:00",
+        "license_signal": "MIT",
+        "license_path": "LICENSE",
+        "readme_path": "README.md",
+        "tree_truncated": false,
+        "entry_paths": [
+          "docs/getting-started.md",
+          "phoneagent/README.md",
+          "phoneagent/core/agent.py",
+          "phoneagent/core/app_map.py",
+          "phoneagent/core/macro.py",
+          "phoneagent/core/llm.py",
+          "phoneagent/server.py",
+          "phoneagent/run.py",
+          "phoneagent/devices/mock.py"
+        ],
+        "missing_candidates": [],
+        "verified_objects": {
+          "README.md": {
+            "git_blob": "9dce86801a27f3dd7cd3725bf2b71906f3562bf8",
+            "mode": "100644",
+            "bytes": 12858
+          },
+          "LICENSE": {
+            "git_blob": "de16fb39240aaed9ae176681b114af7c0a852a54",
+            "mode": "100644",
+            "bytes": 1102
+          },
+          "docs/getting-started.md": {
+            "git_blob": "7743477be662c1e38d7b6331f6217d9159d7438a",
+            "mode": "100644",
+            "bytes": 4529
+          },
+          "phoneagent/README.md": {
+            "git_blob": "364e4e6db4fde68719c4aa96b55b55adf374999a",
+            "mode": "100644",
+            "bytes": 5486
+          },
+          "phoneagent/core/agent.py": {
+            "git_blob": "aeebce6034d465b5623d4d93921de3cb46c095c7",
+            "mode": "100644",
+            "bytes": 151745
+          },
+          "phoneagent/core/app_map.py": {
+            "git_blob": "6a2daacc67fbc4abdcc3a9d7546d40626a29f9a2",
+            "mode": "100644",
+            "bytes": 29134
+          },
+          "phoneagent/core/macro.py": {
+            "git_blob": "e24ad598e2be9466bfb47e354969490a62500f9e",
+            "mode": "100644",
+            "bytes": 15722
+          },
+          "phoneagent/core/llm.py": {
+            "git_blob": "388e4f9903f329ef2c98493f3dca93f522918070",
+            "mode": "100644",
+            "bytes": 18143
+          },
+          "phoneagent/server.py": {
+            "git_blob": "27891a7479a46152c201c16992b23ba7d8eba83d",
+            "mode": "100644",
+            "bytes": 73393
+          },
+          "phoneagent/run.py": {
+            "git_blob": "65f484d4f2bc67beb4f0f9c98505e7e541ca62fb",
+            "mode": "100644",
+            "bytes": 3522
+          },
+          "phoneagent/devices/mock.py": {
+            "git_blob": "5360b9d658cf708b0140ac7bfeff42442441c5e0",
+            "mode": "100644",
+            "bytes": 4891
+          }
+        },
+        "contribution_search": {
+          "query": "repo:HKUDS/PhoneGo author:pengpengyi92 is:pr is:public sort:updated-desc",
+          "total_count": 1,
+          "incomplete_results": false,
+          "detail_limit": 5
+        },
+        "contributions": [
+          {
+            "url": "https://github.com/HKUDS/PhoneGo/pull/12",
+            "number": 12,
+            "title": "fix(state): persist app guard records with current-directory paths",
+            "state": "OPEN",
+            "merged_at": null,
+            "author": "pengpengyi92",
+            "updated_at": "2026-11-19T15:03:50Z",
+            "is_draft": true,
+            "head": "1539d39e4127f0930f16c0870b5c4524c08975b9"
+          }
+        ],
+        "runtime_evaluation": "NOT RUN in this catalog task",
+        "release_observation": {
+          "url": "https://github.com/HKUDS/PhoneGo/releases/tag/phonego-v0.4.2",
+          "tag": "phonego-v0.4.2",
+          "prerelease": true,
+          "published_at": "2026-11-19T12:48:32Z",
+          "asset_verification": "METADATA_ONLY_NOT_DOWNLOADED_OR_INSTALLED"
+        }
+      }
+    },
     {
       "slug": "autoswarm",
       "title": "AutoSwarm",

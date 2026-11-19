@@ -18,7 +18,8 @@ class AutoSwarmAITests(unittest.TestCase):
         self.assertEqual(entry["category"], "ai-agents-and-swarms")
         self.assertIn("AI", entry["tags"])
         self.assertEqual(entry["card"], "ai/agents-and-swarms/autoswarm.md")
-        self.assertEqual(len(self.catalog["entries"]), 11 if self.catalog["profile"] == "systems" else 12)
+        historical = [e for e in self.catalog["entries"] if e["source"]["repository"] != "HKUDS/PhoneGo"]
+        self.assertEqual(len(historical), 11 if self.catalog["profile"] == "systems" else 12)
 
     def test_pinned_development_source_without_runtime_claim(self):
         source = self.entries[0]["source"]

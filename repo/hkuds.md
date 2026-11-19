@@ -1,3 +1,8 @@
+## PhoneGo focus - 2026-11-19
+
+[PhoneGo源码卡](ai/mobile-agents/phonego.md) · [手机Agent专题报告](../report/2026-11-19-phonego-mobile-agents.md)。
+新增固定源码、预发布标记和研究工作流接口。下方93项为2026-11-14历史组织快照，不伪装成今日全量目录。
+
 ## AutoSwarm focus - 2026-11-18
 
 [AI / Agent Swarms card](ai/agents-and-swarms/autoswarm.md) reviews a pinned

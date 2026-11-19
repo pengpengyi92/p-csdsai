@@ -1,8 +1,10 @@
 # AI Repository Topics
 
-**Updated:** 2026-11-18T19:19:17.651011+08:00 (Asia/Shanghai).
+**Updated:** 2026-11-19T23:26:41+08:00 (Asia/Shanghai; PhoneGo entry only).
 
-一级分类 **AI**；当前专题 **Multi-Agent / Agent Swarms**。
+一级分类 **AI**；专题 **Mobile Agents** 与 **Multi-Agent / Agent Swarms** 分开。
+[手机Agent](mobile-agents/README.md) · [PhoneGo](mobile-agents/phonego.md) ·
+[PDD PFF PPRT接入报告](../../report/2026-11-19-phonego-mobile-agents.md)。
 [Agent Swarms](agents-and-swarms/README.md) · [AutoSwarm](agents-and-swarms/autoswarm.md)。
 
 P-CSDSAI 聚焦实现、进程/状态、权限与恢复工程。
