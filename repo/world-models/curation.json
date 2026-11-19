@@ -1,0 +1,19 @@
+{
+  "title": "World Models：潜在动力学、动作条件预测与可验证模拟",
+  "author": "Pengyi Peng / P-CSDSAI",
+  "scope": "Separate world-model reading route; simulators and video generators are explicitly adjacent roles",
+  "entries": [
+    {"repository":"danijar/dreamerv3","role":"latent-dynamics-control","modalities":["observation","action","reward"],"reason":"研究从经验学习潜在动力学并在想象轨迹上训练策略，不与纯视频生成混称。","question":"固定环境、种子和交互预算，想象 rollout 长度如何影响回报、误差和成本？"},
+    {"repository":"nicklashansen/tdmpc2","role":"latent-dynamics-planning","modalities":["observation","action","reward"],"reason":"研究任务导向潜在动力学与模型预测控制，把规划代价纳入比较。","question":"固定数据和动作空间后，规划深度对闭环回报与单步决策时延的权衡是什么？"},
+    {"repository":"facebookresearch/vjepa2","role":"predictive-video-representation","modalities":["video","action"],"reason":"研究预测式视频表征及动作条件路线；具体 checkpoint 的动作能力需单独核对。","question":"同一表征上的冻结特征、动作预测与闭环规划各自能证明什么？"},
+    {"repository":"facebookresearch/jepa","role":"predictive-representation-foundation","modalities":["image","video"],"reason":"研究联合嵌入预测目标的基础代码；表征预训练本身不是可交互世界模拟器。","question":"固定遮挡与表示容量，预测表示是否提升时间外推而非仅静态分类？"},
+    {"repository":"NVIDIA/cosmos","role":"world-foundation-platform","modalities":["video","image","action","text"],"reason":"作为平台入口，进一步区分生成、迁移、理解、数据与评估子仓库，拒绝用平台名替代版本。","question":"选定具体模型、权重许可和控制条件后，物理约束与动作一致性如何评估？"},
+    {"repository":"nvidia-cosmos/cosmos-predict2.5","role":"world-video-prediction","modalities":["video","image","text"],"reason":"研究条件视频预测的工程路径；无动作或闭环证据时不把画面质量称为控制成功。","question":"固定初始帧和条件，长时序对象一致性、物理约束违例与生成成本是多少？"},
+    {"repository":"nvidia-cosmos/cosmos-transfer2.5","role":"controlled-world-generation","modalities":["video","control","text"],"reason":"研究结构控制到视觉世界生成，关注控制信号保真而非只看逼真度。","question":"冻结结构输入和随机种子，生成结果是否保留几何和控制约束？"},
+    {"repository":"eloialonso/diamond","role":"diffusion-world-model-control","modalities":["video","action","reward"],"reason":"研究扩散世界模型中的视觉预测与策略训练，关注误差在闭环中的累积。","question":"固定 Atari 环境与交互预算，扩散 rollout 的准确性与闭环回报如何关联？"},
+    {"repository":"google-deepmind/mujoco","role":"simulator-not-learned-world-model","modalities":["state","action","physics"],"reason":"作为物理 oracle 和环境基础设施；显式物理引擎不是学出的世界模型。","question":"在可访问真实状态的固定任务上，学习模型的多步误差和闭环回报如何偏离 oracle？"},
+    {"repository":"google-deepmind/dm_control","role":"control-benchmark-environment","modalities":["state","action","pixels"],"reason":"建立可重复的控制任务、环境版本与种子协议，不作为新的世界模型算法。","question":"统一动作重复、观测与 episode 终止后，不同算法是否仍可公平比较？"},
+    {"repository":"haosulab/ManiSkill","role":"robotics-simulation-benchmark","modalities":["state","image","action"],"reason":"研究操作任务、演示与并行仿真，用闭环任务成功补充离线视频指标。","question":"固定任务分布和演示预算，学习动力学在未见物体上的成功率与失效模式如何？"},
+    {"repository":"hpcaitech/Open-Sora","role":"adjacent-video-generator-not-control-proof","modalities":["video","image","text"],"reason":"作为视频生成相邻路线；缺少动作接口与闭环实验时不标记为已验证世界模型。","question":"改善视频指标是否同时改善动作条件和物理可行性，还是仅视觉拟真？"}
+  ]
+}

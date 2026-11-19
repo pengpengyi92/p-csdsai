@@ -1,0 +1,70 @@
+{
+  "observed_at": "2026-11-19T11:49:17+08:00",
+  "author": "Pengyi Peng / P-CSDSAI",
+  "base": "20ffa6d873a837ea0456abced27c4369495af242",
+  "python": "3.12.14",
+  "runs": [
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output": "test_public_provenance_without_private_urls (test_ai_infra_release.AIInfraReleaseTests.test_public_provenance_without_private_urls) ... ok\ntest_seven_layers_and_exact_public_snapshot (test_ai_infra_release.AIInfraReleaseTests.test_seven_layers_and_exact_public_snapshot) ... ok\ntest_ai_entrypoints_and_research_history (test_autoswarm_ai_catalog.AutoSwarmAITests.test_ai_entrypoints_and_research_history) ... ok\ntest_historical_pr_is_not_current_implementation (test_autoswarm_ai_catalog.AutoSwarmAITests.test_historical_pr_is_not_current_implementation) ... ok\ntest_one_entry_and_ai_category (test_autoswarm_ai_catalog.AutoSwarmAITests.test_one_entry_and_ai_category) ... ok\ntest_pinned_development_source_without_runtime_claim (test_autoswarm_ai_catalog.AutoSwarmAITests.test_pinned_development_source_without_runtime_claim) ... ok\ntest_changed_imported_source_bytes_are_rejected (test_cv_dl_rl_crosslist.CrossListTests.test_changed_imported_source_bytes_are_rejected) ... ok\ntest_deterministic_output_and_no_stale_pages (test_cv_dl_rl_crosslist.CrossListTests.test_deterministic_output_and_no_stale_pages) ... ok\ntest_duplicate_and_identity_mismatch_negative_controls (test_cv_dl_rl_crosslist.CrossListTests.test_duplicate_and_identity_mismatch_negative_controls) ... ok\ntest_existing_three_ai_infra_projects_crosslink_not_new_cards (test_cv_dl_rl_crosslist.CrossListTests.test_existing_three_ai_infra_projects_crosslink_not_new_cards) ... ok\ntest_generated_pages_include_all89_exact_pins (test_cv_dl_rl_crosslist.CrossListTests.test_generated_pages_include_all89_exact_pins) ... ok\ntest_local_links_public_patterns_and_lf (test_cv_dl_rl_crosslist.CrossListTests.test_local_links_public_patterns_and_lf) ... ok\ntest_no_upstream_network_or_external_imports_in_generator (test_cv_dl_rl_crosslist.CrossListTests.test_no_upstream_network_or_external_imports_in_generator) ... ok\ntest_path_escape_and_missing_baseline_are_rejected (test_cv_dl_rl_crosslist.CrossListTests.test_path_escape_and_missing_baseline_are_rejected) ... ok\ntest_primary_pins_original_times_and_public_only (test_cv_dl_rl_crosslist.CrossListTests.test_primary_pins_original_times_and_public_only) ... ok\ntest_private_or_fork_source_negative_controls (test_cv_dl_rl_crosslist.CrossListTests.test_private_or_fork_source_negative_controls) ... ok\ntest_public_provenance_byte_hash_and_frozen_identity (test_cv_dl_rl_crosslist.CrossListTests.test_public_provenance_byte_hash_and_frozen_identity) ... ok\ntest_result_promotion_is_rejected (test_cv_dl_rl_crosslist.CrossListTests.test_result_promotion_is_rejected) ... ok\ntest_rights_and_maintenance_not_flattened_away (test_cv_dl_rl_crosslist.CrossListTests.test_rights_and_maintenance_not_flattened_away) ... ok\ntest_schema_project_profile_and_reference_scope (test_cv_dl_rl_crosslist.CrossListTests.test_schema_project_profile_and_reference_scope) ... ok\ntest_target_specific_questions_not_copied_learning_notes (test_cv_dl_rl_crosslist.CrossListTests.test_target_specific_questions_not_copied_learning_notes) ... ok\ntest_unique43_and_category_counts (test_cv_dl_rl_crosslist.CrossListTests.test_unique43_and_category_counts) ... ok\ntest_wrong_profile_or_completeness_is_rejected (test_cv_dl_rl_crosslist.CrossListTests.test_wrong_profile_or_completeness_is_rejected) ... ok\ntest_wrong_timestamp_or_future_observation_is_rejected (test_cv_dl_rl_crosslist.CrossListTests.test_wrong_timestamp_or_future_observation_is_rejected) ... ok\ntest_all_code_links_use_verified_commit_and_paths (test_programming_catalog.ProgrammingCatalogTests.test_all_code_links_use_verified_commit_and_paths) ... ok\ntest_duplicate_and_private_sources_rejected (test_programming_catalog.ProgrammingCatalogTests.test_duplicate_and_private_sources_rejected) ... ok\ntest_each_entry_has_original_training_reason_and_exercise (test_programming_catalog.ProgrammingCatalogTests.test_each_entry_has_original_training_reason_and_exercise) ... ok\ntest_eight_topics_and_twenty_four_distinct_repositories (test_programming_catalog.ProgrammingCatalogTests.test_eight_topics_and_twenty_four_distinct_repositories) ... ok\ntest_exact_public_source_objects_and_observation_times (test_programming_catalog.ProgrammingCatalogTests.test_exact_public_source_objects_and_observation_times) ... ok\ntest_generated_guides_are_current (test_programming_catalog.ProgrammingCatalogTests.test_generated_guides_are_current) ... ok\ntest_local_links_and_public_content_boundaries (test_programming_catalog.ProgrammingCatalogTests.test_local_links_and_public_content_boundaries) ... ok\ntest_q_license_and_sqlite_mirror_boundaries_visible (test_programming_catalog.ProgrammingCatalogTests.test_q_license_and_sqlite_mirror_boundaries_visible) ... ok\ntest_code_links_match_pinned_source_metadata (test_repo_catalog.RepoCatalogTests.test_code_links_match_pinned_source_metadata) ... ok\ntest_each_card_has_specific_reasons_and_unrun_plan (test_repo_catalog.RepoCatalogTests.test_each_card_has_specific_reasons_and_unrun_plan) ... ok\ntest_https_is_not_a_drive_and_real_drive_is_detected (test_repo_catalog.RepoCatalogTests.test_https_is_not_a_drive_and_real_drive_is_detected) ... ok\ntest_local_markdown_targets_are_safe_and_exist (test_repo_catalog.RepoCatalogTests.test_local_markdown_targets_are_safe_and_exist) ... ok\ntest_no_pr_candidates_do_not_claim_an_accepted_contribution (test_repo_catalog.RepoCatalogTests.test_no_pr_candidates_do_not_claim_an_accepted_contribution) ... ok\ntest_no_workstation_paths_or_credentials_in_authored_catalog (test_repo_catalog.RepoCatalogTests.test_no_workstation_paths_or_credentials_in_authored_catalog) ... ok\ntest_observed_pr_states_are_not_inferred_from_closed (test_repo_catalog.RepoCatalogTests.test_observed_pr_states_are_not_inferred_from_closed) ... ok\ntest_permission_and_data_model_boundaries_remain_visible (test_repo_catalog.RepoCatalogTests.test_permission_and_data_model_boundaries_remain_visible) ... ok\ntest_public_source_pins_and_verified_entries (test_repo_catalog.RepoCatalogTests.test_public_source_pins_and_verified_entries) ... ok\ntest_schema_scope_and_unique_sources (test_repo_catalog.RepoCatalogTests.test_schema_scope_and_unique_sources) ... ok\ntest_discussion_links_point_at_the_exact_public_content_commit (test_research_routes.ResearchRoutesTests.test_discussion_links_point_at_the_exact_public_content_commit) ... ok\ntest_generated_files_are_fresh (test_research_routes.ResearchRoutesTests.test_generated_files_are_fresh) ... ok\ntest_modality_and_role_boundaries (test_research_routes.ResearchRoutesTests.test_modality_and_role_boundaries) ... ok\ntest_negative_pins_times_claims_and_authorship (test_research_routes.ResearchRoutesTests.test_negative_pins_times_claims_and_authorship) ... ok\ntest_negative_visibility_and_duplicate_controls (test_research_routes.ResearchRoutesTests.test_negative_visibility_and_duplicate_controls) ... ok\ntest_new_markdown_has_valid_local_links_and_no_private_export (test_research_routes.ResearchRoutesTests.test_new_markdown_has_valid_local_links_and_no_private_export) ... ok\ntest_publisher_only_maps_the_two_requested_report_topics (test_research_routes.ResearchRoutesTests.test_publisher_only_maps_the_two_requested_report_topics) ... ok\ntest_reports_have_titles_timestamps_authors_and_protocols (test_research_routes.ResearchRoutesTests.test_reports_have_titles_timestamps_authors_and_protocols) ... ok\ntest_rights_migration_and_deprecation_notes_are_explicit (test_research_routes.ResearchRoutesTests.test_rights_migration_and_deprecation_notes_are_explicit) ... ok\ntest_two_distinct_catalogs_and_counts (test_research_routes.ResearchRoutesTests.test_two_distinct_catalogs_and_counts) ... ok\n\n----------------------------------------------------------------------\nRan 52 tests in 0.265s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "-X",
+        "utf8",
+        "scripts/render_research_routes.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "test_count": 52,
+  "sha256": {
+    "report/2026-11-19-multimodal-rag.md": "25a348561bca5af9611985192a460d24f46735fe7e331f6e02bfab521fbea3d3",
+    "report/2026-11-19-world-models.md": "537a5c43b77ce35766ad692d59fa8286e05ddb601fc62f5c6f108e9133a8aeb2",
+    "repo/multimodal/curation.json": "4ab0c70e0ef987ae07a858745f851416c57a6f46e95cb06107c99c6be318f8be",
+    "repo/multimodal/sources.json": "545700f126d9b7f90bdbb0a3401f16df87ab3990f120691f0b0bba9ba53ca2e6",
+    "repo/multimodal/README.md": "0c62210c074e66b039152e768270f9bac868bac5e67b5e367f839120313fe486",
+    "repo/world-models/curation.json": "83ea0a31fc1a2898d7f4a168905eade07bd02d846df4dbbaca59ed1bad32e7fb",
+    "repo/world-models/sources.json": "195147683fb14842bcc5b13245bbe47bbfad2ef140721d257fab27cca05e9726",
+    "repo/world-models/README.md": "52926a799342f3a55518e1f9c2c8ba0fdbe0ae904f57bdac5647784562d126d0",
+    "research/multimodal/README.md": "40fd2856e32956c3ccefe9fed95d65da49681e40419fc740d11d230c08444a42"
+  },
+  "application_source_and_dependencies_unchanged": true,
+  "node_app_tests": "NOT_RUN; application source and dependencies unchanged",
+  "model_benchmarks": "NOT_RUN / UNMEASURED"
+}

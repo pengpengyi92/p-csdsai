@@ -6,6 +6,12 @@
 
 # AI Systems & Infrastructure — 运行时、数据与工程
 
+## 多模态 / World Model — 2026-11-19
+
+- [多模态 RAG 专题目录](multimodal/README.md)：24个独立来源视角，区分视频/声学/视觉文档、解析器、嵌入、索引和评估。
+- [World Model 独立目录](world-models/README.md)：12个来源视角；预测表征、动作条件控制、世界生成、物理模拟与视频生成分开。
+- [研究模块](../research/multimodal/README.md) · [两份报告](../report/README.md)。历史目录保留，交叉收录不等于全库新增36个不同项目。
+
 ## Programming by language - 2026-11-18
 
 [SQL / Python / C++ / C / Rust / kdb+·q / Java / TypeScript](programming/README.md)

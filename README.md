@@ -6,6 +6,15 @@
 
 # P-CSDSAI
 
+## 多模态研究模块 — 2026-11-19
+
+[多模态 RAG / World Model 模块](research/multimodal/README.md)现已建立：
+Video、Audio、Image、PDF、Docs 等文件的证据解析、对齐、检索与引用；
+World Model 的表征、动作条件预测、规划和模拟另设路线。
+[24项多模态目录](repo/multimodal/README.md) · [12项世界模型/相邻基础设施目录](repo/world-models/README.md)。
+两份署名专题：[RAG报告](report/2026-11-19-multimodal-rag.md) ·
+[World Model报告](report/2026-11-19-world-models.md)。固定来源、许可信号、研究问题与未运行协议均可复查；不代表已完成模型对比。
+
 ## Programming languages - 2026-11-18
 
 [8 language/query topics and24 pinned public repositories](repo/programming/README.md):

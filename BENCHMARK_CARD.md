@@ -1,3 +1,15 @@
+## Multimodal / World Model module — 2026-11-19
+
+Baseline → existing catalogs,42 Python contracts, no dedicated multimodal module.
+Change →24+12 source-pinned role-specific repository views and two original reports.
+Measure → source identity/visibility, exact README objects, generation freshness,
+local links, negative controls and report metadata; unchanged app source fingerprints.
+Result →52 offline Python tests PASS, generation freshness PASS; recorded in
+research/multimodal/CHECKS.json. RAG retrieval/answer quality and world-model
+prediction/control performance **UNMEASURED**. No training or model deployment.
+Trade-off → curated overlapping views, not an exhaustive census or rights certificate.
+Next Action → pre-register RAG-01 and WM-01 with a valid baseline and fixed audit.
+
 ## AutoSwarm AI reference update - 2026-11-18
 
 Baseline: 38 Python tests and existing public catalogs. Change: pinned current

@@ -4,6 +4,8 @@ P-CSDSAI is a public technical research space for computer science, data science
 
 ## What to study here
 
+- **Multimodal research:** [module](research/multimodal/README.md), [RAG repositories](repo/multimodal/README.md) and [world models](repo/world-models/README.md). Preserve source locators, distinguish voice UI/ASR/acoustic RAG and representation/video generation/closed-loop control. Reports require title, timezone-aware timestamp and Pengyi Peng / P-CSDSAI authorship; credit upstream methods separately. Rebuild catalogs offline and run test_research_routes.py after changes. Do not convert planned studies into measured claims.
+
 - **Programming and data systems:** languages, algorithms, databases, query plans, time-series tooling, software architecture, and reproducible performance engineering.
 - **Infrastructure:** isolation, identity, permissions, model serving, high-performance computing, and scheduling under explicit performance and safety constraints.
 - **Post-training:** evaluation coverage, robustness, data integrity, and reproducible safety/performance trade-offs.

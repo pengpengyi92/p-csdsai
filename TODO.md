@@ -1,3 +1,10 @@
+## P0 - Multimodal / World Model module, 2026-11-19
+
+- [x] Add two distinct source-pinned catalogs:24 multimodal and12 world-model/adjacent sources.
+- [x] Add original reports with title, timestamp, authorship, rights, baselines and falsifiable protocols.
+- [ ] Publish both reports to the existing Report category and read back body/category/author.
+- [ ] P1: execute RAG-01/WM-01 only after fixed fixtures, rights and compute budgets are approved; NOT_RUN / UNMEASURED.
+
 ## P1 - AutoSwarm AI catalog, 2026-11-18
 
 - [x] Verify public source, MIT signal, development version and historical PR45 state.
