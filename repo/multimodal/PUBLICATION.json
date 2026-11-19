@@ -1,0 +1,20 @@
+{
+  "id": "D_kwDOUTECvc4ArRh3",
+  "number": 6,
+  "url": "https://github.com/pengpengyi92/p-csdsai/discussions/6",
+  "title": "多模态 RAG 专题｜Video / Audio / Image / PDF / Docs｜2026-11-19",
+  "createdAt": "2026-11-19T03:50:09Z",
+  "updatedAt": "2026-11-19T03:50:09Z",
+  "author": {
+    "login": "pengpengyi92"
+  },
+  "category": {
+    "name": "Report"
+  },
+  "content_commit": "378dd0f8e9b2ec0c15ac64803b9f4438a68f80c4",
+  "report": "report/2026-11-19-multimodal-rag.md",
+  "body_sha256": "a8e759ef3ea02f178b818707170da41328085715ba78647af4c8e9ab2d2991f8",
+  "readback_verified_at": "2026-11-19T03:50:13.987818+00:00",
+  "body_exact_match": true,
+  "actor_id": 74917296
+}

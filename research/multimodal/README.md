@@ -32,3 +32,9 @@
 不自动安装/运行目录中的软件，不授权 GPU/付费 API/数据上传；不索引私人录音或受限论文全文。代码、模型、数据、素材、服务许可分别检查。
 
 [本期52项离线验证与文件指纹](CHECKS.json)覆盖来源、角色、链接、署名、生成新鲜度和负向用例；原应用源码与依赖未修改，Node应用测试本轮NOT_RUN。目录测试不等于模型验收。
+
+公开发布：[RAG Report #6](https://github.com/pengpengyi92/p-csdsai/discussions/6)，
+[World Model Report #7](https://github.com/pengpengyi92/p-csdsai/discussions/7)。两份全文分别于
+2026-11-19 11:50:09/11:50:12 Asia/Shanghai 发布，标题、作者、Report分类与正文已核对。
+文件/正文指纹和精确内容提交在 [RAG回执](../../repo/multimodal/PUBLICATION.json) 与
+[World Model回执](../../repo/world-models/PUBLICATION.json)，不以发布成功宣称模型实验通过。
