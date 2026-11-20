@@ -22,6 +22,13 @@
 
 # Roadmap
 
+## P1 - Visualization as a data-system interface (2026-11-14)
+
+- [x] Add12 pinned public references with schema/nullable/time/transport/aggregation questions; preserve manual license and NOT_RUN boundaries.
+- [x] Run existing catalog and4 new reference tests:14/14 PASS; app/private research unchanged.
+- [x] Push public documentation/log in PR3; catalog CI PASS. App code/deps unchanged from base.
+- [x] 2026-11-20: integrate subsequent main dependency repairs while retaining the high-severity audit gate; fresh PR CI is still required before merge. Historical19/8-high observation remains in the dated log.
+- [ ] Execute a separately approved fixed-fixture renderer comparison; third-party gains remain UNMEASURED.
 ## P0 - Programming language training catalog (2026-11-18)
 
 - [x] Verify24 public source heads and entry objects across8 language/query topics.

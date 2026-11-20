@@ -31,6 +31,7 @@
 
 ## 分类路线
 
+- [Visualization / schema、渲染、WASM与大数据视图（12个公开参考）](data-visualization/README.md)
 - [CV / DL / RL · 工程契约与实现问题](cv-dl-rl/README.md) —43项目、89个固定来源入口；
   从梯度、坐标和训练恢复到episode/replay与多agent生命周期。链接P-ML116项总目录，
   既有AI Infra三项交叉引用；不重复宣称新增独立项目或模型收益。
