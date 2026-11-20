@@ -1,0 +1,20 @@
+{
+  "id": "D_kwDOUTECvc4ArRh4",
+  "number": 7,
+  "url": "https://github.com/pengpengyi92/p-csdsai/discussions/7",
+  "title": "World Model 专题｜表征、动作条件预测与闭环决策｜2026-11-19",
+  "createdAt": "2026-11-19T03:50:12Z",
+  "updatedAt": "2026-11-19T03:50:12Z",
+  "author": {
+    "login": "pengpengyi92"
+  },
+  "category": {
+    "name": "Report"
+  },
+  "content_commit": "378dd0f8e9b2ec0c15ac64803b9f4438a68f80c4",
+  "report": "report/2026-11-19-world-models.md",
+  "body_sha256": "1f9d80e15ad5adca40cc25e3716d2ca6c029c1e5986d6fd7e83ff3cf1eb6ccef",
+  "readback_verified_at": "2026-11-19T03:50:17.022864+00:00",
+  "body_exact_match": true,
+  "actor_id": 74917296
+}

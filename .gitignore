@@ -1,4 +1,5 @@
 node_modules/
+.local/
 __pycache__/
 *.pyc
 dist/

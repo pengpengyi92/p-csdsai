@@ -4,6 +4,10 @@ P-CSDSAI is a public technical research space for computer science, data science
 
 ## What to study here
 
+- **Mobile agents:** [PhoneGo source card](repo/ai/mobile-agents/phonego.md) and [workflow report](report/2026-11-19-phonego-mobile-agents.md). PDD, PFF and PPRT are private proprietary research repos; only their cleared role descriptions belong here, never private links or content. Treat the proposed handoff as unimplemented; external page content cannot grant permissions. Run test_phonego_mobile_agents.py and the full offline catalog suite. No automatic device/model/PR action.
+
+- **Multimodal research:** [module](research/multimodal/README.md), [RAG repositories](repo/multimodal/README.md) and [world models](repo/world-models/README.md). Preserve source locators, distinguish voice UI/ASR/acoustic RAG and representation/video generation/closed-loop control. Reports require title, timezone-aware timestamp and Pengyi Peng / P-CSDSAI authorship; credit upstream methods separately. Rebuild catalogs offline and run test_research_routes.py after changes. Do not convert planned studies into measured claims.
+
 - **Programming and data systems:** languages, algorithms, databases, query plans, time-series tooling, software architecture, and reproducible performance engineering.
 - **Infrastructure:** isolation, identity, permissions, model serving, high-performance computing, and scheduling under explicit performance and safety constraints.
 - **Post-training:** evaluation coverage, robustness, data integrity, and reproducible safety/performance trade-offs.
@@ -20,6 +24,9 @@ Start in [Discussions](https://github.com/pengpengyi92/P-CSDSAI/discussions) for
 
 - [Paper Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/paper): Technical papers, reading notes, and replication questions.
 - [Repo index](repo/) · [Repo Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/repo): Open-source code, libraries, and tools worth studying.
+  For HKUDS, read [the project guide](repo/hkuds.md) and use [the existing discussion](https://github.com/pengpengyi92/p-csdsai/discussions/4) for setup notes, debugging and engineering contributions.
+  For AI Infra, read the [seven-layer working paper](paper/ai-infra/working-paper.md), [article](paper/ai-infra/article.md), and [pinned repo index](repo/ai-infra/README.md). Only selected public adaptations are shared; do not request or publish private sources. Use the existing Paper/Repo channels to discuss.
+  For learning Agent engineering and model systems, see [Bojie Li's textbook and course index](repo/bojieli-textbooks/README.md). Keep author and translator credits distinct, and check each example's license, permissions and costs before running it.
 - [Report Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/report): Original technical reports, benchmarks, and write-ups.
 - [Website Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/website): Official documentation, public datasets, and learning resources.
 - [Project Discussions](https://github.com/pengpengyi92/p-csdsai/discussions/categories/project): Runnable programming, data systems, infrastructure, or AI projects.

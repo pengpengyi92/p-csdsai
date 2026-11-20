@@ -1,4 +1,39 @@
-# P-CSDSAI
+# P-CSDSAI: The Open Computing, Data Science & AI Lab
+
+<p align="center">
+  <img src="assets/p-csdsai-super-workspace.webp" alt="Xiao G and the CS, DS, and AI robots share a workshop with code, chips, statistical plots, agent workflows, and a robot arm" width="100%">
+</p>
+
+## 2026-11-18 - HKUDS AutoSwarm under AI
+
+[AutoSwarm 收录卡](repo/ai/agents-and-swarms/autoswarm.md) · [AI 分类](repo/ai/README.md)。
+工程视角：CLI 适配、上下文交接、批准与恢复。
+固定 `2.0.0.dev0` 开发快照；本轮未安装或运行上游 Agent。
+
+## 手机 Agent 与研究工作流
+
+[HKUDS PhoneGo收录卡](repo/ai/mobile-agents/phonego.md) · [手机Agent目录](repo/ai/mobile-agents/README.md) ·
+[PhoneGo接入PDD PFF PPRT专题](report/2026-11-19-phonego-mobile-agents.md) · [Report #8](https://github.com/pengpengyi92/p-csdsai/discussions/8)。
+介绍三个私有prop repo的职责，研究证据交接、导航复用、失败恢复和人工批准；
+仅公开原创方案与来源，不公开私库资料。接入尚未实现，设备/模型收益NOT_RUN / UNMEASURED。
+
+## 多模态研究模块 — 2026-11-19
+
+[多模态 RAG / World Model 模块](research/multimodal/README.md)现已建立：
+Video、Audio、Image、PDF、Docs 等文件的证据解析、对齐、检索与引用；
+World Model 的表征、动作条件预测、规划和模拟另设路线。
+[24项多模态目录](repo/multimodal/README.md) · [12项世界模型/相邻基础设施目录](repo/world-models/README.md)。
+两份署名专题：[RAG报告](report/2026-11-19-multimodal-rag.md) ·
+[World Model报告](report/2026-11-19-world-models.md)。固定来源、许可信号、研究问题与未运行协议均可复查；不代表已完成模型对比。
+
+## Programming languages - 2026-11-18
+
+[8 language/query topics and24 pinned public repositories](repo/programming/README.md):
+SQL, Python, C++, C, Rust, kdb+/q, Java and TypeScript. Each has a specific
+learning reason, source entry points, unrun exercises and licensing boundaries.
+[Cross-language projects](repo/programming/PROJECTS.md) and
+[training protocol](repo/programming/TRAINING.md) turn reading into falsifiable
+practice. No training gain/performance claim or q runtime permission is implied.
 
 **Write code. Study systems. Share what you learn.** P-CSDSAI is a public research and discussion space for computer science, data science, and artificial intelligence. Programming is central: bring your Python, SQL, C++, Rust, kdb+/q, or other language questions, implementations, and reproducible experiments.
 
@@ -19,8 +54,16 @@ pinned public references with typed-schema, null/time semantics, browser/WASM,
 aggregation and measurement questions. References only; no third-party runtime,
 performance or safety validation is implied.
 
-[10 repository cards](repo/README.md) cover SGLang, vLLM, Ray, PyTorch, Triton,
-Safetensors, DuckDB, Ibis, Pandera and sqlite-utils. Each has a systems-specific
+[CV / DL / RL · 43个工程问题入口](repo/cv-dl-rl/README.md) — 图像/视频/3D、训练状态与并行、
+episode/replay/模拟器；逐项有baseline、拟用指标和固定许可来源。链接P-ML的116项总目录，
+已有AI Infra条目交叉引用不重复计数；所有新上游实验NOT_RUN / UNMEASURED。
+
+[李博杰的 AI 教材](repo/bojieli-textbooks/README.md) — 从 Agent 的上下文、工具与评估，到 Infra 的显存、带宽与推理估算；附译著、课程和动手路线。
+
+**AI Infra L1–L7** — [Working paper](paper/ai-infra/working-paper.md) · [配套文章](paper/ai-infra/article.md) · [28 个公开仓库](repo/ai-infra/README.md)。Selected shared from P University, with selected PINF and P Compute methods (private prop repositories). No performance experiments were run for this edition.
+
+[12 repository cards](repo/README.md) cover PhoneGo, AutoSwarm, SGLang, vLLM, Ray,
+PyTorch, Triton, Safetensors, DuckDB, Ibis, Pandera and sqlite-utils. Each has a systems-specific
 reason, pinned code pointers and an unrun study plan. No serving/GPU speedup,
 model installation or successful production integration is claimed.
 
@@ -53,6 +96,21 @@ P Trust asks: what can this code do, what keeps it in bounds, and what evidence 
 This is **not a security certification or authorization to run code**. The score measures observed patterns under a bounded static policy. It does not establish runtime safety, detect all malicious code, or prove that safeguards are effective. A synthetic fixture can achieve 100 by containing every expected pattern; this is not evidence of real-world accuracy.
 
 ## Quick Start
+
+Dependency repair observed `2026-11-15T14:03:58+08:00`: **19 audit entries
+(8 high, 11 moderate) -> 7 moderate, 0 high**. The existing high-severity CI gate
+is unchanged. The remaining development-only TypeScript-ESLint/minimatch chain
+is still reported, not suppressed or forcibly overridden. See the
+[full audit and regression evidence](docs/reports/dependency-audit-2026-11-15/README.md)
+and [implementation log](log/2026-11-15-dependency-audit-repair.md).
+
+The [moderate-finding follow-up](docs/reports/dependency-audit-2026-11-15/moderate-followup.md)
+checks compatible/backport/downgrade options and retains the existing lint policy
+with three negative controls (45 unit tests). No compatible supported remediation
+was found as of the review. After anonymous quota recovery, the actual local
+public-repository scan and both real-report browser cases passed: **10/10 browser
+cases,0 skipped**. See the [real self-inspection evidence](docs/reports/self-inspection-2026-11-15.md);
+default hosted CI remains deterministic and does not automatically run live scans.
 
 Node.js 22.12+ (Node 24 used in development):
 

@@ -1,4 +1,29 @@
+## 2026-11-18 - AI / Agent Swarms
+
+[AI 分类](ai/README.md) · [HKUDS AutoSwarm](ai/agents-and-swarms/autoswarm.md)。
+当日新增后基础卡11项；后续PhoneGo更新见下方手机Agent专题。
+固定当前主线开发快照；其余来源时间与历史专题保留，本轮未安装或调用 Agent。
+
 # AI Systems & Infrastructure — 运行时、数据与工程
+
+## 手机 Agent 与 PhoneGo
+
+[手机Agent目录](ai/mobile-agents/README.md) · [PhoneGo卡](ai/mobile-agents/phonego.md) ·
+[PDD PFF PPRT接入报告](../report/2026-11-19-phonego-mobile-agents.md)。
+2026-11-19新增一个独立项目，机器总目录现12项；复用导航、视觉回退、来源保真与交接状态是本专题的问题。
+所有旧条目的源码观测时间保留，不把此日期当作全目录重新验证。
+
+## 多模态 / World Model — 2026-11-19
+
+- [多模态 RAG 专题目录](multimodal/README.md)：24个独立来源视角，区分视频/声学/视觉文档、解析器、嵌入、索引和评估。
+- [World Model 独立目录](world-models/README.md)：12个来源视角；预测表征、动作条件控制、世界生成、物理模拟与视频生成分开。
+- [研究模块](../research/multimodal/README.md) · [两份报告](../report/README.md)。历史目录保留，交叉收录不等于全库新增36个不同项目。
+
+## Programming by language - 2026-11-18
+
+[SQL / Python / C++ / C / Rust / kdb+·q / Java / TypeScript](programming/README.md)
+新增8个训练专题、24个独立公开仓库的固定源码视角。带用途、收录理由、练习、
+跨语言项目和许可边界；与下列旧专题交叉引用，不覆盖原目录或重复计算项目数。
 
 **Last reviewed:** 2026-11-14 (Asia/Shanghai). 首批 **10** 个项目视角档案；选题范围：编程、模型服务、调度、编译、分布式计算、数据系统和可验证的基础设施工程。
 
@@ -7,6 +32,12 @@
 ## 分类路线
 
 - [Visualization / schema、渲染、WASM与大数据视图（12个公开参考）](data-visualization/README.md)
+- [CV / DL / RL · 工程契约与实现问题](cv-dl-rl/README.md) —43项目、89个固定来源入口；
+  从梯度、坐标和训练恢复到episode/replay与多agent生命周期。链接P-ML116项总目录，
+  既有AI Infra三项交叉引用；不重复宣称新增独立项目或模型收益。
+- [李博杰的 AI 教材：Agent、Infra 与大模型](bojieli-textbooks/README.md) — 两本原创开源书、两本译著，以及 Agent 课件和实践课题；逐项标明作者、原始来源、用途和许可边界。
+- [AI Infra L1–L7 · 源码路线、最小复现与工程贡献](ai-infra/README.md) — 每层四个固定版本的公开项目；原有项目卡保留。
+
 - [Serving & Runtime / 推理服务与分布式调度](model-serving-and-runtime/README.md)
 - [Programming & Kernels / 框架、底层与编译](programming-and-kernels/README.md)
 - [Data & Storage / 查询、schema、序列化与持久化](data-and-storage/README.md)
@@ -15,6 +46,8 @@
 
 | 项目 | 本仓库为何收录 | 档案 |
 | --- | --- | --- |
+| PhoneGo | AI / Mobile Agents：手机导航复用、证据交接、状态与人工批准。 | [阅读](ai/mobile-agents/phonego.md) |
+| AutoSwarm | AI / Agent Swarms：原生 CLI、上下文、批准归属与失败恢复。 | [阅读](ai/agents-and-swarms/autoswarm.md) |
 | PyTorch | 研究张量执行、模块 hook、分布式接口及 Python/底层边界，关注正确性与可维护性。 | [阅读](programming-and-kernels/pytorch.md) |
 | Safetensors | 研究 Rust/Python 边界、字节序、文件校验与模型 artifact 供应链。 | [阅读](data-and-storage/safetensors.md) |
 | SGLang | AI infra 重点：服务调度、chunking、异常与 profiling，连接现有 NVTX/动态分块贡献。 | [阅读](model-serving-and-runtime/sglang.md) |
@@ -42,7 +75,9 @@
 - [P-Research / AI 研究](https://github.com/pengpengyi92/p-research/tree/main/repo)
 - [P-CSDSAI / AI 系统与数据](https://github.com/pengpengyi92/p-csdsai/tree/main/repo)
 
-## Existing community guide
+## Community guides
+
+- [HKUDS community and repository guide](hkuds.md) — 93 public repository links, engineering starting points, and [the HKUDS discussion](https://github.com/pengpengyi92/p-csdsai/discussions/4).
 
 - [PPRT prop engineering work log](../docs/logs/2026-11-14-pprt-prop-engineering-upstream.md) — public contributions and reproducible checks for Jump Trading, Optiver, and Point72, plus what we could verify about Verition.
 - [LLMQuant community and repository guide](llmquant.md) — the complete public inventory with access notes, suggested starting points, and how to contribute. [Discuss LLMQuant (#2)](https://github.com/pengpengyi92/p-csdsai/discussions/2).

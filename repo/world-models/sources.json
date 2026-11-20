@@ -1,0 +1,329 @@
+{
+  "observed_at": "2026-11-19T11:39:58+08:00",
+  "sources": [
+    {
+      "nameWithOwner": "danijar/dreamerv3",
+      "url": "https://github.com/danijar/dreamerv3",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "MIT",
+        "name": "MIT License"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "e01491fad6434b2245a3b8ca201dd7faedcc458c"
+        }
+      },
+      "license": {
+        "oid": "80bb3c8ed0c268d898f1eb4c42350e7417a94e53"
+      },
+      "licensemd": null,
+      "repository": "danijar/dreamerv3",
+      "observed_at": "2026-11-19T11:39:58+08:00",
+      "head": "e01491fad6434b2245a3b8ca201dd7faedcc458c",
+      "readme_path": "README.md",
+      "readme_oid": "17bd6209a7d171aacab9d77c85ebfa057c77bb04",
+      "source_url": "https://github.com/danijar/dreamerv3/blob/e01491fad6434b2245a3b8ca201dd7faedcc458c/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "nicklashansen/tdmpc2",
+      "url": "https://github.com/nicklashansen/tdmpc2",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "MIT",
+        "name": "MIT License"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "332f19e4aba4bffe2dc736f45ea7f7bdc585903a"
+        }
+      },
+      "license": {
+        "oid": "bc27ced3a6089944ca36a3b2da8da8e22d2a400b"
+      },
+      "licensemd": null,
+      "repository": "nicklashansen/tdmpc2",
+      "observed_at": "2026-11-19T11:39:58+08:00",
+      "head": "332f19e4aba4bffe2dc736f45ea7f7bdc585903a",
+      "readme_path": "README.md",
+      "readme_oid": "ddf858acdd38f3f78310702f00c67e1207743d8d",
+      "source_url": "https://github.com/nicklashansen/tdmpc2/blob/332f19e4aba4bffe2dc736f45ea7f7bdc585903a/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "facebookresearch/vjepa2",
+      "url": "https://github.com/facebookresearch/vjepa2",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "MIT",
+        "name": "MIT License"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "204698b45b3712590f06245fbfba32d3be539812"
+        }
+      },
+      "license": {
+        "oid": "a45a376fb0fcd4a3de06b6c096e62028929a2dcb"
+      },
+      "licensemd": null,
+      "repository": "facebookresearch/vjepa2",
+      "observed_at": "2026-11-19T11:39:58+08:00",
+      "head": "204698b45b3712590f06245fbfba32d3be539812",
+      "readme_path": "README.md",
+      "readme_oid": "18fab9146ff2499ee27721c9280f72537479141c",
+      "source_url": "https://github.com/facebookresearch/vjepa2/blob/204698b45b3712590f06245fbfba32d3be539812/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "facebookresearch/jepa",
+      "url": "https://github.com/facebookresearch/jepa",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "NOASSERTION",
+        "name": "Other"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "51c59d518fc63c08464af6de585f78ac0c7ed4d5"
+        }
+      },
+      "license": {
+        "oid": "5476dc34ede12e6e7d79e5845f34a7c3b029a963"
+      },
+      "licensemd": null,
+      "repository": "facebookresearch/jepa",
+      "observed_at": "2026-11-19T11:39:58+08:00",
+      "head": "51c59d518fc63c08464af6de585f78ac0c7ed4d5",
+      "readme_path": "README.md",
+      "readme_oid": "90dbb741cd39384ee97afa70f4d743cade232ae5",
+      "source_url": "https://github.com/facebookresearch/jepa/blob/51c59d518fc63c08464af6de585f78ac0c7ed4d5/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "NVIDIA/cosmos",
+      "url": "https://github.com/NVIDIA/cosmos",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "NOASSERTION",
+        "name": "Other"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "b64ab1db9cb8683c4f78257361ea4c28c32da110"
+        }
+      },
+      "license": {
+        "oid": "ec297ac5456384786644013ec196da33b916be97"
+      },
+      "licensemd": null,
+      "repository": "NVIDIA/cosmos",
+      "observed_at": "2026-11-19T11:39:58+08:00",
+      "head": "b64ab1db9cb8683c4f78257361ea4c28c32da110",
+      "readme_path": "README.md",
+      "readme_oid": "b797fdf6bf81d1340171b44923764b0846d649ca",
+      "source_url": "https://github.com/NVIDIA/cosmos/blob/b64ab1db9cb8683c4f78257361ea4c28c32da110/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "nvidia-cosmos/cosmos-predict2.5",
+      "url": "https://github.com/nvidia-cosmos/cosmos-predict2.5",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "Apache-2.0",
+        "name": "Apache License 2.0"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "a2c298b0a3df3778b973fe65e9e58877b292d8a7"
+        }
+      },
+      "license": {
+        "oid": "4c9ad980682246bd6ab0d2bae82232be6dbdcbd4"
+      },
+      "licensemd": null,
+      "repository": "nvidia-cosmos/cosmos-predict2.5",
+      "observed_at": "2026-11-19T11:39:58+08:00",
+      "head": "a2c298b0a3df3778b973fe65e9e58877b292d8a7",
+      "readme_path": "README.md",
+      "readme_oid": "1686690d7aef76d6c42d164d02002c739b35582b",
+      "source_url": "https://github.com/nvidia-cosmos/cosmos-predict2.5/blob/a2c298b0a3df3778b973fe65e9e58877b292d8a7/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "nvidia-cosmos/cosmos-transfer2.5",
+      "url": "https://github.com/nvidia-cosmos/cosmos-transfer2.5",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "Apache-2.0",
+        "name": "Apache License 2.0"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "2ff49d0717af02057ae79bc75c00fbff9da1b4e7"
+        }
+      },
+      "license": {
+        "oid": "4c9ad980682246bd6ab0d2bae82232be6dbdcbd4"
+      },
+      "licensemd": null,
+      "repository": "nvidia-cosmos/cosmos-transfer2.5",
+      "observed_at": "2026-11-19T11:39:58+08:00",
+      "head": "2ff49d0717af02057ae79bc75c00fbff9da1b4e7",
+      "readme_path": "README.md",
+      "readme_oid": "9ca220f1f38141580f60bcdb762591ea34c34256",
+      "source_url": "https://github.com/nvidia-cosmos/cosmos-transfer2.5/blob/2ff49d0717af02057ae79bc75c00fbff9da1b4e7/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "eloialonso/diamond",
+      "url": "https://github.com/eloialonso/diamond",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "MIT",
+        "name": "MIT License"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "5bcd1599755b4f2fae8e5e079e02f0728e174965"
+        }
+      },
+      "license": {
+        "oid": "4dabe85556f852094708ce8b7f60bcdd9407e5f0"
+      },
+      "licensemd": null,
+      "repository": "eloialonso/diamond",
+      "observed_at": "2026-11-19T11:39:58+08:00",
+      "head": "5bcd1599755b4f2fae8e5e079e02f0728e174965",
+      "readme_path": "README.md",
+      "readme_oid": "d61a519c24f28420c736c014b20b938e4929b09f",
+      "source_url": "https://github.com/eloialonso/diamond/blob/5bcd1599755b4f2fae8e5e079e02f0728e174965/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "google-deepmind/mujoco",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "Apache-2.0",
+        "name": "Apache License 2.0"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "ab8b9f8bea6cb5333c117f43a52b244308a1f397"
+        }
+      },
+      "license": {
+        "oid": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      "licensemd": null,
+      "repository": "google-deepmind/mujoco",
+      "observed_at": "2026-11-19T11:39:58+08:00",
+      "head": "ab8b9f8bea6cb5333c117f43a52b244308a1f397",
+      "readme_path": "README.md",
+      "readme_oid": "e8c8ca731dc670c273dbff7a956938064c41e6c3",
+      "source_url": "https://github.com/google-deepmind/mujoco/blob/ab8b9f8bea6cb5333c117f43a52b244308a1f397/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "google-deepmind/dm_control",
+      "url": "https://github.com/google-deepmind/dm_control",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "Apache-2.0",
+        "name": "Apache License 2.0"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "d7e52e3602a555df6cc20cc928ea5b41e9920158"
+        }
+      },
+      "license": {
+        "oid": "7a4a3ea2424c09fbe48d455aed1eaa94d9124835"
+      },
+      "licensemd": null,
+      "repository": "google-deepmind/dm_control",
+      "observed_at": "2026-11-19T11:39:58+08:00",
+      "head": "d7e52e3602a555df6cc20cc928ea5b41e9920158",
+      "readme_path": "README.md",
+      "readme_oid": "b0d3f77b8aede5c41f403c60e60fba771a03b333",
+      "source_url": "https://github.com/google-deepmind/dm_control/blob/d7e52e3602a555df6cc20cc928ea5b41e9920158/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "mani-skill/ManiSkill",
+      "url": "https://github.com/mani-skill/ManiSkill",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "Apache-2.0",
+        "name": "Apache License 2.0"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3"
+        }
+      },
+      "license": {
+        "oid": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+      },
+      "licensemd": null,
+      "repository": "haosulab/ManiSkill",
+      "observed_at": "2026-11-19T11:39:58+08:00",
+      "head": "62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3",
+      "readme_path": "README.md",
+      "readme_oid": "be5c3f747a04f982a8dc10a53bef90fd69eaf442",
+      "source_url": "https://github.com/mani-skill/ManiSkill/blob/62ff3a5896b4d5b4cf0ac4c8d79afe600c9404a3/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "hpcaitech/Open-Sora",
+      "url": "https://github.com/hpcaitech/Open-Sora",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "Apache-2.0",
+        "name": "Apache License 2.0"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "7ad6a96a135feb81f755c84fb391818718f6beb2"
+        }
+      },
+      "license": {
+        "oid": "e4edb5fde96f2c6d21b884b1a79952489a9ace70"
+      },
+      "licensemd": null,
+      "repository": "hpcaitech/Open-Sora",
+      "observed_at": "2026-11-19T11:39:58+08:00",
+      "head": "7ad6a96a135feb81f755c84fb391818718f6beb2",
+      "readme_path": "README.md",
+      "readme_oid": "da2160760f725bdd1fd4422dfb27a6c13452013b",
+      "source_url": "https://github.com/hpcaitech/Open-Sora/blob/7ad6a96a135feb81f755c84fb391818718f6beb2/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    }
+  ]
+}

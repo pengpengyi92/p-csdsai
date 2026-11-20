@@ -1,0 +1,648 @@
+{
+  "observed_at": "2026-11-19T11:39:12+08:00",
+  "sources": [
+    {
+      "nameWithOwner": "HKUDS/VideoRAG",
+      "url": "https://github.com/HKUDS/VideoRAG",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "NOASSERTION",
+        "name": "Other"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "c412a093a820ef7a0e0dda31076ed871136198b3"
+        }
+      },
+      "license": {
+        "oid": "5c209effc1fefa31ca6d1128416a84f60be130da"
+      },
+      "licensemd": null,
+      "repository": "HKUDS/VideoRAG",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "c412a093a820ef7a0e0dda31076ed871136198b3",
+      "readme_path": "README.md",
+      "readme_oid": "5fe5c4558aa66db1d5a34a3935ebf7728caf6819",
+      "source_url": "https://github.com/HKUDS/VideoRAG/blob/c412a093a820ef7a0e0dda31076ed871136198b3/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "ewha-mmai/audiohelix",
+      "url": "https://github.com/ewha-mmai/audiohelix",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "GPL-3.0",
+        "name": "GNU General Public License v3.0"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "20d6e402be5f13a6fae470b430095a4528d48a56"
+        }
+      },
+      "license": {
+        "oid": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7"
+      },
+      "licensemd": null,
+      "repository": "ewha-mmai/audiohelix",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "20d6e402be5f13a6fae470b430095a4528d48a56",
+      "readme_path": "README.md",
+      "readme_oid": "f1ef49ac82450f08c8fec747eae2c89bf973624d",
+      "source_url": "https://github.com/ewha-mmai/audiohelix/blob/20d6e402be5f13a6fae470b430095a4528d48a56/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "jingru-lin/AudioRAG",
+      "url": "https://github.com/jingru-lin/AudioRAG",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": null,
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "8e63d32ddecb2e72d0d1407204a74690f63980a2"
+        }
+      },
+      "license": null,
+      "licensemd": null,
+      "repository": "jingru-lin/AudioRAG",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "8e63d32ddecb2e72d0d1407204a74690f63980a2",
+      "readme_path": "README.md",
+      "readme_oid": "7f19ccaadea179da6cc37e16d0b0b8f97e379a1f",
+      "source_url": "https://github.com/jingru-lin/AudioRAG/blob/8e63d32ddecb2e72d0d1407204a74690f63980a2/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "Azure-Samples/aisearch-openai-rag-audio",
+      "url": "https://github.com/Azure-Samples/aisearch-openai-rag-audio",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "MIT",
+        "name": "MIT License"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "5a1d0d066eb1c08d142e089806c94e39dceacadf"
+        }
+      },
+      "license": {
+        "oid": "2bae6a114b0ca6bb608efb7c20cd4a14bd6e81e1"
+      },
+      "licensemd": null,
+      "repository": "Azure-Samples/aisearch-openai-rag-audio",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "5a1d0d066eb1c08d142e089806c94e39dceacadf",
+      "readme_path": "README.md",
+      "readme_oid": "c40dd5d9da03ef9aae66dbbb85594ce10f1e763e",
+      "source_url": "https://github.com/Azure-Samples/aisearch-openai-rag-audio/blob/5a1d0d066eb1c08d142e089806c94e39dceacadf/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "openai/whisper",
+      "url": "https://github.com/openai/whisper",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "MIT",
+        "name": "MIT License"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "86098128c0b4f24f0e2aa2994de830614b474227"
+        }
+      },
+      "license": {
+        "oid": "d25552598bb9c5400612159ed4bab92ce12a5ce5"
+      },
+      "licensemd": null,
+      "repository": "openai/whisper",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "86098128c0b4f24f0e2aa2994de830614b474227",
+      "readme_path": "README.md",
+      "readme_oid": "196b48f62d3b6f0b77bac2b7dbc2df5e4cfb070b",
+      "source_url": "https://github.com/openai/whisper/blob/86098128c0b4f24f0e2aa2994de830614b474227/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "SYSTRAN/faster-whisper",
+      "url": "https://github.com/SYSTRAN/faster-whisper",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "MIT",
+        "name": "MIT License"
+      },
+      "defaultBranchRef": {
+        "name": "master",
+        "target": {
+          "oid": "6cb639e70786aea42b9233006ae60eaf07190bdb"
+        }
+      },
+      "license": {
+        "oid": "2d92330dc294fea86caf785fa626d22917850141"
+      },
+      "licensemd": null,
+      "repository": "SYSTRAN/faster-whisper",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "6cb639e70786aea42b9233006ae60eaf07190bdb",
+      "readme_path": "README.md",
+      "readme_oid": "e4e7c6f33eedca15e01c7cd93b3aca512d961ec0",
+      "source_url": "https://github.com/SYSTRAN/faster-whisper/blob/6cb639e70786aea42b9233006ae60eaf07190bdb/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "LAION-AI/CLAP",
+      "url": "https://github.com/LAION-AI/CLAP",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "CC0-1.0",
+        "name": "Creative Commons Zero v1.0 Universal"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "1fd4c37df5ffbfcfbad5415c170bc66cf94c9994"
+        }
+      },
+      "license": {
+        "oid": "0e259d42c996742e9e3cba14c677129b2c1b6311"
+      },
+      "licensemd": null,
+      "repository": "LAION-AI/CLAP",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "1fd4c37df5ffbfcfbad5415c170bc66cf94c9994",
+      "readme_path": "README.md",
+      "readme_oid": "5a76d231361a9f66380331a3dff6f8c6b242fab1",
+      "source_url": "https://github.com/LAION-AI/CLAP/blob/1fd4c37df5ffbfcfbad5415c170bc66cf94c9994/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "facebookresearch/ImageBind",
+      "url": "https://github.com/facebookresearch/ImageBind",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "NOASSERTION",
+        "name": "Other"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "53680b02d7e37b19b124fa37bae4b6c98c38f5be"
+        }
+      },
+      "license": {
+        "oid": "bfef380bf7d9cb74ec9ba533b37c3fbeef3bdc09"
+      },
+      "licensemd": null,
+      "repository": "facebookresearch/ImageBind",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "53680b02d7e37b19b124fa37bae4b6c98c38f5be",
+      "readme_path": "README.md",
+      "readme_oid": "b18ea4d8af72b4ca0f2e66d89453505fc2698b90",
+      "source_url": "https://github.com/facebookresearch/ImageBind/blob/53680b02d7e37b19b124fa37bae4b6c98c38f5be/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "openai/CLIP",
+      "url": "https://github.com/openai/CLIP",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "MIT",
+        "name": "MIT License"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6"
+        }
+      },
+      "license": {
+        "oid": "4e97f0b45803b7c04ae89548934af4f257a97501"
+      },
+      "licensemd": null,
+      "repository": "openai/CLIP",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+      "readme_path": "README.md",
+      "readme_oid": "db56b56e29258cc871fe0e6297bde00436d9180b",
+      "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "illuin-tech/colpali",
+      "url": "https://github.com/illuin-tech/colpali",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "MIT",
+        "name": "MIT License"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "97487f8871ff4d5d2284411fe61bdcd2cfe99894"
+        }
+      },
+      "license": {
+        "oid": "c67416730fed7bab154d250168c820fcc27eff97"
+      },
+      "licensemd": null,
+      "repository": "illuin-tech/colpali",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "97487f8871ff4d5d2284411fe61bdcd2cfe99894",
+      "readme_path": "README.md",
+      "readme_oid": "b7372cdaedad84ee180d5ac0494b97b1fdd3bfa7",
+      "source_url": "https://github.com/illuin-tech/colpali/blob/97487f8871ff4d5d2284411fe61bdcd2cfe99894/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "AnswerDotAI/byaldi",
+      "url": "https://github.com/AnswerDotAI/byaldi",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "Apache-2.0",
+        "name": "Apache License 2.0"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "4583c0732fac06cca5624c53a539a7785d226ce8"
+        }
+      },
+      "license": {
+        "oid": "f49a4e16e68b128803cc2dcea614603632b04eac"
+      },
+      "licensemd": null,
+      "repository": "AnswerDotAI/byaldi",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "4583c0732fac06cca5624c53a539a7785d226ce8",
+      "readme_path": "README.md",
+      "readme_oid": "6e533f21d2f235e439cc2c861c4b2c5626bb4e81",
+      "source_url": "https://github.com/AnswerDotAI/byaldi/blob/4583c0732fac06cca5624c53a539a7785d226ce8/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "docling-project/docling",
+      "url": "https://github.com/docling-project/docling",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "MIT",
+        "name": "MIT License"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "0563d23e004f403b61e181fe3a743be06894d52e"
+        }
+      },
+      "license": {
+        "oid": "6684a401bf0f700fd37104ab7c8da340036f7166"
+      },
+      "licensemd": null,
+      "repository": "docling-project/docling",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "0563d23e004f403b61e181fe3a743be06894d52e",
+      "readme_path": "README.md",
+      "readme_oid": "9eb5780e933f3ff23319b542d00e0fe46f8b7a45",
+      "source_url": "https://github.com/docling-project/docling/blob/0563d23e004f403b61e181fe3a743be06894d52e/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "opendatalab/MinerU",
+      "url": "https://github.com/opendatalab/MinerU",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "NOASSERTION",
+        "name": "Other"
+      },
+      "defaultBranchRef": {
+        "name": "master",
+        "target": {
+          "oid": "097de7f63f54722c9b805ee1c9a14a0c5b02e078"
+        }
+      },
+      "license": null,
+      "licensemd": {
+        "oid": "6496f953085e712b9e1724681661b73d534fa5d8"
+      },
+      "repository": "opendatalab/MinerU",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "097de7f63f54722c9b805ee1c9a14a0c5b02e078",
+      "readme_path": "README.md",
+      "readme_oid": "816f0a74e045dc285eda7e9f19b75d23507cd8ba",
+      "source_url": "https://github.com/opendatalab/MinerU/blob/097de7f63f54722c9b805ee1c9a14a0c5b02e078/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "Unstructured-IO/unstructured",
+      "url": "https://github.com/Unstructured-IO/unstructured",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "Apache-2.0",
+        "name": "Apache License 2.0"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "52735431453043da0f3225b1fdd3d20b15c71b91"
+        }
+      },
+      "license": null,
+      "licensemd": {
+        "oid": "b807bcb4281598fdb402807621127fad312b3f74"
+      },
+      "repository": "Unstructured-IO/unstructured",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "52735431453043da0f3225b1fdd3d20b15c71b91",
+      "readme_path": "README.md",
+      "readme_oid": "3a6f34957c17d2e065c0ad1e58072cfc2aee4d5d",
+      "source_url": "https://github.com/Unstructured-IO/unstructured/blob/52735431453043da0f3225b1fdd3d20b15c71b91/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "PaddlePaddle/PaddleOCR",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "Apache-2.0",
+        "name": "Apache License 2.0"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf"
+        }
+      },
+      "license": {
+        "oid": "430edfa0cfcb59f15b7aa5457427d0faf2e40dac"
+      },
+      "licensemd": null,
+      "repository": "PaddlePaddle/PaddleOCR",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf",
+      "readme_path": "README.md",
+      "readme_oid": "d3a9c16b6b5672a872d6ad7473ff52aceb7712bb",
+      "source_url": "https://github.com/PaddlePaddle/PaddleOCR/blob/dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "mindee/doctr",
+      "url": "https://github.com/mindee/doctr",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "Apache-2.0",
+        "name": "Apache License 2.0"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "4c49d7930b0568b4d3e10d81b216eb8517003d6a"
+        }
+      },
+      "license": {
+        "oid": "63d22de4a6df22f7f83c7511e6ce983968ed4996"
+      },
+      "licensemd": null,
+      "repository": "mindee/doctr",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "4c49d7930b0568b4d3e10d81b216eb8517003d6a",
+      "readme_path": "README.md",
+      "readme_oid": "a13131a1e3f1f567cba6dff4e35228b1d3b5a4dc",
+      "source_url": "https://github.com/mindee/doctr/blob/4c49d7930b0568b4d3e10d81b216eb8517003d6a/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "MIT",
+        "name": "MIT License"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "ed178952a6672abdfd35b5f9e76a80b6cefc086e"
+        }
+      },
+      "license": {
+        "oid": "9e841e7a26e4eb057b24511e7b92d42b257a80e5"
+      },
+      "licensemd": null,
+      "repository": "microsoft/markitdown",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "ed178952a6672abdfd35b5f9e76a80b6cefc086e",
+      "readme_path": "README.md",
+      "readme_oid": "af858038fd380b187e2928cfbb8b9802c4912d5b",
+      "source_url": "https://github.com/microsoft/markitdown/blob/ed178952a6672abdfd35b5f9e76a80b6cefc086e/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "HKUDS/RAG-Anything",
+      "url": "https://github.com/HKUDS/RAG-Anything",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "MIT",
+        "name": "MIT License"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "da63090a0d13d153495c986cb6d115c809657ee9"
+        }
+      },
+      "license": {
+        "oid": "b3ba37ce442298d5bdec96e2e52a8a812a25f123"
+      },
+      "licensemd": null,
+      "repository": "HKUDS/RAG-Anything",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "da63090a0d13d153495c986cb6d115c809657ee9",
+      "readme_path": "README.md",
+      "readme_oid": "9ee41b24bbca990ffdec699b5210c59b6a7ee702",
+      "source_url": "https://github.com/HKUDS/RAG-Anything/blob/da63090a0d13d153495c986cb6d115c809657ee9/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "infiniflow/ragflow",
+      "url": "https://github.com/infiniflow/ragflow",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "Apache-2.0",
+        "name": "Apache License 2.0"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "05c239a8cf7932850adc1a120dd54a757b4ef665"
+        }
+      },
+      "license": {
+        "oid": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+      },
+      "licensemd": null,
+      "repository": "infiniflow/ragflow",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "05c239a8cf7932850adc1a120dd54a757b4ef665",
+      "readme_path": "README.md",
+      "readme_oid": "3f6d834686238b81ae2ef134c623bc7aa59cee43",
+      "source_url": "https://github.com/infiniflow/ragflow/blob/05c239a8cf7932850adc1a120dd54a757b4ef665/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "run-llama/llama_index",
+      "url": "https://github.com/run-llama/llama_index",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "MIT",
+        "name": "MIT License"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "99d7433f6f71888951379ccca9294e272442c832"
+        }
+      },
+      "license": {
+        "oid": "e6074042d0391061b7d7d45d21e6693ae108daec"
+      },
+      "licensemd": null,
+      "repository": "run-llama/llama_index",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "99d7433f6f71888951379ccca9294e272442c832",
+      "readme_path": "README.md",
+      "readme_oid": "572527a8f5293bcf001366da01e51549280ff2e0",
+      "source_url": "https://github.com/run-llama/llama_index/blob/99d7433f6f71888951379ccca9294e272442c832/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "deepset-ai/haystack",
+      "url": "https://github.com/deepset-ai/haystack",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "Apache-2.0",
+        "name": "Apache License 2.0"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "bbf5b2b429670fa866e388f9a734ff3b1c652bf8"
+        }
+      },
+      "license": {
+        "oid": "6fb66d8d5fa55912ee80f4fdab94cab99140c448"
+      },
+      "licensemd": null,
+      "repository": "deepset-ai/haystack",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "bbf5b2b429670fa866e388f9a734ff3b1c652bf8",
+      "readme_path": "README.md",
+      "readme_oid": "afa079b2a7e90e815fdaf9b09edcd7ad010e3e91",
+      "source_url": "https://github.com/deepset-ai/haystack/blob/bbf5b2b429670fa866e388f9a734ff3b1c652bf8/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "qdrant/qdrant",
+      "url": "https://github.com/qdrant/qdrant",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "Apache-2.0",
+        "name": "Apache License 2.0"
+      },
+      "defaultBranchRef": {
+        "name": "master",
+        "target": {
+          "oid": "23065a0bf6857c3e5da45f6c8939cc746cc0580e"
+        }
+      },
+      "license": {
+        "oid": "456fb05e0e936f439cf42c517b19797dafd53ff9"
+      },
+      "licensemd": null,
+      "repository": "qdrant/qdrant",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "23065a0bf6857c3e5da45f6c8939cc746cc0580e",
+      "readme_path": "README.md",
+      "readme_oid": "cf4c1c5213148ed9d6388654f9d3e75b06504bc9",
+      "source_url": "https://github.com/qdrant/qdrant/blob/23065a0bf6857c3e5da45f6c8939cc746cc0580e/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "facebookresearch/faiss",
+      "url": "https://github.com/facebookresearch/faiss",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "MIT",
+        "name": "MIT License"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "14392c952788ca1d6980361cf01d1c8736afc4db"
+        }
+      },
+      "license": {
+        "oid": "b96dcb0480a0b0be0727976e5202a1e7b23edc3f"
+      },
+      "licensemd": null,
+      "repository": "facebookresearch/faiss",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "14392c952788ca1d6980361cf01d1c8736afc4db",
+      "readme_path": "README.md",
+      "readme_oid": "df490b17ae202d92d5b81df7443e90d11f637097",
+      "source_url": "https://github.com/facebookresearch/faiss/blob/14392c952788ca1d6980361cf01d1c8736afc4db/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    },
+    {
+      "nameWithOwner": "illuin-tech/vidore-benchmark",
+      "url": "https://github.com/illuin-tech/vidore-benchmark",
+      "isPrivate": false,
+      "isArchived": false,
+      "licenseInfo": {
+        "spdxId": "MIT",
+        "name": "MIT License"
+      },
+      "defaultBranchRef": {
+        "name": "main",
+        "target": {
+          "oid": "de1d88c14c31d9e0d761b7099fe6eb4f876f8912"
+        }
+      },
+      "license": {
+        "oid": "c67416730fed7bab154d250168c820fcc27eff97"
+      },
+      "licensemd": null,
+      "repository": "illuin-tech/vidore-benchmark",
+      "observed_at": "2026-11-19T11:39:12+08:00",
+      "head": "de1d88c14c31d9e0d761b7099fe6eb4f876f8912",
+      "readme_path": "README.md",
+      "readme_oid": "0617d4a4b52b8cb0fb1bc46c0d7888a179022e9d",
+      "source_url": "https://github.com/illuin-tech/vidore-benchmark/blob/de1d88c14c31d9e0d761b7099fe6eb4f876f8912/README.md",
+      "experiment_status": "NOT_RUN / UNMEASURED"
+    }
+  ]
+}

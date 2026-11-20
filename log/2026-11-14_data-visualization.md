@@ -56,3 +56,13 @@ PR stays OPEN pending separately reviewed dependency remediation. Public
 catalog branch/log are published, but this is NOT a claim of main merge or
 clean application audit/browser acceptance. Do not copy unrelated app fixes
 into a reference-only PR without separate scope and verification.
+# 2026-11-20 maintenance follow-up
+
+User requested pending owned-repo PR handling. PR3 was blocked by merge conflicts
+with subsequent main changes. Integrated main e01eeaf without a history rewrite;
+the cover,PhoneGo,multimodal,world-model,programming and existing audit gates are retained.
+All66 offline Python contracts pass (including the4 visualization checks); all three
+catalog generators remain fresh. App source and package/lock files equal current main.
+Historical source-review dates and14-case results below remain historical,not fresh
+upstream validation. No third-party renderer run,model call,private export or app deploy.
+Fresh hosted CI and the normal merge gate are still required; no audit bypass.

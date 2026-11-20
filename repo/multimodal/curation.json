@@ -1,0 +1,31 @@
+{
+  "title": "多模态 RAG：从文件解析到可回溯证据",
+  "author": "Pengyi Peng / P-CSDSAI",
+  "scope": "Curated engineering reading routes, not a ranking or an exhaustive ecosystem census",
+  "entries": [
+    {"repository":"HKUDS/VideoRAG","role":"video-rag","modalities":["video","audio","text"],"reason":"研究帧、转录与跨视频图检索的对齐，保留时间区间而非只索引摘要。","question":"固定同一批带时序答案的公开视频，文本转录基线遗漏了哪些视觉证据？"},
+    {"repository":"ewha-mmai/audiohelix","role":"audio-native-rag","modalities":["audio","text"],"reason":"研究声学单元与文本概念的双图检索，区分音色、环境声与可转录语义。","question":"同样上下文预算下，声学证据是否改善不依赖转录的问答及时间定位？"},
+    {"repository":"jingru-lin/AudioRAG","role":"benchmark","modalities":["audio","text"],"reason":"作为音频推理和外部信息检索的基准入口，不把同名数据仓库当完整可部署框架。","question":"将识音失败与外部知识检索失败分别计数，能否解释端到端错误？"},
+    {"repository":"Azure-Samples/aisearch-openai-rag-audio","role":"voice-interface","modalities":["audio","text"],"reason":"对照语音交互入口与文档检索，避免将语音 UI 等同于原生音频检索。","question":"固定检索结果后，流式语音往返时延和引用可读性如何变化？"},
+    {"repository":"openai/whisper","role":"asr","modalities":["audio","text"],"reason":"建立转录型 Audio RAG 的可解释基线，测实体名和数字的识别损失。","question":"逐字稿的词错率与后续证据召回损失是否相关，哪些专名需要复核？"},
+    {"repository":"SYSTRAN/faster-whisper","role":"asr-runtime","modalities":["audio","text"],"reason":"研究转录执行器的分段、量化与吞吐，不直接接受速度倍数为本地结果。","question":"相同模型、音频和精度下，冷启动及热转录成本与实体召回如何权衡？"},
+    {"repository":"LAION-AI/CLAP","role":"audio-text-embedding","modalities":["audio","text"],"reason":"研究非语音声音的文本对齐与音频检索，不用 ASR 覆盖全部声学内容。","question":"狗叫、警报、音乐等固定合成或授权样本的跨模态 Recall@k 是否优于转录索引？"},
+    {"repository":"facebookresearch/ImageBind","role":"cross-modal-embedding","modalities":["image","audio","video","text"],"reason":"观察多模态共享嵌入接口与模型许可边界，尤其不能忽略非商用限制。","question":"冻结各模态输入和许可，直接跨模态近邻能否区分语义相近但时序不同的片段？"},
+    {"repository":"openai/CLIP","role":"image-text-embedding","modalities":["image","text"],"reason":"建立图像文本检索基线，并观察图中文字与细粒度布局的能力边界。","question":"视觉相近但文字不同的图表，CLIP 与 OCR 文本检索的错误分布有何不同？"},
+    {"repository":"illuin-tech/colpali","role":"visual-document-retrieval","modalities":["pdf","image","text"],"reason":"研究整页图像的多向量检索，保留版面、表格与图表而不是只提纯文本。","question":"相同页级标注下，多向量视觉检索相对 OCR+BM25 的 Recall@k 与存储代价如何？"},
+    {"repository":"AnswerDotAI/byaldi","role":"visual-index-wrapper","modalities":["pdf","image","text"],"reason":"研究视觉文档模型的索引与查询封装，避免把封装层当新的检索模型。","question":"同一模型和页面，封装前后页号、metadata 和批次结果是否严格等价？"},
+    {"repository":"docling-project/docling","role":"document-parser","modalities":["pdf","docs","image","text"],"reason":"研究复杂文档的结构化解析与导出，逐格式核验 reading order 和表格。","question":"同一授权 PDF/DOCX/PPTX 固定样本的阅读顺序和表格单元格恢复率如何？"},
+    {"repository":"opendatalab/MinerU","role":"pdf-parser","modalities":["pdf","image","text"],"reason":"研究公式、表格和扫描页解析；代码、权重及服务许可分开记录。","question":"扫描与原生 PDF 分层后，公式和单元格保真度及每页成本如何变化？"},
+    {"repository":"Unstructured-IO/unstructured","role":"file-partitioning","modalities":["docs","pdf","image","text"],"reason":"研究文件类型分发与元素 metadata；后端依赖及服务条款不等同于顶层许可。","question":"同一份不同格式导出是否保持标题层级、页码和可复核元素 ID？"},
+    {"repository":"PaddlePaddle/PaddleOCR","role":"ocr-layout","modalities":["image","pdf","text"],"reason":"研究多语言 OCR 与布局提取，为扫描件提供可测的文字与坐标基线。","question":"旋转、低清与中英混排固定样本上的字符错误和框定位误差如何？"},
+    {"repository":"mindee/doctr","role":"ocr","modalities":["image","pdf","text"],"reason":"提供 OCR 检测识别拆分的工程对照，标注坐标与置信度而非只比最终文本。","question":"相同图片上，检测漏框与识别错误各自造成多少证据召回损失？"},
+    {"repository":"microsoft/markitdown","role":"document-conversion","modalities":["docs","pdf","image","audio","text"],"reason":"研究多文件到 Markdown 的统一转换入口；转换成功不是引用保真保证。","question":"逐转换器核实可选依赖，表格、链接和页/时间出处有多少信息被丢失？"},
+    {"repository":"HKUDS/RAG-Anything","role":"multimodal-rag","modalities":["image","pdf","docs","video","audio","text"],"reason":"研究多模态内容与图检索的集成边界；支持矩阵必须逐解析后端和版本核对。","question":"相同解析产物和生成模型下，跨模态图边是否改善跨表格图像证据问题？"},
+    {"repository":"infiniflow/ragflow","role":"rag-platform","modalities":["pdf","docs","image","text"],"reason":"研究解析、检索与应用流程的边界，关注引用对象、数据隔离和运维成本。","question":"固定文档集和权限测试，检索引用是否保持页码且不越过用户授权边界？"},
+    {"repository":"run-llama/llama_index","role":"orchestration","modalities":["text","image","docs"],"reason":"研究多模态节点、检索和 connector 接口，不把生态插件的能力算作核心默认能力。","question":"同一证据节点在转换、重排和生成之间是否保留原始 source locator？"},
+    {"repository":"deepset-ai/haystack","role":"orchestration","modalities":["text","image","docs"],"reason":"研究可组合管线与组件契约，分开评估解析器、检索器和生成器。","question":"固定输入的组件级输出能否回放，并将失败准确归因到管线阶段？"},
+    {"repository":"qdrant/qdrant","role":"vector-store","modalities":["embedding","metadata"],"reason":"研究向量、多向量和过滤存储契约；向量库本身不理解视频或 PDF。","question":"固定向量、过滤条件和并发读写，召回、隔离正确性和查询时延如何？"},
+    {"repository":"facebookresearch/faiss","role":"vector-index","modalities":["embedding"],"reason":"为精确与近似向量搜索建立固定向量对照，不将 ANN 损失误归因给模型。","question":"相同向量下 IVF/HNSW 相对精确检索的 Recall@k、内存和时延如何？"},
+    {"repository":"illuin-tech/vidore-benchmark","role":"visual-retrieval-evaluation","modalities":["pdf","image","text"],"reason":"用视觉文档检索基准协议区分检索质量和最终生成答案质量。","question":"固定数据版本、页面去重与查询拆分，视觉检索和 OCR 基线是否有可靠差异？"}
+  ]
+}
